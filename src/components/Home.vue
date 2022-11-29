@@ -34,16 +34,14 @@
     #Home{
         padding: 4% 3% 4%;
         h1{
-            width: 120%;
             margin-top: 4%;
             font-size: 3.5rem;
             line-height: 4.5rem;
             font-weight: 600;
         }
         p{
-            width: 120%;
             margin: 4% 0;
-            font-size: 1.6rem;
+            font-size: 1.45rem;
             line-height: 2.5rem;
         }
         button{
