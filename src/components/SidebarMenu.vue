@@ -140,7 +140,7 @@
         top: 50%;
         right: 0;
         transform: translateY(-50%);
-        font-size: 22px;
+        font-size: 1.6rem;
         transition: all 0.4s ease;
         text-align: center;
         cursor: pointer;
@@ -152,7 +152,7 @@
         color: black;
         height: 60px;
         min-width: 50px;
-        font-size: 28px;
+        font-size: 1.6rem;
         text-align: center;
         line-height: 60px;
     }
@@ -163,7 +163,7 @@
     .sidebar li {
         position: relative;
         margin: 8px 0;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         list-style: none;
     }
     .sidebar li a {
@@ -176,9 +176,6 @@
         transition: all 0.4s ease;
         color: black;
     }
-    .sidebar li a:hover {
-
-    }
     .sidebar li a:hover i {
         transition: all 0.5s ease;
         color: var(--bg-color);
@@ -186,7 +183,7 @@
     .sidebar li i {
         height: 50px;
         line-height: 50px;
-        font-size: 18px;
+        font-size: 1.6rem;
         border-radius: 12px;
     }
     .my-scroll-active {
