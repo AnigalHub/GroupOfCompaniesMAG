@@ -4,6 +4,7 @@
       <Home/>
       <About/>
       <Advantages/>
+      <Employees/>
   </div>
 </template>
 
@@ -12,13 +13,16 @@
     import Home from './components/Home.vue'
     import About from "@/components/About";
     import Advantages from "@/components/Advantages";
+    import Employees from "@/components/Employees";
 
 export default {
   name: 'App',
   components: {
+      Employees,
       Advantages,
       About,
-    Home, SidebarMenu,
+      Home,
+      SidebarMenu,
   }
 }
 </script>
