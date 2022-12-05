@@ -41,8 +41,8 @@
         }
         p{
             margin: 4% 0;
-            font-size: 1.45rem;
-            line-height: 2.5rem;
+            font-size: 1.35rem;
+            line-height: 2.25rem;
         }
         button{
             width: 48%;
