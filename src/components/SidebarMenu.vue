@@ -93,7 +93,6 @@
 </script>
 
 <style>
-    @import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
     :root{
         --bg-color:linear-gradient(#b7dfe9,#adc7e2, #a0a6d8);
     }
