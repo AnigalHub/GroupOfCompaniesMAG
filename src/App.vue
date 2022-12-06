@@ -5,6 +5,8 @@
       <About/>
       <Advantages/>
       <Employees/>
+      <Services/>
+      <Contacts/>
   </div>
 </template>
 
@@ -14,10 +16,14 @@
     import About from "@/components/About";
     import Advantages from "@/components/Advantages";
     import Employees from "@/components/Employees";
+    import Services from "@/components/Services";
+    import Contacts from "@/components/Contacts";
 
 export default {
   name: 'App',
   components: {
+      Contacts,
+      Services,
       Employees,
       Advantages,
       About,
@@ -28,6 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
+    @import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
 #app {
     height: 100%;
     margin: 0 !important;
@@ -56,5 +63,9 @@ h2{
     text-shadow: 1px 1px 2px #000;
     color: #77AEDB;
     font-size: 2.5rem !important;
+}
+p,li,.text{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 </style>
