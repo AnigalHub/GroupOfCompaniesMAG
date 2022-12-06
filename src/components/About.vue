@@ -2,13 +2,11 @@
     <div id="About">
         <b-container>
             <b-row>
-                <b-col cols="5">
+                <b-col cols="6">
                     <component :is="svg"/>
                 </b-col>
                 <b-col>
-                    <h2>
-                        О нас
-                    </h2>
+                    <h2>О нас</h2>
                     <p>
                         <b>ОАО "Группа компаний МАГ"</b>- группа компаний, занимающаяся строительно-монтажными и пуско-наладочными работами систем:
                     </p>
@@ -39,7 +37,7 @@
                     {text:"Оповещения населения (ГОиЧС)",},
                     {text:"Дератизационные системы (ОЗДС) ",},
                     {text:"Пожарные сигнализации (СПС, АПС)",},
-                    { text:"Контроля и управления доступом (СКУД)",},
+                    {text:"Контроля и управления доступом (СКУД)",},
                 ],
                 SecondList:[
                     {text:"Контроля учета электроэнергии (АСКУЭ)",},
@@ -64,41 +62,41 @@
     #About{
         h2{
             margin-top: 5%;
+            margin-left: -8%;
         }
-        padding: 4% 0 4%;
+        padding: 4% 3% 4%;
         .ul {
             padding:0;
             list-style: none;
+            margin-bottom: .8rem !important;
+            font-size: 1.2rem;
         }
         .ul li:before {
             padding-right:10px;
             font-size: 2rem;
             font-weight: bold;
             color: #77AEDB;
-            content: "\2606";
+            content: "\2999";
             transition-duration: 0.5s;
         }
-        .ul li:hover:before {
-            color: #337AB7;
-            content: "\2605";
+        .col .flex-container{
+            margin-left: -6%;
         }
         .col .flex-container > ul{
-            width: 46%;
+            width: 100%;
             margin: 1% 1.5% 1%;
         }
         .flex-container > ul {
-            width: 22%;
+            width: 46%;
             margin: 0 1% 2%;
         }
         p{
-            margin: 2% 0;
-        }
-        p,li,.text{
-            font-size: 1.4rem;
-            line-height: 2rem;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: -8%;
         }
         svg{
-            width: 105%;
+            width: 95%;
             margin-bottom: 3%;
         }
     }
