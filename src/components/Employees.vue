@@ -2,11 +2,11 @@
     <div id="Employees">
         <b-container>
             <b-row>
-                <b-col>
+                <b-col cols="5">
                     <component :is="svg"/>
                 </b-col>
                 <b-col>
-                    <h2>Сотрудники <span>, которым доверяют</span></h2>
+                    <h2>Сотрудники<span>, которым доверяют</span></h2>
                     <ul v-for="list in List" class="ul">
                         <li class="text">
                            <span>{{list.name}}</span>
@@ -39,7 +39,7 @@
 
 <style scoped lang="scss">
     #Employees{
-        padding: 4% 0 4%;
+        padding: 0 3% 4%;
         .ul {
             padding:0;
             list-style: none;
@@ -55,10 +55,6 @@
         .ul li:hover:before {
             color: #337AB7;
             content: "\2605";
-        }
-        p,li,.text{
-            font-size: 1.4rem;
-            line-height: 2rem;
         }
         h2 span{
             text-shadow: none;
