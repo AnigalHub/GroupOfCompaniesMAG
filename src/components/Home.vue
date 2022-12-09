@@ -36,7 +36,8 @@
         h1{
             margin-top: 4%;
             font-size: 3.5rem;
-            line-height: 4.5rem;
+            line-height: 4rem;
+            width: 110%;
             font-weight: 600;
         }
         p{
