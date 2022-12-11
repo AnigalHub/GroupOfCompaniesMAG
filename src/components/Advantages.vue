@@ -7,6 +7,7 @@
                     <ul class="ul">
                         <li v-for="list in List" class="text">{{list.text}}</li>
                     </ul>
+                    <b-button><a>Посмотреть лицензию</a></b-button>
                 </b-col>
                 <b-col cols="6">
                     <component :is="svg"/>
@@ -42,9 +43,9 @@
             list-style: none;
         }
         .ul li{
-           font-weight: 600;
-            padding-top: 2%;
-            padding-bottom: 3%;
+            font-weight: 600;
+            padding-top: 1.5%;
+            padding-bottom: 1.5%;
             padding-left: 2%;
         }
         .ul li:before {
@@ -68,6 +69,20 @@
             width: 2.8rem;
             margin-top: 45%;
             margin-right: 15%;
+        }
+        button{
+            width: 60%;
+            margin: 1% 1.5%;
+            padding: 1.5%;
+            font-size: 1.5rem;
+            border-radius: 30px;
+            text-shadow: 1px 1px 0.2px rgb(0 0 0 / 43%);
+            border: none;
+            background: linear-gradient(to left, #b7dfe9,#adc7e2, #a0a6d8);
+            a{
+                color:white;
+                text-decoration: none;
+            }
         }
     }
 </style>
