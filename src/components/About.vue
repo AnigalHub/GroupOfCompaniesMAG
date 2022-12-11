@@ -16,11 +16,12 @@
                     </ul>
                 </b-col>
             </b-row>
-            <p style="text-align: center"><u>Основные направления компании:</u></p>
-            <div class="flex-container">
-                <ul v-for="list in FirstList" class="ul">
-                    <li class="text">{{list.text}}</li>
-                </ul>
+            <h3>Основные направления компании:</h3>
+            <div class="parent">
+                <div class="text" v-for="list in List">
+                    {{list.text}}
+                    <component v-if="!list.text" :is="list.svg"/>
+                </div>
             </div>
         </b-container>
     </div>
@@ -33,14 +34,16 @@
         data(){
             return{
                 svg:AboutSvg,
-                FirstList:[
+                List:[
                     {text:"Оповещения населения (ГОиЧС)",},
                     {text:"Дератизационные системы (ОЗДС) ",},
                     {text:"Пожарные сигнализации (СПС, АПС)",},
                     {text:"Контроля и управления доступом (СКУД)",},
+                    {svg:AboutSvg},
                     {text:"Контроля учета электроэнергии (АСКУЭ)",},
                     {text:"Охранные комплексы и различный мониторинг",},
                     {text:"Проводного радиовещания (РСО, РАСЦО)",},
+                    {svg:AboutSvg},
                     {text:"Оповещения и управления эвакуацией (СОУЭ)",},
                     {text:"Каналов связи (оптические, электрические, беспроводные)",},
                     {text:"Управления и диспетчеризация инженерных систем (АСУД)",},
@@ -53,14 +56,70 @@
 </script>
 
 <style scoped lang="scss">
-    .flex-container{
-        display: flex;
-        flex-wrap: wrap;
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        div{
+            padding: 2%;
+            margin: 1%;
+            border-radius: 12px;
+            align-items: center;
+            justify-content: center;
+            svg{
+                width: 30px !important;
+                height: 30px !important;
+            }
+            &:first-child{
+                grid-area: 1 / 1 / 2 / 2;
+            }
+            &:nth-child(2){
+                grid-area: 1 / 2 / 2 / 3;
+            }
+            &:nth-child(3){
+                grid-area: 1 / 3 / 2 / 4;
+            }
+            &:nth-child(4){
+                grid-area: 2 / 1 / 3 / 2;
+            }
+            &:nth-child(5){
+                grid-area: 2 / 2 / 3 / 4;
+            }
+            &:nth-child(6){
+                grid-area: 3 / 1 / 4 / 2;
+            }
+            &:nth-child(7){
+                grid-area: 3 / 2 / 4 / 3;
+            }
+            &:nth-child(8){
+                grid-area: 3 / 3 / 4 / 4;
+            }
+            &:nth-child(9){
+                grid-area: 4 / 1 / 5 / 2;
+            }
+            &:nth-child(10){
+                grid-area: 4 / 2 / 5 / 3;
+            }
+            &:nth-child(11){
+                grid-area: 4 / 3 / 5 / 4;
+            }
+            &:nth-child(12){
+                grid-area: 5 / 1 / 6 / 2;
+            }
+            &:nth-child(13){
+                grid-area: 5 / 2 / 6 / 3;
+            }
+            &:nth-child(14){
+                grid-area: 5 / 3 / 6 / 4;
+            }
+        }
     }
+
     #About{
+
         padding: 4% 3% 4%;
         h2{
-            margin-top: 8%;
+            margin-top: 7%;
         }
         .ul {
             padding:0;
@@ -83,16 +142,6 @@
                 color: #337AB7;
                 content: "\2726";
             }
-        }
-
-        .flex-container > ul {
-            width: 32%;
-            list-style: none;
-            padding: 1%;
-            margin: .5%;
-            box-shadow: 0 3px 6px -2px rgb(0 0 0 / 10%);
-            border: 2px solid #b7dfe9;
-            border-radius: 12px;
         }
         svg{
             width: 100%;
