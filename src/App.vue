@@ -64,8 +64,16 @@ h2{
     color: #77AEDB;
     font-size: 2.5rem !important;
 }
-p,li,.text{
+h3{
+    text-shadow: .5px .5px .8px #000;
+    color: #77AEDB;
+}
+b,u, p,li,.text{
     font-size: 1.2rem;
     line-height: 1.8rem;
+    font-family: Verdana,Geneva,sans-serif,"websafe";
+}
+button{
+    font-family: Verdana,Geneva,sans-serif,"websafe";
 }
 </style>
