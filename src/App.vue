@@ -3,6 +3,7 @@
       <sidebar-menu/>
       <Home/>
       <About/>
+      <Directions/>
       <Advantages/>
       <Employees/>
       <Services/>
@@ -18,10 +19,12 @@
     import Employees from "@/components/Employees";
     import Services from "@/components/Services";
     import Contacts from "@/components/Contacts";
+    import Directions from "@/components/Directions";
 
 export default {
   name: 'App',
   components: {
+      Directions,
       Contacts,
       Services,
       Employees,
