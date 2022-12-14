@@ -58,6 +58,11 @@
                         icon: 'bx-user',
                     },
                     {
+                        link: '#Directions',
+                        name: 'Направления',
+                        icon: 'bx-pie-chart-alt-2',
+                    },
+                    {
                         link: '#Advantages',
                         name: 'Преимущества',
                         icon: 'bx-star',
