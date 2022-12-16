@@ -31,39 +31,5 @@
 </script>
 
 <style scoped lang="scss">
-    #Home{
-        padding: 4% 3% 4%;
-        h1{
-            margin-top: 4%;
-            font-size: 3.5rem;
-            line-height: 4rem;
-            width: 110%;
-            font-weight: 600;
-        }
-        p{
-            margin: 4% 0;
-            font-size: 1.35rem;
-            line-height: 2.25rem;
-        }
-        button{
-            width: 48%;
-            margin: 3% 1.5%;
-            padding: 2%;
-            font-size: 1.5rem;
-            border-radius: 30px;
-            border: none;
-            background: linear-gradient(to left, #b7dfe9,#adc7e2, #a0a6d8);
-            &:last-child{
-                margin-top: 2%;
-            }
-            a{
-                color:white;
-                text-decoration: none;
-            }
-        }
-        svg{
-            margin-top: 2%;
-            width: 95%;
-        }
-    }
+
 </style>
