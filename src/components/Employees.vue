@@ -21,7 +21,7 @@
 </template>
 
 <script>
-    import AboutSvg from "./svg/AboutSvg";
+    import AboutSvg from "./svg/EmployeesSvg";
     export default {
         name: "Employees",
         data() {
@@ -39,7 +39,10 @@
 
 <style scoped lang="scss">
     #Employees{
-        padding: 0 3% 4%;
+        svg{
+            width: 100%;
+            margin-top: -10%;
+        }
         .ul {
             padding:0;
             list-style: none;

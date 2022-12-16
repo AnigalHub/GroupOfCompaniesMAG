@@ -37,13 +37,12 @@
 
 <style scoped lang="scss">
     #Advantages{
-        padding: 4% 3% 0;
         .ul {
             padding:0;
             list-style: none;
         }
         .ul li{
-            font-weight: 600;
+           //font-weight: 600;
             padding-top: 1.5%;
             padding-bottom: 1.5%;
             padding-left: 2%;
