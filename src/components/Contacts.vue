@@ -62,7 +62,6 @@
 
 <style scoped lang="scss">
     #Contacts{
-        padding: 4% 3% 4%;
         .contacts{
             padding-left: 2%;
         }
@@ -83,7 +82,7 @@
             }
         }
         svg{
-            width: 100%;
+            width: 95%;
         }
     }
 </style>

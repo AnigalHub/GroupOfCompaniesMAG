@@ -34,7 +34,6 @@
 
 <style scoped lang="scss">
     #About{
-        padding: 4% 3% 4%;
         h2{
             margin-top: 5%;
         }
