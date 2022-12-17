@@ -112,7 +112,6 @@
     }
 
     .sidebar {
-        position: relative;
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -190,11 +189,8 @@
         font-size: 1.6rem;
         border-radius: 12px;
     }
-    .my-scroll-active {
-        overflow-y: auto;
-    }
     #my-scroll {
-        overflow-y: auto;
+        overflow-y: hidden;
         height: calc(100% - 30px);
     }
     #my-scroll::-webkit-scrollbar{
