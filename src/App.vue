@@ -49,17 +49,12 @@ export default {
     padding-right: 15px !important;
     padding-left: 15px !important;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-button{
-    cursor: pointer;
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
+h1{
+    margin-top: 4%;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    width: 110%;
+    font-weight: 600;
 }
 h2{
     text-transform: uppercase;
@@ -71,12 +66,79 @@ h3{
     text-shadow: .5px .5px .8px #000;
     color: #77AEDB;
 }
-b,u, p,li,.text{
+b, u, p, li, .text{
     font-size: 1.2rem;
     line-height: 1.8rem;
+}
+b, u, p, li, .text, button{
     font-family: Verdana,Geneva,sans-serif,"websafe";
 }
 button{
-    font-family: Verdana,Geneva,sans-serif,"websafe";
+    font-size: 1.5rem;
+    border-radius: 30px;
+    background: linear-gradient(to left, #b7dfe9,#adc7e2, #a0a6d8);
+    a{
+        color:white;
+        text-decoration: none;
+    }
 }
+#Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts{
+    padding: 3%;
+}
+#Home{
+    h1{
+        margin-top: 4%;
+        font-size: 3.5rem;
+        line-height: 4rem;
+        width: 110%;
+        font-weight: 600;
+    }
+    p{
+        margin: 4% 0;
+        font-size: 1.35rem;
+        line-height: 2.25rem;
+    }
+    button{
+        width: 48%;
+        margin: 3% 1.5%;
+        padding: 2%;
+        font-size: 1.5rem;
+        border-radius: 30px;
+        border: none;
+        &:last-child{
+            margin-top: 2%;
+        }
+    }
+    svg{
+        margin-top: 2%;
+        width: 100%;
+    }
+}
+#Directions{
+        padding: 0 3% 4%;
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            div{
+                width: 100%;
+                margin: 0 auto 1%;
+            }
+        }
+        ul {
+            padding: 0 2%;
+            margin-bottom: 0 !important;
+            list-style: none !important;
+        }
+        li:before {
+            padding-right:10px;
+            margin-left: -3%;
+            font-size: 2rem;
+            color: #77AEDB;
+            content: "\2727";
+        }
+        li:hover:before {
+            color: #337AB7;
+            content: "\2726";
+        }
+    }
 </style>
