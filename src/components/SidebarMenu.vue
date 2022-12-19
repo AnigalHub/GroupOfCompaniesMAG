@@ -85,10 +85,6 @@
                 isOpened: false
             }
         },
-        mounted() {
-            this.isOpened = this.isMenuOpen
-        },
-
         watch: {
             isOpened() {
                 window.document.body.style.paddingLeft = this.isOpened && this.isPaddingLeft ? this.menuOpenedPaddingLeftBody : this.menuClosedPaddingLeftBody
@@ -189,8 +185,11 @@
         font-size: 1.6rem;
         border-radius: 12px;
     }
+    .my-scroll-active {
+        overflow-y: auto;
+    }
     #my-scroll {
-        overflow-y: hidden;
+        overflow-y: auto;
         height: calc(100% - 30px);
     }
     #my-scroll::-webkit-scrollbar{
