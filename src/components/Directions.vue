@@ -1,40 +1,57 @@
 <template>
     <div id="Directions">
         <b-container>
-            <h2>Основные направления компании:</h2>
-            <div class="parent">
-                <div class="text" v-for="list in List">
-                    <ul v-if="!list.svg">
-                        <li>{{list.text}}</li>
-                    </ul>
-                    <component v-if="!list.text" :is="list.svg"/>
-                </div>
-            </div>
+            <h2>Основные направления работы компании:</h2>
+            <b-row>
+                <b-col>
+                    <div class="wrapper">
+                        <div class="text" v-for="list in List">
+                            <ul v-if="!list.svg && list.text !== ''">
+                                <li>{{list.text}}</li>
+                            </ul>
+                            <component  v-if="list.text === ''" :is="list.svg"/>
+                        </div>
+                    </div>
+                </b-col>
+                <b-col cols="3">
+                   <img src="./../../public/camera.jpg">
+                </b-col>
+                <b-col>
+                    <div class="wrapper">
+                        <div class="text" v-for="list in List2">
+                            <ul v-if="!list.svg && list.text !== ''">
+                                <li>{{list.text}}</li>
+                            </ul>
+                            <component  v-if="list.text === ''" :is="list.svg"/>
+                        </div>
+                    </div>
+                </b-col>
+            </b-row>
         </b-container>
     </div>
 </template>
 
 <script>
-    import AboutSvg from "@/components/svg/AboutSvg";
-
     export default {
         name: "Directions",
         data(){
             return{
                 List:[
                     {text:"Оповещения населения (ГОиЧС)",},
-                    {text:"Дератизационные системы (ОЗДС) ",},
-                    {text:"Пожарные сигнализации (СПС, АПС)",},
-                    {text:"Контроля и управления доступом (СКУД)",},
-                    {svg:AboutSvg},
-                    {text:"Контроля учета электроэнергии (АСКУЭ)",},
-                    {text:"Охранные комплексы и различный мониторинг",},
-                    {text:"Проводного радиовещания (РСО, РАСЦО)",},
-                    {svg:AboutSvg},
                     {text:"Оповещения и управления эвакуацией (СОУЭ)",},
+
+                    {text:"Пожарные сигнализации (СПС, АПС)",},
+                    {text:"Проводного радиовещания (РСО, РАСЦО)",},
                     {text:"Каналов связи (оптические, электрические, беспроводные)",},
-                    {text:"Управления и диспетчеризация инженерных систем (АСУД)",},
                     {text:"Видеонаблюдения (СОТ, Безопасный регион, Безопасный город)",},
+                ],
+                List2:[
+                    {text:"Дератизационные системы (ОЗДС) ",},
+                    {text:"Охранные комплексы и различный мониторинг",},
+                    {text:"Контроля учета электроэнергии (АСКУЭ)",},
+                    {text:"Контроля и управления доступом (СКУД)",},
+
+                    {text:"Управления и диспетчеризация инженерных систем (АСУД)",},
                     {text:"Электрические сети и установки (Бытовые и промышленные до 220КВ)",},
                 ],
             }
@@ -44,68 +61,24 @@
 
 <style scoped lang="scss">
     #Directions{
-        padding: 0% 3% 4%;
-        .parent {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            div{
-                border-radius: 12px;
-                align-items: center;
-                justify-content: center;
-                svg{
-                    width: 100%;
-                    height: 30px !important;
-                }
-                &:first-child{
-                    grid-area: 1 / 1 / 2 / 2;
-                }
-                &:nth-child(2){
-                    grid-area: 1 / 2 / 2 / 3;
-                }
-                &:nth-child(3){
-                    grid-area: 1 / 3 / 2 / 4;
-                }
-                &:nth-child(4){
-                    grid-area: 2 / 1 / 3 / 2;
-                }
-                &:nth-child(5){
-                    grid-area: 2 / 2 / 3 / 4;
-                }
-                &:nth-child(6){
-                    grid-area: 3 / 1 / 4 / 2;
-                }
-                &:nth-child(7){
-                    grid-area: 3 / 2 / 4 / 3;
-                }
-                &:nth-child(8){
-                    grid-area: 3 / 3 / 4 / 4;
-                }
-                &:nth-child(9){
-                    grid-area: 4 / 1 / 5 / 2;
-                }
-                &:nth-child(10){
-                    grid-area: 4 / 2 / 5 / 3;
-                }
-                &:nth-child(11){
-                    grid-area: 4 / 3 / 5 / 4;
-                }
-                &:nth-child(12){
-                    grid-area: 5 / 1 / 6 / 2;
-                }
-                &:nth-child(13){
-                    grid-area: 5 / 2 / 6 / 3;
-                }
-                &:nth-child(14){
-                    grid-area: 5 / 3 / 6 / 4;
-                }
-            }
+        .col{
+            padding: 0 !important;
+        }
+        .col-3 {
+            width: 20% !important;
+        }
+        img{
+            width: 100%;
+            height: 100%;
         }
         ul {
-            padding: 0 3% 2% 3%;
+            padding: 0 1%;
+            border-radius: 20px;
             margin-bottom: 1.5% !important;
             font-size: 1.2rem;
             list-style: none !important;
+            //text-align: center;
+            background: linear-gradient(to left, rgba(160, 166, 216, 0.05), rgba(173, 199, 226, 0.1), rgba(160, 166, 216, 0.05));
         }
         li:before {
             padding-right:10px;
