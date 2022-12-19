@@ -36,7 +36,6 @@
 					</g>
 				</g>
                 <g>
-					<polygon class="st5" points="297.4,87.9 291.8,95.4 294.2,95.4 291.8,102.2 299.8,94.6 296.6,94.6 					"/>
                     <g>
 						<g>
 							<g>
@@ -243,7 +242,7 @@
 
 <style scoped>
     .st0{fill:url(#SVGID_2_);}
-    .st1{fill:#FFFFFF;}
+    .st1{fill:#FFFFFF;stroke:#738CE9;stroke-width:.5;stroke-miterlimit:10;}
     .st2{fill:#E6E6E6;stroke:#8089B0;stroke-width:5;stroke-miterlimit:10;}
     .st3{fill:none;stroke:#8089B0;stroke-width:5;stroke-miterlimit:10;}
     .st4{fill:#AAB7EB;stroke:#8089B0;stroke-width:2;stroke-miterlimit:10;}

@@ -488,8 +488,8 @@
 
 <style scoped>
     .st0{fill:url(#SVGID_1_);}
-    .st1{fill:#FFFFFF;stroke:#B7DFE9;stroke-width:2;stroke-miterlimit:10;}
-    .st2{fill:none;stroke:#B7DFE9;stroke-width:2;stroke-miterlimit:10;}
+    .st1{fill:#FFFFFF;stroke:#738CE9;stroke-width:1;stroke-miterlimit:10;}
+    .st2{fill:none;stroke:#738CE9;stroke-width:1;stroke-miterlimit:10;}
     .st3{fill:#A0A6D8;}
     .st4{fill:#F7AD1A;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
     .st5{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}

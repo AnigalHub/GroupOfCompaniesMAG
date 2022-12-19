@@ -72,17 +72,15 @@
             height: 100%;
         }
         ul {
-            padding: 0 1%;
             border-radius: 20px;
             margin-bottom: 1.5% !important;
             font-size: 1.2rem;
             list-style: none !important;
-            //text-align: center;
             background: linear-gradient(to left, rgba(160, 166, 216, 0.05), rgba(173, 199, 226, 0.1), rgba(160, 166, 216, 0.05));
         }
         li:before {
             padding-right:10px;
-            margin-left: -3%;
+
             font-size: 2rem;
             color: #77AEDB;
             content: "\2727";
