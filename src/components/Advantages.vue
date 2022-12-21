@@ -9,7 +9,7 @@
                     </ul>
                     <b-button><a>Посмотреть лицензию</a></b-button>
                 </b-col>
-                <b-col cols="6">
+                <b-col cols="5">
                     <component :is="svg"/>
                 </b-col>
             </b-row>
@@ -18,12 +18,12 @@
 </template>
 
 <script>
-    import HomeSvg from "./svg/HomeSvg";
+    import AdvantagesSvg from "./svg/AdvantagesSvg";
     export default {
         name: "Advantages",
         data(){
             return{
-                svg:HomeSvg,
+                svg:AdvantagesSvg,
                 List:[
                     {text:"Безупречная репутация",},
                     {text:"Лучший технадзор на рынке",},
@@ -60,8 +60,8 @@
             content: "\2713";
         }
         svg{
-            width: 100%;
-            margin-top: -5%;
+            width: 95%;
+            margin-top: -2%;
             margin-bottom: 10%;
         }
         .col-1 svg{
