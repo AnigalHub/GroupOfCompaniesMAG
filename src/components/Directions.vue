@@ -14,7 +14,6 @@
                     </div>
                 </b-col>
                 <b-col cols="3">
-<!--                   <img src="./../../public/camera.jpg">-->
                     <component  :is="svg"/>
                 </b-col>
                 <b-col>
@@ -68,10 +67,6 @@
         }
         .col-3 {
             width: 20% !important;
-        }
-        img{
-            width: 100%;
-            height: 100%;
         }
         ul {
             border-radius: 20px;
