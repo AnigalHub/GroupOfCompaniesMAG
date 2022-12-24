@@ -49,16 +49,9 @@ export default {
     padding-right: 15px !important;
     padding-left: 15px !important;
 }
-h1{
-    margin-top: 4%;
-    font-size: 3.5rem;
-    line-height: 4rem;
-    width: 110%;
-    font-weight: 600;
-}
 h2{
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px #000;
+    text-shadow: 1px 1px 1px #001056;
     color: #77AEDB;
     font-size: 2.5rem !important;
 }
@@ -83,7 +76,7 @@ button{
     }
 }
 #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts{
-    padding: 3%;
+    padding: 2% 3% 2% 5%;
 }
 #Home{
     h1{
@@ -115,7 +108,6 @@ button{
     }
 }
 #Directions{
-        padding: 0 3% 4%;
         .wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -125,7 +117,6 @@ button{
             }
         }
         ul {
-            padding: 0 2%;
             margin-bottom: 0 !important;
             list-style: none !important;
         }
