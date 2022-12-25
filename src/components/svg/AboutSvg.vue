@@ -538,7 +538,6 @@
 	</g>
 </g>
 </svg>
-
 </template>
 
 <script>
