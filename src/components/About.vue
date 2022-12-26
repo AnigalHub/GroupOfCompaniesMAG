@@ -56,7 +56,7 @@
             content: "\2022";
         }
         svg{
-            width: 95%;
+            width: 100%;
             margin-bottom: 3%;
         }
     }
