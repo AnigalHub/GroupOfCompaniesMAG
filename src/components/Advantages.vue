@@ -60,9 +60,8 @@
             content: "\2713";
         }
         svg{
-            width: 95%;
-            margin-top: -2%;
-            margin-bottom: 10%;
+            width: 90%;
+            margin-top: -5%;
         }
         .col-1 svg{
             width: 2.8rem;

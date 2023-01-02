@@ -2,7 +2,7 @@
     <div id="About">
         <b-container>
             <b-row>
-                <b-col cols="5">
+                <b-col cols="4">
                     <component :is="svg"/>
                 </b-col>
                 <b-col>

@@ -82,7 +82,8 @@
             }
         }
         svg{
-            width: 100%;
+            width: 90%;
+            margin-top: -2%;
         }
     }
 </style>

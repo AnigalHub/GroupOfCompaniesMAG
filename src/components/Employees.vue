@@ -40,8 +40,8 @@
 <style scoped lang="scss">
     #Employees{
         svg{
-            width: 100%;
-            margin-top: -10%;
+            width: 90%;
+            margin-top: -3%;
         }
         .ul {
             padding:0;

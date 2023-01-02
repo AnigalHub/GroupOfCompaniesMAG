@@ -43,7 +43,8 @@
             padding: .5%;
         }
         svg{
-            width: 100%;
+            width: 95%;
+            margin-top: -5%;
         }
         button{
             width: 65%;
