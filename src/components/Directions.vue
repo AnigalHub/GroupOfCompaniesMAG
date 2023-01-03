@@ -61,30 +61,5 @@
 </script>
 
 <style scoped lang="scss">
-    #Directions{
-        .col{
-            padding: 0 !important;
-        }
-        .col-3 {
-            width: 20% !important;
-        }
-        ul {
-            border-radius: 20px;
-            margin-bottom: 1.5% !important;
-            font-size: 1.2rem;
-            list-style: none !important;
-            background: linear-gradient(to left, rgba(160, 166, 216, 0.05), rgba(173, 199, 226, 0.1), rgba(160, 166, 216, 0.05));
-        }
-        li:before {
-            padding-right:10px;
 
-            font-size: 2rem;
-            color: #77AEDB;
-            content: "\2727";
-        }
-        li:hover:before {
-            color: #337AB7;
-            content: "\2726";
-        }
-    }
 </style>

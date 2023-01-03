@@ -61,29 +61,5 @@
 </script>
 
 <style scoped lang="scss">
-    #Contacts{
-        .contacts{
-            padding-left: 2%;
-        }
-        span{
-            text-decoration: underline;
-        }
-        a{
-            margin-top: 5%;
-            text-decoration: none;
-        }
-        .nameContact{
-            padding: 1.5%;
-            border-radius: 20px;
-            svg{
-                width: 2.5rem;
-                margin-top: 40%;
-                margin-right: 3%;
-            }
-        }
-        svg{
-            width: 90%;
-            margin-top: -2%;
-        }
-    }
+
 </style>

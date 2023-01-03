@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
+@import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
 #app {
     height: 100%;
     margin: 0 !important;
@@ -48,6 +48,13 @@ export default {
 .container{
     padding-right: 15px !important;
     padding-left: 15px !important;
+}
+h1{
+    margin-top: 4% !important;
+    font-size: 3.5rem !important;
+    line-height: 4rem !important;
+    width: 110%;
+    font-weight: 600 !important;
 }
 h2{
     text-transform: uppercase;
@@ -66,9 +73,26 @@ b, u, p, li, .text{
 b, u, p, li, .text, button{
     font-family: Verdana,Geneva,sans-serif,"websafe";
 }
+ul{
+    list-style: none !important;
+    margin-bottom: 1.5% !important;
+}
+li:before {
+    font-weight: bold;
+    padding-right:10px;
+    margin-left: -3%;
+    font-size: 2rem;
+    color: #77AEDB;
+    transition-duration: 0.5s;
+}
+li:hover:before {
+    color: #337AB7;
+}
 button{
-    font-size: 1.5rem;
-    border-radius: 30px;
+    font-size: 1.5rem !important;
+    border-radius: 30px !important;
+    border: none !important;
+    text-shadow: 1px 1px 0.2px rgb(0 0 0 / 43%) !important;
     background: linear-gradient(to left, #b7dfe9,#adc7e2, #a0a6d8);
     a{
         color:white;
@@ -79,13 +103,6 @@ button{
     padding: 2% 3% 2% 5%;
 }
 #Home{
-    h1{
-        margin-top: 4%;
-        font-size: 3.5rem;
-        line-height: 4rem;
-        width: 110%;
-        font-weight: 600;
-    }
     p{
         margin: 4% 0;
         font-size: 1.35rem;
@@ -95,8 +112,6 @@ button{
         width: 48%;
         margin: 3% 1.5%;
         padding: 2%;
-        font-size: 1.5rem;
-        border-radius: 30px;
         border: none;
         &:last-child{
             margin-top: 2%;
@@ -107,29 +122,135 @@ button{
         width: 100%;
     }
 }
+#About{
+    h2{
+        margin-top: 5%;
+    }
+    ul {
+        padding: 0 3% 2% 3%;
+        font-size: 1.2rem;
+    }
+    li:before {
+        content: "\25cb";
+    }
+    li:hover:before {
+        content: "\2022";
+    }
+    svg{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+}
 #Directions{
-        .wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            div{
-                width: 100%;
-                margin: 0 auto 1%;
-            }
-        }
-        ul {
-            margin-bottom: 0 !important;
-            list-style: none !important;
-        }
-        li:before {
-            padding-right:10px;
-            margin-left: -3%;
-            font-size: 2rem;
-            color: #77AEDB;
-            content: "\2727";
-        }
-        li:hover:before {
-            color: #337AB7;
-            content: "\2726";
+    .col{
+        padding: 0 !important;
+    }
+    .col-3 {
+        width: 20% !important;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            width: 100%;
+            margin: 0 auto 1%;
         }
     }
+    li:before {
+        content: "\2727";
+    }
+    li:hover:before {
+        content: "\2726";
+    }
+}
+#Advantages{
+    .ul li{
+        padding-top: 1.25%;
+        padding-bottom: 1.25%;
+    }
+    .ul li:before {
+        content: "\1F5F8";
+    }
+    .ul li:hover:before {
+        content: "\2713";
+    }
+    svg{
+        width: 90%;
+        margin-top: -5%;
+    }
+    .col-1 svg{
+        width: 2.8rem;
+        margin-top: 45%;
+        margin-right: 15%;
+    }
+    button{
+        width: 60%;
+        margin: 1% 1.5%;
+        padding: 1.5%;
+    }
+}
+#Employees{
+    svg{
+        width: 90%;
+        margin-top: -3%;
+    }
+    .ul {
+        padding:0;
+    }
+    .ul li:before {
+        content: "\2606";
+    }
+    .ul li:hover:before {
+        content: "\2605";
+    }
+    h2 span{
+        text-shadow: none;
+        text-transform: lowercase;
+    }
+    li span{
+        font-weight: 600;
+    }
+}
+#Services{
+    li:before {
+        content: "\25cb";
+    }
+    li:hover:before {
+        content: "\2022";
+    }
+    svg{
+        width: 95%;
+        margin-top: -5%;
+    }
+    button{
+        width: 65%;
+        margin: 1% 1.5%;
+        padding: 2%;
+    }
+}
+#Contacts{
+    .contacts{
+        padding-left: 2%;
+    }
+    span{
+        text-decoration: underline;
+    }
+    a{
+        margin-top: 5%;
+        text-decoration: none;
+    }
+    .nameContact{
+        padding: 1.5%;
+        border-radius: 20px;
+        svg{
+            width: 2.5rem;
+            margin-top: 40%;
+            margin-right: 3%;
+        }
+    }
+    svg{
+        width: 90%;
+        margin-top: -2%;
+    }
+}
 </style>

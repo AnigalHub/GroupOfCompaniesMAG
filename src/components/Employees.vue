@@ -38,33 +38,5 @@
 </script>
 
 <style scoped lang="scss">
-    #Employees{
-        svg{
-            width: 90%;
-            margin-top: -3%;
-        }
-        .ul {
-            padding:0;
-            list-style: none;
-        }
-        .ul li:before {
-            padding-right:10px;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #77AEDB;
-            content: "\2606";
-            transition-duration: 0.5s;
-        }
-        .ul li:hover:before {
-            color: #337AB7;
-            content: "\2605";
-        }
-        h2 span{
-            text-shadow: none;
-            text-transform: lowercase;
-        }
-        li span{
-            font-weight: 600;
-        }
-    }
+
 </style>

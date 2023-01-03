@@ -33,31 +33,5 @@
 </script>
 
 <style scoped lang="scss">
-    #About{
-        h2{
-            margin-top: 5%;
-        }
-        ul {
-            padding: 0 3% 2% 3%;
-            margin-bottom: 1.5% !important;
-            font-size: 1.2rem;
-            list-style: none !important;
-        }
-        li:before {
-            padding-right: 10px;
-            margin-left: -3%;
-            font-size: 1.5rem;
-            color: #77AEDB;
-            content: "\25cb";
-        }
-        li:hover:before {
-            color: #337AB7;
-            font-size: 1.55rem;
-            content: "\2022";
-        }
-        svg{
-            width: 100%;
-            margin-bottom: 3%;
-        }
-    }
+
 </style>
