@@ -4,27 +4,13 @@
             <h2>Основные направления работы компании:</h2>
             <b-row>
                 <b-col>
-                    <div class="wrapper">
-                        <div class="text" v-for="list in List">
-                            <ul v-if="!list.svg && list.text !== ''">
-                                <li>{{list.text}}</li>
-                            </ul>
-                            <component  v-if="list.text === ''" :is="list.svg"/>
-                        </div>
-                    </div>
+                    <DirectionsItems :items="List1"></DirectionsItems>
                 </b-col>
                 <b-col cols="3">
                     <component  :is="svg"/>
                 </b-col>
                 <b-col>
-                    <div class="wrapper">
-                        <div class="text" v-for="list in List2">
-                            <ul v-if="!list.svg && list.text !== ''">
-                                <li>{{list.text}}</li>
-                            </ul>
-                            <component  v-if="list.text === ''" :is="list.svg"/>
-                        </div>
-                    </div>
+                    <DirectionsItems :items="List2"></DirectionsItems>
                 </b-col>
             </b-row>
         </b-container>
@@ -33,13 +19,16 @@
 
 <script>
     import DirectionsSvg from "@/components/svg/DirectionsSvg";
-
+    import DirectionsItems from "@/components/mixins/DirectionsItems";
     export default {
         name: "Directions",
+        components:{
+            DirectionsItems
+        },
         data(){
             return{
                 svg: DirectionsSvg,
-                List:[
+                List1:[
                     {text:"Оповещения населения (ГОиЧС)",},
                     {text:"Оповещения и управления эвакуацией (СОУЭ)",},
                     {text:"Пожарные сигнализации (СПС, АПС)",},
