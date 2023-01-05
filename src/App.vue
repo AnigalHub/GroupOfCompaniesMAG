@@ -61,10 +61,14 @@ h2{
     text-shadow: 1px 1px 1px #001056;
     color: #77AEDB;
     font-size: 2.5rem !important;
+    margin-bottom: 2% !important;
 }
 h3{
     text-shadow: .5px .5px .8px #000;
     color: #77AEDB;
+}
+a{
+    text-decoration: none;
 }
 b, u, p, li, .text{
     font-size: 1.2rem;
@@ -73,9 +77,15 @@ b, u, p, li, .text{
 b, u, p, li, .text, button{
     font-family: Verdana,Geneva,sans-serif,"websafe";
 }
+span{
+    font-weight: 600;
+}
 ul{
     list-style: none !important;
     margin-bottom: 1.5% !important;
+}
+li{
+    margin-bottom: 2.25%;
 }
 li:before {
     font-weight: bold;
@@ -99,7 +109,33 @@ button{
         text-decoration: none;
     }
 }
-#Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts{
+#Home, #About{
+    svg{
+        width: 100%;
+    }
+}
+#Advantages, #Employees, #Services{
+    svg{
+        width: 90%;
+    }
+}
+#About, #Services{
+    li:before {
+        content: "\25cb";
+    }
+    li:hover:before {
+        content: "\25cf";
+    }
+}
+#Advantages, #Services{
+    button{
+        width: 60%;
+        margin: 1% 1.5%;
+        padding: 1.5%;
+    }
+}
+#Home, #About, #Directions, #Advantages,
+#Employees, #Services, #Contacts{
     padding: 2% 3% 2% 5%;
 }
 #Home{
@@ -119,26 +155,14 @@ button{
     }
     svg{
         margin-top: 2%;
-        width: 100%;
     }
 }
 #About{
     h2{
         margin-top: 5%;
     }
-    ul {
-        padding: 0 3% 2% 3%;
-        font-size: 1.2rem;
-    }
-    li:before {
-        content: "\25cb";
-    }
-    li:hover:before {
-        content: "\2022";
-    }
-    svg{
-        width: 100%;
-        margin-bottom: 3%;
+    li{
+        margin-bottom: 0;
     }
 }
 #Directions{
@@ -164,68 +188,39 @@ button{
     }
 }
 #Advantages{
-    .ul li{
-        padding-top: 1.25%;
-        padding-bottom: 1.25%;
-    }
-    .ul li:before {
+    ul li:before {
         content: "\1F5F8";
     }
-    .ul li:hover:before {
+    ul li:hover:before {
         content: "\2713";
-    }
-    svg{
-        width: 90%;
-        margin-top: -5%;
     }
     .col-1 svg{
         width: 2.8rem;
         margin-top: 45%;
         margin-right: 15%;
     }
-    button{
-        width: 60%;
-        margin: 1% 1.5%;
-        padding: 1.5%;
+    svg{
+        margin-top: -5%;
     }
 }
 #Employees{
     svg{
-        width: 90%;
         margin-top: -3%;
     }
-    .ul {
-        padding:0;
-    }
-    .ul li:before {
+    ul li:before {
         content: "\2606";
     }
-    .ul li:hover:before {
+    ul li:hover:before {
         content: "\2605";
     }
     h2 span{
         text-shadow: none;
         text-transform: lowercase;
     }
-    li span{
-        font-weight: 600;
-    }
 }
 #Services{
-    li:before {
-        content: "\25cb";
-    }
-    li:hover:before {
-        content: "\2022";
-    }
     svg{
-        width: 95%;
         margin-top: -5%;
-    }
-    button{
-        width: 65%;
-        margin: 1% 1.5%;
-        padding: 2%;
     }
 }
 #Contacts{
@@ -237,19 +232,16 @@ button{
     }
     a{
         margin-top: 5%;
-        text-decoration: none;
     }
     .nameContact{
         padding: 1.5%;
-        border-radius: 20px;
         svg{
             width: 2.5rem;
             margin-top: 40%;
-            margin-right: 3%;
         }
     }
     svg{
-        width: 90%;
+        width: 95%;
         margin-top: -2%;
     }
 }

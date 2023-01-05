@@ -6,7 +6,7 @@
                   <h1>ОАО "Группа компаний МАГ"</h1>
                   <p>Создаем идеальное современное место для вашей комфотной и счастливой жизни</p>
                   <b-button><a href="#About">О нас</a></b-button>
-                  <b-button><a  href="#Services">Услуги</a></b-button>
+                  <b-button><a href="#Services">Услуги</a></b-button>
               </b-col>
               <b-col>
                   <component :is="svg"/>

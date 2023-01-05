@@ -7,8 +7,8 @@
                 </b-col>
                 <b-col>
                     <h2>Сотрудники<span>, которым доверяют</span></h2>
-                    <ul v-for="list in List" class="ul">
-                        <li class="text">
+                    <ul>
+                        <li class="text" v-for="list in List">
                            <span>{{list.name}}</span>
                             <br/>
                             {{list.text}}
