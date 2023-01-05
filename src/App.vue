@@ -71,14 +71,11 @@ a{
     text-decoration: none;
 }
 b, u, p, li, .text{
-    font-size: 1.2rem;
+    font-size: 1.18rem;
     line-height: 1.8rem;
 }
 b, u, p, li, .text, button{
     font-family: Verdana,Geneva,sans-serif,"websafe";
-}
-span{
-    font-weight: 600;
 }
 ul{
     list-style: none !important;
@@ -170,7 +167,7 @@ button{
         padding: 0 !important;
     }
     .col-3 {
-        width: 20% !important;
+        width: 21% !important;
     }
     .wrapper {
         display: flex;
@@ -228,6 +225,7 @@ button{
         padding-left: 2%;
     }
     span{
+        font-weight: 600;
         text-decoration: underline;
     }
     a{
