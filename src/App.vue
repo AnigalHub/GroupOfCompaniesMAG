@@ -70,11 +70,14 @@ h3{
 a{
     text-decoration: none;
 }
+.sidebar li {
+    font-size: 1.2rem;
+}
 b, u, p, li, .text{
     font-size: 1.18rem;
     line-height: 1.8rem;
 }
-b, u, p, li, .text, button{
+b, u, p, li, .text, button, .sidebar li{
     font-family: Verdana,Geneva,sans-serif,"websafe";
 }
 ul{

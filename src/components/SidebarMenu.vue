@@ -30,7 +30,6 @@
                 type: Boolean,
                 default: true,
             },
-
             isPaddingLeft: {
                 type: Boolean,
                 default: true,
@@ -94,19 +93,9 @@
 </script>
 
 <style>
-    :root{
-        --bg-color:linear-gradient(#b7dfe9,#adc7e2, #a0a6d8);
-    }
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
     body {
         transition: all 0.5s ease;
     }
-
     .sidebar {
         display: flex;
         flex-direction: column;
@@ -116,7 +105,7 @@
         height: 100%;
         min-height: min-content;
         width: 78px;
-        background: var(--bg-color);
+        background: linear-gradient(#b7dfe9,#adc7e2, #a0a6d8);
         z-index: 99;
         transition: all 0.5s ease;
     }
@@ -128,10 +117,6 @@
         display: flex;
         align-items: center;
         position: relative;
-    }
-    .sidebar .logo-details .icon {
-        opacity: 0;
-        transition: all 0.5s ease;
     }
 
     .sidebar .logo-details #btn {
@@ -162,23 +147,18 @@
     .sidebar li {
         position: relative;
         margin: 8px 0;
-        font-size: 1.3rem;
         list-style: none;
     }
     .sidebar li a {
         display: flex;
         height: 100%;
         width: 100%;
-        border-radius: 12px;
         align-items: center;
         text-decoration: none;
         transition: all 0.4s ease;
         color: black;
     }
-    .sidebar li a:hover i {
-        transition: all 0.5s ease;
-        color: var(--bg-color);
-    }
+
     .sidebar li i {
         height: 50px;
         line-height: 50px;
