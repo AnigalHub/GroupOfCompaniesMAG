@@ -5,7 +5,7 @@
                 <b-col>
                     <h2>Почему выбирают нас</h2>
                     <ul class="ul">
-                        <li v-for="list in List" class="text">{{list.text}}</li>
+                        <li v-for="advantage in Advantages" class="text">{{advantage.text}}</li>
                     </ul>
                     <b-button><a>Посмотреть лицензию</a></b-button>
                 </b-col>
@@ -24,7 +24,7 @@
         data(){
             return{
                 svg:AdvantagesSvg,
-                List:[
+                Advantages:[
                     {text:"Безупречная репутация",},
                     {text:"Лучший технадзор на рынке",},
                     {text:"Выполнение всех работ точно в срок",},

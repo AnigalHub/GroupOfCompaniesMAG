@@ -10,7 +10,7 @@
                     <p><b>ОАО "Группа компаний МАГ"</b> занимается строительно-монтажными и пуско-наладочными работами систем.</p>
                     <p><u>Наша компания состоит из:</u></p>
                     <ul>
-                        <li v-for="list in List" class="text"><b>{{list.name}}</b>{{list.text}}</li>
+                        <li v-for="company in Companies" class="text"><b>{{company.name}}</b>{{company.text}}</li>
                     </ul>
                 </b-col>
             </b-row>
@@ -25,7 +25,7 @@
         data(){
             return{
                 svg:AboutSvg,
-                List:[
+                Companies:[
                     {name:"ООО \"МРС\"",text:"- оператор связи и проектирование;"},
                     {name:"ООО \"Аваконт\"",text:"- строительно-монтажные работы;"},
                     {name:"ООО \"Гостехносервис\"",text:"- локальные и международные поставки."},
