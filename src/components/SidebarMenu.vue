@@ -135,13 +135,14 @@
     .sidebar i {
         color: black;
         height: 60px;
+        margin-right: 4%;
         min-width: 50px;
         font-size: 1.6rem;
         text-align: center;
         line-height: 60px;
     }
     .sidebar .nav-list {
-        margin-left: -32px;
+        margin-left: -35px;
         margin-top: 20px;
     }
     .sidebar li {
