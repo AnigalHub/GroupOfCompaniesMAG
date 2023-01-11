@@ -89,7 +89,7 @@ li{
 }
 li:before {
     font-weight: bold;
-    padding-right:10px;
+    padding-right: 10px;
     margin-left: -3%;
     font-size: 2rem;
     color: #77AEDB;
@@ -114,7 +114,7 @@ button{
         width: 100%;
     }
 }
-#Advantages, #Employees, #Services{
+#Advantages, #Services{
     svg{
         width: 90%;
     }
@@ -136,7 +136,7 @@ button{
 }
 #Home, #About, #Directions, #Advantages,
 #Employees, #Services, #Contacts{
-    padding: 2% 3% 2% 5%;
+    padding: 2% 3% 2% 6%;
 }
 #Home{
     p{
@@ -155,6 +155,8 @@ button{
     }
     svg{
         margin-top: 2%;
+        width: 105%;
+        margin-left: -5%;
     }
 }
 #About{
@@ -163,6 +165,9 @@ button{
     }
     li{
         margin-bottom: 0;
+    }
+    svg{
+        margin-top: 5%;
     }
 }
 #Directions{
@@ -205,7 +210,8 @@ button{
 }
 #Employees{
     svg{
-        margin-top: -3%;
+        margin-left: -8%;
+        width: 108%;
     }
     ul li:before {
         content: "\2606";
@@ -224,8 +230,9 @@ button{
     }
 }
 #Contacts{
+    padding-bottom: 3%;
     .contacts{
-        padding-left: 2%;
+        margin-left: - 2%;
     }
     span{
         font-weight: 600;
@@ -234,16 +241,20 @@ button{
     a{
         margin-top: 5%;
     }
+    svg{
+        margin-top: 5%;
+        margin-left: -8%;
+        width: 112%;
+    }
     .nameContact{
-        padding: 1.5%;
+        padding: 1%;
         svg{
             width: 2.5rem;
-            margin-top: 40%;
+            margin-top: 15%;
         }
     }
-    svg{
-        width: 95%;
-        margin-top: -2%;
-    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+
 }
 </style>
