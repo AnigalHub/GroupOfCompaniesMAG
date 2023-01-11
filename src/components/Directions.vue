@@ -6,9 +6,6 @@
                 <b-col>
                     <DirectionsItems :items="Directions1"></DirectionsItems>
                 </b-col>
-                <b-col cols="3">
-                    <component  :is="svg"/>
-                </b-col>
                 <b-col>
                     <DirectionsItems :items="Directions2"></DirectionsItems>
                 </b-col>
@@ -18,7 +15,6 @@
 </template>
 
 <script>
-    import DirectionsSvg from "@/components/svg/DirectionsSvg";
     import DirectionsItems from "@/components/mixins/DirectionsItems";
     export default {
         name: "Directions",
@@ -27,7 +23,6 @@
         },
         data(){
             return{
-                svg: DirectionsSvg,
                 Directions1:[
                     {text:"Оповещения населения (ГОиЧС)",},
                     {text:"Оповещения и управления эвакуацией (СОУЭ)",},
