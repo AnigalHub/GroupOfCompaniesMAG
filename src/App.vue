@@ -50,17 +50,19 @@ export default {
     padding-left: 15px !important;
 }
 h1{
-    margin-top: 4% !important;
-    font-size: 3.5rem !important;
+    margin-top: 10% !important;
+    font-size: 4rem !important;
+    color: #5d86b4;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-weight: 700 !important;
     line-height: 4rem !important;
     width: 110%;
-    font-weight: 600 !important;
 }
 h2{
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px #001056;
-    color: #77AEDB;
-    font-size: 2.5rem !important;
+    color: #5d86b4;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 2.8rem !important;
     margin-bottom: 2% !important;
 }
 h3{
@@ -73,12 +75,13 @@ a{
 .sidebar li {
     font-size: 1.2rem;
 }
-b, u, p, li, .text{
-    font-size: 1.18rem;
+b, u, p, li, .text, a{
+    font-size: 1.24rem;
     line-height: 1.8rem;
 }
-b, u, p, li, .text, button, .sidebar li{
-    font-family: Verdana,Geneva,sans-serif,"websafe";
+a, b, u, p, li, .text, button, .sidebar li{
+    font-weight: 400;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
 }
 ul{
     list-style: none !important;
@@ -99,13 +102,14 @@ li:hover:before {
     color: #337AB7;
 }
 button{
-    font-size: 1.5rem !important;
+
     border-radius: 30px !important;
     border: none !important;
-    text-shadow: 1px 1px 0.2px rgb(0 0 0 / 43%) !important;
     background: linear-gradient(to left, #b7dfe9,#adc7e2, #a0a6d8);
     a{
         color:white;
+        font-size: 1.3rem !important;
+        font-weight: 500;
         text-decoration: none;
     }
 }
@@ -221,7 +225,12 @@ button{
     }
     h2 span{
         text-shadow: none;
+        font-weight: 400;
         text-transform: lowercase;
+        text-decoration: none;
+    }
+    span{
+        font-weight: 600;
     }
 }
 #Services{
