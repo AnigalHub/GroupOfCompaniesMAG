@@ -44,7 +44,7 @@
                 Contacts: [
                     {
                         name:'Телефон:',
-                        description:'+7 (968) - 824 -80-96',
+                        description:'+7(968)-824-80-96',
                         svg:CallSvg,
                     },
                     {

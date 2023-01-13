@@ -50,12 +50,13 @@ export default {
     padding-left: 15px !important;
 }
 h1{
-    margin-top: 10% !important;
+    margin-top: 9% !important;
     font-size: 4rem !important;
     color: #5d86b4;
     font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
     font-weight: 700 !important;
-    line-height: 4rem !important;
+    line-height: 4.7rem !important;
+    padding-bottom: 2% !important;
     width: 110%;
 }
 h2{
@@ -105,7 +106,7 @@ button{
 
     border-radius: 30px !important;
     border: none !important;
-    background: linear-gradient(to left, #b7dfe9,#adc7e2, #a0a6d8);
+    background: linear-gradient(to left, #a9d3dd, #9ba0cb);
     a{
         color:white;
         font-size: 1.3rem !important;
@@ -120,7 +121,7 @@ button{
 }
 #Advantages, #Services{
     svg{
-        width: 90%;
+        width: 95%;
     }
 }
 #About, #Services{
@@ -149,12 +150,12 @@ button{
         line-height: 2.25rem;
     }
     button{
-        width: 48%;
+        width: 60%;
         margin: 3% 1.5%;
-        padding: 2%;
+        padding: 2.7% 2.5%;
         border: none;
         &:last-child{
-            margin-top: 2%;
+            margin-top: 2.5%;
         }
     }
     svg{
