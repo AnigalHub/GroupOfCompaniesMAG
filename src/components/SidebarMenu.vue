@@ -1,11 +1,11 @@
 <template>
     <div class="sidebar" :class="isOpened ? 'open' : ''">
-        <div class="logo-details" style="margin: 6px 14px 0 14px;">
+        <div class="logo-details">
             <i class="bx" :class="isOpened ? 'bx-menu-alt-right' : 'bx-menu'" id="btn" @click="isOpened = !isOpened"/>
         </div>
         <div>
-            <div id="my-scroll" style="margin: 6px 14px 0 14px;">
-                <ul  class="nav-list" style="overflow: visible;">
+            <div id="my-scroll">
+                <ul class="nav-list" style="overflow: visible;">
                     <span v-for="(menuItem, index) in menuItems" :key="index">
                         <li>
                           <a :href="menuItem.link">
@@ -16,7 +16,6 @@
                   </span>
                 </ul>
             </div>
-
         </div>
     </div>
 </template>
@@ -40,7 +39,7 @@
             },
             menuClosedPaddingLeftBody: {
                 type: String,
-                default: '78px'
+                default: '38px'
             },
             //! Menu items
             menuItems: {
@@ -84,6 +83,9 @@
                 isOpened: false
             }
         },
+        mounted() {
+            this.isMenuOpen = !this.isOpened
+        },
         watch: {
             isOpened() {
                 window.document.body.style.paddingLeft = this.isOpened && this.isPaddingLeft ? this.menuOpenedPaddingLeftBody : this.menuClosedPaddingLeftBody
@@ -112,7 +114,9 @@
     .sidebar.open {
         width: 250px;
     }
+
     .sidebar .logo-details {
+        margin: 6px 14px 0;
         height: 60px;
         display: flex;
         align-items: center;
@@ -164,12 +168,12 @@
         height: 50px;
         line-height: 50px;
         font-size: 1.6rem;
-        border-radius: 12px;
     }
     .my-scroll-active {
         overflow-y: auto;
     }
     #my-scroll {
+        margin: 6px 14px 0 14px;
         overflow-y: auto;
         height: calc(100% - 30px);
     }
