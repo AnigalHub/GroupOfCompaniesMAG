@@ -55,7 +55,7 @@ h1{
     color: #5d86b4;
     font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
     font-weight: 700 !important;
-    line-height: 4.7rem !important;
+    line-height: 4.9rem !important;
     padding-bottom: 2% !important;
     width: 110%;
 }
@@ -66,18 +66,14 @@ h2{
     font-size: 2.8rem !important;
     margin-bottom: 2% !important;
 }
-h3{
-    text-shadow: .5px .5px .8px #000;
-    color: #77AEDB;
-}
 a{
     text-decoration: none;
 }
 .sidebar li {
     font-size: 1.2rem;
 }
-b, u, p, li, .text, a{
-    font-size: 1.24rem;
+a, b, u, p, li, .text{
+    font-size: 1.25rem;
     line-height: 1.8rem;
 }
 a, b, u, p, li, .text, button, .sidebar li{
@@ -103,25 +99,24 @@ li:hover:before {
     color: #337AB7;
 }
 button{
-
     border-radius: 30px !important;
     border: none !important;
     background: linear-gradient(to left, #a9d3dd, #9ba0cb);
     a{
         color:white;
-        font-size: 1.3rem !important;
-        font-weight: 500;
+        font-size: 1.48rem !important;
+        font-weight: 400;
         text-decoration: none;
     }
 }
-#Home, #About{
+#About{
     svg{
         width: 100%;
     }
 }
 #Advantages, #Services{
     svg{
-        width: 95%;
+        width: 93%;
     }
 }
 #About, #Services{
@@ -166,7 +161,7 @@ button{
 }
 #About{
     h2{
-        margin-top: 5%;
+        margin-top: 3%;
     }
     li{
         margin-bottom: 0;
@@ -236,11 +231,11 @@ button{
 }
 #Services{
     svg{
-        margin-top: -5%;
+        margin-top: -2%;
     }
 }
 #Contacts{
-    padding-bottom: 3%;
+    padding-bottom: 5%;
     .contacts{
         margin-left: - 2%;
     }
@@ -254,17 +249,396 @@ button{
     svg{
         margin-top: 5%;
         margin-left: -8%;
-        width: 112%;
+        width: 114%;
     }
     .nameContact{
         padding: 1%;
         svg{
-            width: 2.5rem;
+            width: 2.35rem;
+            margin-left: 2%;
             margin-top: 15%;
         }
     }
 }
+@media screen and (max-width: 992px){
+    .sidebar.open {
+        width: 100%;
+    }
+    #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
+        padding: 2% 3% 2% 3%;
+    }
+    #Home{
+        .row{
+            flex-direction: column;
+        }
+        .col-5{
+            width: 100%;
+            button{
+                display: none;
+            }
+        }
+        svg{
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    #About, #Employees, #Contacts{
+        .row{
+            flex-direction: column-reverse;
+        }
+    }
+    #Advantages, #Services{
+        .row{
+            flex-direction: column;
+        }
+    }
+    #Directions{
+        .row{
+            flex-direction: column;
+        }
+        .col{
+            padding: 0 15px !important;
+        }
+    }
+    #About, #Advantages, #Employees, #Services, #Contacts{
+        .col-4, .col-5{
+            width: 100%;
+        }
+        svg{
+            margin: 3% auto 0;
+            display: block;
+        }
+    }
+    h1{
+        width: 100%;
+        margin-bottom: 0 !important;
+        margin-top: 3% !important;
+    }
+    p{
+        margin-bottom: .5rem !important;
+    }
+    ul{
+        margin-bottom: 0 !important;
+    }
+    li {
+        margin-bottom: 1%;
+    }
+    #Contacts .nameContact{
+        .row{
+            flex-direction: inherit;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        padding-left: 45px;
+    }
+    .sidebar {
+        width: 45px;
+        #my-scroll {
+            margin: 6px 0 0;
+        }
+        .logo-details{
+            margin: 6px 0 0 75%;
+            .bx-menu:before {
+                margin-left: 8%;
+            }
+        }
+        li i {
+            font-size: 1.4rem;
+        }
+    }
+    #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
+        padding: 2% !important;
+    }
+    #About, #Advantages, #Employees, #Services, #Contacts{
+        svg{
+            width: 56%;
+        }
+    }
+    #Home{
+        p{
+            margin: 0 0 4%;
+            font-size: 1rem;
+            line-height: 1.6rem;
+        }
+        svg{
+            width: 96%;
+        }
+    }
+    h1{
+        font-size: 1.45rem !important;
+        line-height: 2rem !important;
+    }
+    h2{
+        font-size: 1.25rem !important;
+    }
+    a, b, u, p, li, .text{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    button a{
+        font-size: 1.1rem !important;
+    }
+    li:before {
+        margin-left: -3%;
+        font-size: 1.8rem;
+    }
+    ul{
+        margin-left: -8%;
+    }
+    #Advantages button, #Services button {
+        width: 90%;
+    }
+    #Contacts{
+        .nameContact svg{
+            width: 1.9rem;
+            margin-left: -50%;
+            margin-top: 75%;
+        }
+        .contacts {
+            margin-left: 0;
+        }
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 768px){
+    #About, #Advantages, #Employees, #Services, #Contacts{
+        svg{
+            width: 56%;
+        }
+    }
+    #Home{
+        p{
+            margin: 0 0 4%;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        svg{
+            width: 96%;
+        }
+    }
+    h1{
+        font-size: 2.4rem !important;
+        line-height: 2.3rem !important;
+    }
+    h2{
+        font-size: 1.7rem !important;
+    }
+    ul{
+        margin-left: -6%;
+    }
+    a, b, u, p, li, .text{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    button a{
+        font-size: 1.25rem !important;
+    }
+    #Advantages button, #Services button {
+        width: 90%;
+    }
+    #Contacts{
+        .nameContact svg{
+            width: 1.9rem;
+            margin-left: -50%;
+            margin-top: 75%;
+        }
+        .contacts {
+            margin-left: 0;
+        }
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 992px){
-
+    #About, #Advantages, #Employees, #Services, #Contacts{
+        svg{
+            width: 48%;
+        }
+    }
+    #Home{
+        p{
+            margin: 0 0 4%;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        svg{
+            width: 66%;
+        }
+    }
+    h1{
+        font-size: 2.65rem !important;
+        line-height: 2.35rem !important;
+    }
+    h2{
+        font-size: 1.7rem !important;
+    }
+    ul{
+        margin-left: -2%;
+    }
+    a, b, u, p, li, .text{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    button a{
+        font-size: 1.25rem !important;
+    }
+    #Contacts .nameContact{
+        svg{
+            width: 2rem;
+        }
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
+        padding: 2% 3% 2% 3%;
+    }
+    #About, #Employees, #Contacts{
+        .row{
+            flex-direction: column-reverse;
+        }
+    }
+    #Advantages, #Services{
+        .row{
+            flex-direction: column;
+        }
+    }
+    #Directions{
+        .row{
+            flex-direction: column;
+        }
+        .col{
+            padding: 0 15px !important;
+        }
+    }
+    #About, #Advantages, #Employees, #Services, #Contacts{
+        .col-4, .col-5{
+            width: 100%;
+        }
+        svg{
+            margin: 3% auto 0;
+            display: block;
+            width: 45%;
+        }
+    }
+    h1{
+        margin-top: 3% !important;
+        font-size: 2.28rem !important;
+        line-height: 2.8rem !important;
+        margin-bottom: 0 !important;
+    }
+    #Home{
+        p{
+            width: 106%;
+            margin: 0 0 4%;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        svg{
+            margin-top: 2%;
+            width: 124%;
+            margin-left: -19%;
+        }
+    }
+    h2{
+        font-size: 2rem !important;
+    }
+    p{
+        margin-bottom: .5rem !important;
+    }
+    a, b, u, p, li, .text{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    ul{
+        margin-left: -2%;
+        margin-bottom: 0 !important;
+    }
+    li {
+        margin-bottom: 1%;
+    }
+    button a{
+        font-size: 1.25rem !important;
+    }
+    #Contacts .nameContact{
+        svg{
+            width: 2rem;
+        }
+        .row{
+            flex-direction: inherit;
+        }
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    #Advantages, #Services{
+        svg{
+            width: 95%;
+        }
+    }
+    #Home svg{
+        width: 110%;
+        margin-left: -8%;
+    }
+    #About svg{
+        margin-left: -5%;
+        width: 105%;
+    }
+    #Employees svg, #Contacts svg {
+        margin-left: -12%;
+        width: 110%;
+    }
+    h1{
+        font-size: 2.65rem !important;
+        line-height: 3.5rem !important;
+        margin-bottom: 0 !important;
+    }
+    #Home p{
+        margin: 0 0 4%;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    h2{
+        font-size: 2.15rem !important;
+    }
+    p{
+        margin-bottom: .5rem !important;
+    }
+    a, b, u, p, li, .text{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    ul{
+        margin-left: -4%;
+    }
+    li {
+        margin-bottom: 2%;
+    }
+    button a{
+        font-size: 1.25rem !important;
+    }
+    #Contacts .nameContact svg{
+        width: 2rem;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1600px){
+    h1{
+        font-size: 3.5rem !important;
+        line-height: 4.25rem !important;
+    }
+    #Home p{
+        font-size: 1.35rem;
+        line-height: 1.9rem;
+    }
+    h2{
+        font-size: 2.6rem !important;
+    }
+    a, b, u, p, li, .text{
+        font-size: 1.2rem;
+        line-height: 1.45rem;
+    }
+    button a{
+        font-size: 1.3rem !important;
+    }
+    #Contacts .nameContact svg{
+        width: 2.15rem;
+    }
 }
 </style>
