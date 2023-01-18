@@ -53,7 +53,6 @@ h1{
     margin-top: 9% !important;
     font-size: 4rem !important;
     color: #5d86b4;
-    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
     font-weight: 700 !important;
     line-height: 4.9rem !important;
     padding-bottom: 2% !important;
@@ -61,7 +60,6 @@ h1{
 }
 h2{
     color: #5d86b4;
-    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
     font-weight: 700 !important;
     font-size: 2.8rem !important;
     margin-bottom: 2% !important;
@@ -78,6 +76,9 @@ a, b, u, p, li, .text{
 }
 a, b, u, p, li, .text, button, .sidebar li{
     font-weight: 400;
+}
+h1, h2, a, b, u, p, li, .text, button, .sidebar li{
+    font-weight: 400;
     font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
 }
 ul{
@@ -87,7 +88,7 @@ ul{
 li{
     margin-bottom: 2.25%;
 }
-li:before {
+li::before {
     font-weight: bold;
     padding-right: 10px;
     margin-left: -3%;
@@ -95,7 +96,7 @@ li:before {
     color: #77AEDB;
     transition-duration: 0.5s;
 }
-li:hover:before {
+li:hover::before {
     color: #337AB7;
 }
 button{
@@ -109,15 +110,11 @@ button{
         text-decoration: none;
     }
 }
-#About{
-    svg{
-        width: 100%;
-    }
+#Advantages svg, #Services svg{
+    width: 93%;
 }
-#Advantages, #Services{
-    svg{
-        width: 93%;
-    }
+#Services svg{
+    margin-top: -2%;
 }
 #About, #Services{
     li:before {
@@ -127,12 +124,10 @@ button{
         content: "\25cf";
     }
 }
-#Advantages, #Services{
-    button{
-        width: 60%;
-        margin: 1% 1.5%;
-        padding: 1.5%;
-    }
+#Advantages button, #Services button{
+    width: 60%;
+    margin: 1% 1.5%;
+    padding: 1.5%;
 }
 #Home, #About, #Directions, #Advantages,
 #Employees, #Services, #Contacts{
@@ -167,6 +162,7 @@ button{
         margin-bottom: 0;
     }
     svg{
+        width: 100%;
         margin-top: 5%;
     }
 }
@@ -186,6 +182,7 @@ button{
         }
     }
     li:before {
+        font-family: "Font Awesome 6 brands";
         content: "\2727";
     }
     li:hover:before {
@@ -194,9 +191,7 @@ button{
 }
 #Advantages{
     ul li:before {
-        content: "\1F5F8";
-    }
-    ul li:hover:before {
+        font-family: "Font Awesome 6 brands";
         content: "\2713";
     }
     .col-1 svg{
@@ -213,10 +208,10 @@ button{
         margin-left: -8%;
         width: 108%;
     }
-    ul li:before {
+    li:before {
         content: "\2606";
     }
-    ul li:hover:before {
+    li:hover:before {
         content: "\2605";
     }
     h2 span{
@@ -227,11 +222,6 @@ button{
     }
     span{
         font-weight: 600;
-    }
-}
-#Services{
-    svg{
-        margin-top: -2%;
     }
 }
 #Contacts{
@@ -282,15 +272,11 @@ button{
             display: block;
         }
     }
-    #About, #Employees, #Contacts{
-        .row{
-            flex-direction: column-reverse;
-        }
+    #About .row, #Employees .row, #Contacts .row{
+        flex-direction: column-reverse;
     }
-    #Advantages, #Services{
-        .row{
-            flex-direction: column;
-        }
+    #Advantages .row, #Services .row{
+        flex-direction: column;
     }
     #Directions{
         .row{
@@ -323,10 +309,8 @@ button{
     li {
         margin-bottom: 1%;
     }
-    #Contacts .nameContact{
-        .row{
-            flex-direction: inherit;
-        }
+    #Contacts .nameContact .row{
+        flex-direction: inherit;
     }
 }
 @media screen and (max-width: 500px){
@@ -351,10 +335,8 @@ button{
     #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
         padding: 2% !important;
     }
-    #About, #Advantages, #Employees, #Services, #Contacts{
-        svg{
-            width: 56%;
-        }
+    #About svg, #Advantages svg, #Employees svg, #Services svg, #Contacts svg{
+        width: 56%;
     }
     #Home{
         p{
@@ -382,7 +364,11 @@ button{
     }
     li:before {
         margin-left: -3%;
-        font-size: 1.8rem;
+        font-size: 1.1rem;
+    }
+    #Directions li:before {
+        margin-left: -5%;
+        font-size: 1.4rem;
     }
     ul{
         margin-left: -8%;
@@ -402,10 +388,16 @@ button{
     }
 }
 @media screen and (min-width: 500px) and (max-width: 768px){
-    #About, #Advantages, #Employees, #Services, #Contacts{
-        svg{
-            width: 56%;
-        }
+    #About svg, #Advantages svg, #Employees svg, #Services svg, #Contacts svg{
+        width: 56%;
+    }
+    li:before {
+        margin-left: 0;
+        font-size: 1.1rem;
+    }
+    #Directions li:before {
+        margin-left: -1%;
+        font-size: 1.4rem;
     }
     #Home{
         p{
@@ -449,10 +441,8 @@ button{
     }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
-    #About, #Advantages, #Employees, #Services, #Contacts{
-        svg{
-            width: 48%;
-        }
+    #About svg, #Advantages svg, #Employees svg, #Services svg, #Contacts svg{
+        width: 48%;
     }
     #Home{
         p{
@@ -481,25 +471,19 @@ button{
     button a{
         font-size: 1.25rem !important;
     }
-    #Contacts .nameContact{
-        svg{
-            width: 2rem;
-        }
+    #Contacts .nameContact svg{
+        width: 2rem;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
     #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
         padding: 2% 3% 2% 3%;
     }
-    #About, #Employees, #Contacts{
-        .row{
-            flex-direction: column-reverse;
-        }
+    #About .row, #Employees .row, #Contacts .row{
+        flex-direction: column-reverse;
     }
-    #Advantages, #Services{
-        .row{
-            flex-direction: column;
-        }
+    #Advantages .row, #Services .row{
+        flex-direction: column;
     }
     #Directions{
         .row{
@@ -519,12 +503,6 @@ button{
             width: 45%;
         }
     }
-    h1{
-        margin-top: 3% !important;
-        font-size: 2.28rem !important;
-        line-height: 2.8rem !important;
-        margin-bottom: 0 !important;
-    }
     #Home{
         p{
             width: 106%;
@@ -537,6 +515,12 @@ button{
             width: 124%;
             margin-left: -19%;
         }
+    }
+    h1{
+        margin-top: 3% !important;
+        font-size: 2.28rem !important;
+        line-height: 2.8rem !important;
+        margin-bottom: 0 !important;
     }
     h2{
         font-size: 2rem !important;
@@ -568,10 +552,8 @@ button{
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px){
-    #Advantages, #Services{
-        svg{
-            width: 95%;
-        }
+    #Advantages svg, #Services svg{
+        width: 95%;
     }
     #Home svg{
         width: 110%;
