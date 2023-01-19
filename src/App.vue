@@ -134,6 +134,54 @@ button{
     padding: 2% 3% 2% 6%;
 }
 #Home{
+    &:hover{
+        #HeadPersonWithPapers1, #HeadPersonWithStick1,#Papers2,
+        #RightHandPersonWithBook1, #HeadPersonWithBook2,#Hair2,
+        #RightHandPersonWithStick2, #Stick2,#RightHandPersonWithRope1,
+        #BagPersonWithRope2, #HeadPersonWithRope1, #Instruments2,
+        #RightHandPersonWithTail1,#LeftHandPersonWithTail1, #LeftHandPersonWithBook1 {
+            display: block;
+            animation: up-down-1 3s infinite ;
+        }
+
+        #HeadPersonWithPapers2, #HeadPersonWithStick2,#Papers1,
+        #RightHandPersonWithBook2,#HeadPersonWithBook1,#Hair1,
+        #RightHandPersonWithStick1, #Stick1, #RightHandPersonWithRope2,
+        #BagPersonWithRope1, #HeadPersonWithRope2, #Instruments1,
+        #RightHandPersonWithTail2,#LeftHandPersonWithTail2, #LeftHandPersonWithBook2 {
+            animation: up-down-2 3s infinite ;
+        }
+        @keyframes up-down-2 {
+            from {
+                visibility:hidden;
+            }
+            50% {
+                visibility:hidden;
+            }
+            to {
+                visibility:visible;
+            }
+        }
+        @keyframes up-down-1{
+            from {
+
+                visibility:visible;
+            }
+            50% {
+                visibility:hidden;
+            }
+            to {
+                visibility:hidden;
+            }
+        }
+    }
+    #HeadPersonWithPapers1, #HeadPersonWithStick1,#Papers2,
+    #RightHandPersonWithBook1, #HeadPersonWithBook2,#Hair2,
+    #RightHandPersonWithStick2, #Stick2,#RightHandPersonWithRope1,
+    #BagPersonWithRope2, #HeadPersonWithRope1, #Instruments2,
+    #RightHandPersonWithTail1,#LeftHandPersonWithTail1, #LeftHandPersonWithBook1{
+        display: none;
+    }
     p{
         margin: 4% 0;
         font-size: 1.35rem;
