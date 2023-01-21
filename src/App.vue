@@ -131,7 +131,17 @@ button{
 }
 #Home, #About, #Directions, #Advantages,
 #Employees, #Services, #Contacts{
-    padding: 2% 3% 2% 6%;
+    padding: 2% 3% 2% 10%;
+}
+@keyframes up-down-2 {
+    from {visibility:hidden;}
+    50% {visibility:hidden;}
+    to {visibility:visible;}
+}
+@keyframes up-down-1{
+    from {visibility:visible;}
+    50% {visibility:hidden;}
+    to {visibility:hidden;}
 }
 #Home{
     &:hover{
@@ -143,36 +153,12 @@ button{
             display: block;
             animation: up-down-1 3s infinite ;
         }
-
         #HeadPersonWithPapers2, #HeadPersonWithStick2,#Papers1,
         #RightHandPersonWithBook2,#HeadPersonWithBook1,#Hair1,
         #RightHandPersonWithStick1, #Stick1, #RightHandPersonWithRope2,
         #BagPersonWithRope1, #HeadPersonWithRope2, #Instruments1,
         #RightHandPersonWithTail2,#LeftHandPersonWithTail2, #LeftHandPersonWithBook2 {
             animation: up-down-2 3s infinite ;
-        }
-        @keyframes up-down-2 {
-            from {
-                visibility:hidden;
-            }
-            50% {
-                visibility:hidden;
-            }
-            to {
-                visibility:visible;
-            }
-        }
-        @keyframes up-down-1{
-            from {
-
-                visibility:visible;
-            }
-            50% {
-                visibility:hidden;
-            }
-            to {
-                visibility:hidden;
-            }
         }
     }
     #HeadPersonWithPapers1, #HeadPersonWithStick1,#Papers2,
@@ -203,6 +189,18 @@ button{
     }
 }
 #About{
+    &:hover {
+        #Head1, #LeftHand1, #Text1, #Text2, #Text3, #Text4, #Text5, #Mark1, #Mark3, #Mark4, #HandWithDocument1 {
+            display: block;
+            animation: up-down-1 3s infinite;
+        }
+        #Head2, #LeftHand2, #Text11, #Text22, #Text33, #Text44, #Text55, #Mark2, #Mark3, #HandWithDocument2 {
+            animation: up-down-2 3s infinite;
+        }
+    }
+    #Head1, #LeftHand1, #Text1, #Text2, #Text3, #Text4, #Text5, #Mark1, #Mark3, #Mark4, #HandWithDocument1 {
+        display: none;
+    }
     h2{
         margin-top: 3%;
     }
@@ -301,9 +299,6 @@ button{
 @media screen and (max-width: 992px){
     .sidebar.open {
         width: 100%;
-    }
-    #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
-        padding: 2% 3% 2% 3%;
     }
     #Home{
         .row{
@@ -436,6 +431,25 @@ button{
     }
 }
 @media screen and (min-width: 500px) and (max-width: 768px){
+    body{
+        padding-left: 45px;
+    }
+    .sidebar {
+        width: 45px;
+        #my-scroll {
+            margin: 6px 0 0;
+        }
+        .logo-details{
+            margin: 6px 0 0 75%;
+            .bx-menu:before {
+                margin-left: 8%;
+            }
+        }
+
+    }
+    #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
+        padding: 2% 3% 2% 2%;
+    }
     #About svg, #Advantages svg, #Employees svg, #Services svg, #Contacts svg{
         width: 56%;
     }
@@ -524,9 +538,6 @@ button{
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
-    #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
-        padding: 2% 3% 2% 3%;
-    }
     #About .row, #Employees .row, #Contacts .row{
         flex-direction: column-reverse;
     }
