@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar" :class="isOpened ? 'open' : ''">
+    <div class="sidebar" :class="isOpened ? 'open' : ''" >
         <div class="logo-details">
             <i class="bx" :class="isOpened ? 'bx-menu-alt-right' : 'bx-menu'" id="btn" @click="isOpened = !isOpened"/>
         </div>
@@ -9,7 +9,7 @@
                     <span v-for="(menuItem, index) in menuItems" :key="index">
                         <li>
                           <a :href="menuItem.link">
-                            <i class="bx" :class="menuItem.icon || 'bx-square-rounded'"/>
+                            <i class="bx" :class="menuItem.icon"/>
                             <span class="links_name">{{ menuItem.name }}</span>
                           </a>
                         </li>
@@ -22,7 +22,7 @@
 
 <script>
     export default {
-        name: 'SidebarMenuAkahon',
+        name: 'SidebarMenu',
         props: {
             //! Menu settings
             isMenuOpen: {
@@ -106,7 +106,7 @@
         top: 0;
         height: 100%;
         min-height: min-content;
-        width: 78px;
+        width: 68px;
         background: linear-gradient(#b7dfe9,#adc7e2, #a0a6d8);
         z-index: 99;
         transition: all 0.5s ease;
@@ -125,6 +125,7 @@
 
     .sidebar .logo-details #btn {
         position: absolute;
+        padding-left: 40%;
         top: 50%;
         right: 0;
         transform: translateY(-50%);
