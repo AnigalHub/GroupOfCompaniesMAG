@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar" :class="isOpened ? 'open' : ''" >
+    <div class="sidebar" :class="isOpened ? 'open' : ''">
         <div class="logo-details">
             <i class="bx" :class="isOpened ? 'bx-menu-alt-right' : 'bx-menu'" id="btn" @click="isOpened = !isOpened"/>
         </div>
@@ -7,7 +7,7 @@
             <div id="my-scroll">
                 <ul class="nav-list" style="overflow: visible;">
                     <span v-for="(menuItem, index) in menuItems" :key="index">
-                        <li>
+                        <li @click="menuItemClick">
                           <a :href="menuItem.link">
                             <i class="bx" :class="menuItem.icon"/>
                             <span class="links_name">{{ menuItem.name }}</span>
@@ -24,18 +24,9 @@
     export default {
         name: 'SidebarMenu',
         props: {
-            //! Menu settings
-            isMenuOpen: {
-                type: Boolean,
-                default: true,
-            },
             isPaddingLeft: {
                 type: Boolean,
                 default: true,
-            },
-            menuOpenedPaddingLeftBody: {
-                type: String,
-                default: '250px'
             },
             menuClosedPaddingLeftBody: {
                 type: String,
@@ -80,15 +71,32 @@
         },
         data() {
             return {
-                isOpened: false
+                isOpened: false,
+                menuOpenedPaddingLeftBody: '38px',
             }
         },
-        mounted() {
-            this.isMenuOpen = !this.isOpened
+        methods: {
+            isMobile() {
+                if( screen.width <= 992 || window.innerWidth <= 992) {
+                    return true;
+                }
+                else {
+                    this.menuOpenedPaddingLeftBody = '250px'
+                    return false;
+                }
+            },
+            menuItemClick(){
+                if(!this.isOpened)
+                    return;
+                if(this.isMobile()){
+                    this.isOpened = !this.isOpened;
+                }
+            },
         },
         watch: {
             isOpened() {
-                window.document.body.style.paddingLeft = this.isOpened && this.isPaddingLeft ? this.menuOpenedPaddingLeftBody : this.menuClosedPaddingLeftBody
+                this.isMobile();
+                window.document.body.style.paddingLeft = this.isOpened && this.isPaddingLeft ? this.menuOpenedPaddingLeftBody : this.menuClosedPaddingLeftBody;
             }
         }
     }
@@ -125,7 +133,7 @@
 
     .sidebar .logo-details #btn {
         position: absolute;
-        padding-left: 40%;
+        //padding-left: 40%;
         top: 50%;
         right: 0;
         transform: translateY(-50%);
@@ -133,6 +141,9 @@
         transition: all 0.4s ease;
         text-align: center;
         cursor: pointer;
+    }
+    #btn:before {
+        margin-left: 30%;
     }
     .sidebar.open .logo-details #btn {
         text-align: right;

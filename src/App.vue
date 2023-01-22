@@ -131,7 +131,7 @@ button{
 }
 #Home, #About, #Directions, #Advantages,
 #Employees, #Services, #Contacts{
-    padding: 2% 3% 2% 10%;
+    padding: 2% 3% 2% 8%;
 }
 @keyframes up-down-2 {
     from {visibility:hidden;}
@@ -367,7 +367,7 @@ button{
         }
         .logo-details{
             margin: 6px 0 0 75%;
-            .bx-menu:before {
+            #btn:before {
                 margin-left: 8%;
             }
         }
@@ -441,14 +441,14 @@ button{
         }
         .logo-details{
             margin: 6px 0 0 75%;
-            .bx-menu:before {
-                margin-left: 8%;
+            #btn:before {
+                margin-left: 16%;
             }
         }
 
     }
     #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
-        padding: 2% 3% 2% 2%;
+        padding: 2% 3% 2% 1%;
     }
     #About svg, #Advantages svg, #Employees svg, #Services svg, #Contacts svg{
         width: 56%;
