@@ -1,0 +1,93 @@
+@keyframes up-down-2 {
+  from {visibility:hidden;}
+  50% {visibility:hidden;}
+  to {visibility:visible;}
+}
+@keyframes up-down-1{
+  from {visibility:visible;}
+  50% {visibility:hidden;}
+  to {visibility:hidden;}
+}
+#HeadPersonWithPapers1, #HeadPersonWithStick1,#Papers2,
+#RightHandPersonWithBook1, #HeadPersonWithBook2,#Hair2,
+#RightHandPersonWithStick2, #Stick2,#RightHandPersonWithRope1,
+#BagPersonWithRope2, #HeadPersonWithRope1, #Instruments2,
+#RightHandPersonWithTail1,#LeftHandPersonWithTail1, #LeftHandPersonWithBook1,
+#Head1, #LeftHand1, #Text1, #Text2, #Text3, #Text4, #Text5, #Mark1, #Mark3, #Mark4,
+#HandWithDocument1, #Wrist1, #HeadPersonWithBag1, #LeftHandPersonWithBag1,
+#RightHandPersonWithBag1, #HeadPersonWithList2, #LeftHandWithList1, #Line11,
+#Line2, #Line3, #RightHand2 {
+  display: block;
+  animation: up-down-1 3s infinite ;
+}
+#HeadPersonWithPapers2, #HeadPersonWithStick2,#Papers1,
+#RightHandPersonWithBook2,#HeadPersonWithBook1,#Hair1,
+#RightHandPersonWithStick1, #Stick1, #RightHandPersonWithRope2,
+#BagPersonWithRope1, #HeadPersonWithRope2, #Instruments1,
+#RightHandPersonWithTail2,#LeftHandPersonWithTail2, #LeftHandPersonWithBook2,
+#Head2, #LeftHand2, #Text11, #Text22, #Text33, #Text44, #Text55, #Mark2, #Mark3,
+#HandWithDocument2, #Wrist2,#HeadPersonWithBag2, #LeftHandPersonWithBag2,
+#RightHandPersonWithBag2, #HeadPersonWithList1, #LeftHandWithList2, #Line1,
+#Line22, #Line33, #RightHand1 {
+  animation: up-down-2 3s infinite ;
+}
+.wire, #Lightning{
+  animation: blinking1 3s infinite;
+}
+@keyframes blinking1 {
+  0%   {fill: #555889;}
+  25%  {fill: #48709a;}
+  50%  {fill: #2A478B}
+  75%  {fill: #555889;}
+  100% {fill: #2A478B;}
+}
+.strokeWire{
+  animation: blinking2 3s infinite;
+}
+@keyframes blinking2 {
+  0%   {stroke: #555889;fill:none;stroke-width:4;}
+  25%  {stroke: #48709a;fill:none;stroke-width:4;}
+  50%  {stroke: #2A478B;fill:none;stroke-width:4;}
+  75%  {stroke: #555889;fill:none;stroke-width:4;}
+  100% {stroke: #2A478B;fill:none;stroke-width:4;}
+}
+#Wire1 path{
+  animation: blinking3 3s infinite;
+}
+@keyframes blinking3 {
+  0%    {fill:none;stroke: #FFDB8B;stroke-width:7;}
+  25%   {fill:none;stroke: #FFCF40;stroke-width:7;}
+  50%   {fill:none;stroke: #FFCF48;stroke-width:7;}
+  75%   {fill:none;stroke: #FFDB8B;stroke-width:7;}
+  100%  {fill:none;stroke: #FFCF40;stroke-width:7;}
+}
+#Wire2{
+  animation: blinking4 3s infinite;
+}
+@keyframes blinking4 {
+  0%    {fill:none;stroke: #a52222;stroke-width:7;}
+  25%   {fill:none;stroke: #E94673;stroke-width:7;}
+  50%   {fill:none;stroke: #d26d8a;stroke-width:7;}
+  75%   {fill:none;stroke: #a52222;stroke-width:7;}
+  100%  {fill:none;stroke: #E94673;stroke-width:7;}
+}
+#Wire3{
+  animation: blinking5 3s infinite;
+}
+@keyframes blinking5 {
+  0%    {fill:none;stroke: #4f62a0;stroke-width:7;}
+  25%   {fill:none;stroke: #35488b;stroke-width:7;}
+  50%   {fill:none;stroke: #203a93;stroke-width:7;}
+  75%   {fill:none;stroke: #4f62a0;stroke-width:7;}
+  100%  {fill:none;stroke: #35488b;stroke-width:7;}
+}
+#Сurrent path{
+  animation: blinking6 5s infinite;
+}
+@keyframes blinking6 {
+  0%   {stroke: #A0A5D4;fill:none;stroke-width:4;}
+  25%  {stroke: #8e93c2;fill:none;stroke-width:4;}
+  50%  {stroke: #a0b3d4;fill:none;stroke-width:4;}
+  75%  {stroke: #A0A5D4;fill:none;stroke-width:4;}
+  100% {stroke: #8e93c2;fill:none;stroke-width:4;}
+}

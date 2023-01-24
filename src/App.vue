@@ -38,6 +38,7 @@ export default {
 
 <style lang="scss">
 @import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
+@import "components/styleSvg/animationsSvg";
 #app {
     height: 100%;
     margin: 0 !important;
@@ -133,41 +134,8 @@ button{
 #Employees, #Services, #Contacts{
     padding: 2% 3% 2% 8%;
 }
-@keyframes up-down-2 {
-    from {visibility:hidden;}
-    50% {visibility:hidden;}
-    to {visibility:visible;}
-}
-@keyframes up-down-1{
-    from {visibility:visible;}
-    50% {visibility:hidden;}
-    to {visibility:hidden;}
-}
+
 #Home{
-    &:hover{
-        #HeadPersonWithPapers1, #HeadPersonWithStick1,#Papers2,
-        #RightHandPersonWithBook1, #HeadPersonWithBook2,#Hair2,
-        #RightHandPersonWithStick2, #Stick2,#RightHandPersonWithRope1,
-        #BagPersonWithRope2, #HeadPersonWithRope1, #Instruments2,
-        #RightHandPersonWithTail1,#LeftHandPersonWithTail1, #LeftHandPersonWithBook1 {
-            display: block;
-            animation: up-down-1 3s infinite ;
-        }
-        #HeadPersonWithPapers2, #HeadPersonWithStick2,#Papers1,
-        #RightHandPersonWithBook2,#HeadPersonWithBook1,#Hair1,
-        #RightHandPersonWithStick1, #Stick1, #RightHandPersonWithRope2,
-        #BagPersonWithRope1, #HeadPersonWithRope2, #Instruments1,
-        #RightHandPersonWithTail2,#LeftHandPersonWithTail2, #LeftHandPersonWithBook2 {
-            animation: up-down-2 3s infinite ;
-        }
-    }
-    #HeadPersonWithPapers1, #HeadPersonWithStick1,#Papers2,
-    #RightHandPersonWithBook1, #HeadPersonWithBook2,#Hair2,
-    #RightHandPersonWithStick2, #Stick2,#RightHandPersonWithRope1,
-    #BagPersonWithRope2, #HeadPersonWithRope1, #Instruments2,
-    #RightHandPersonWithTail1,#LeftHandPersonWithTail1, #LeftHandPersonWithBook1{
-        display: none;
-    }
     p{
         margin: 4% 0;
         font-size: 1.35rem;
@@ -189,18 +157,6 @@ button{
     }
 }
 #About{
-    &:hover {
-        #Head1, #LeftHand1, #Text1, #Text2, #Text3, #Text4, #Text5, #Mark1, #Mark3, #Mark4, #HandWithDocument1 {
-            display: block;
-            animation: up-down-1 3s infinite;
-        }
-        #Head2, #LeftHand2, #Text11, #Text22, #Text33, #Text44, #Text55, #Mark2, #Mark3, #HandWithDocument2 {
-            animation: up-down-2 3s infinite;
-        }
-    }
-    #Head1, #LeftHand1, #Text1, #Text2, #Text3, #Text4, #Text5, #Mark1, #Mark3, #Mark4, #HandWithDocument1 {
-        display: none;
-    }
     h2{
         margin-top: 3%;
     }
@@ -504,7 +460,7 @@ button{
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
     #About svg, #Advantages svg, #Employees svg, #Services svg, #Contacts svg{
-        width: 48%;
+        width: 50%;
     }
     #Home{
         p{
@@ -571,8 +527,8 @@ button{
         }
         svg{
             margin-top: 2%;
-            width: 124%;
-            margin-left: -19%;
+            width: 118%;
+            margin-left: -13%;
         }
     }
     h1{
