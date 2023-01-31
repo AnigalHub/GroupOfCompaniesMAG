@@ -1,5 +1,5 @@
 <template>
-	<svg version="1.1" id="ContractsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	<svg version="1.1" id="ContactsSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 		 y="0px" viewBox="0 0 992.1 850.4" style="enable-background:new 0 0 992.1 850.4;" xml:space="preserve">
 		<linearGradient id="Background" gradientUnits="userSpaceOnUse" x1="1129.3893" y1="425.658" x2="-61.3746" y2="415.1414">
 			<stop  offset="0.21" style="stop-color:#B8E0E9"/>
@@ -139,26 +139,28 @@
     }
 </script>
 
-<style scoped>
-	.st1{fill:#FFFFFF;stroke:#1D71B8;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#1D71B8;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#A0A5D4;stroke-width:4;stroke-miterlimit:10;}
-	.st4{fill:#D9E2F4;stroke:#1D71B8;stroke-miterlimit:10;}
-	.st5{fill:#A7B3DC;stroke:#1D71B8;stroke-miterlimit:10;}
-	.st6{fill:#D7DEF2;stroke:#1D71B8;stroke-miterlimit:10;}
-	.st7{fill:#A5B3DD;stroke:#1D71B8;stroke-miterlimit:10;}
-	.st8{fill:#5378BB;}
-	.st9{fill:#2C478C;}
-	.st10{fill:#253863;}
-	.st11{fill:#EEAB72;}
-	.st12{fill:#FBC57F;}
-	.st13{fill:#192D4F;}
-	.st14{fill:#DB9B5B;}
-	.st15{fill:#F7AD1C;}
-	.st16{fill:#BF7F43;}
-	.st17{fill:#769BD1;}
-	.st18{fill:#754D24;}
-	.st19{fill:#F7A51D;stroke:#E27F2A;stroke-miterlimit:10;}
-	.st20{fill:#E27F2A;stroke:#E27F2A;stroke-width:2;stroke-miterlimit:10;}
-	.st21{fill:none;stroke:#E27F2A;stroke-width:3;stroke-miterlimit:10;}
+<style scoped lang="scss">
+	#ContactsSvg{
+		.st1{fill:#FFFFFF;stroke:#1D71B8;stroke-miterlimit:10;}
+		.st2{fill:none;stroke:#1D71B8;stroke-miterlimit:10;}
+		.st3{fill:none;stroke:#A0A5D4;stroke-width:4;stroke-miterlimit:10;}
+		.st4{fill:#D9E2F4;stroke:#1D71B8;stroke-miterlimit:10;}
+		.st5{fill:#A7B3DC;stroke:#1D71B8;stroke-miterlimit:10;}
+		.st6{fill:#D7DEF2;stroke:#1D71B8;stroke-miterlimit:10;}
+		.st7{fill:#A5B3DD;stroke:#1D71B8;stroke-miterlimit:10;}
+		.st8{fill:#5378BB;}
+		.st9{fill:#2C478C;}
+		.st10{fill:#253863;}
+		.st11{fill:#EEAB72;}
+		.st12{fill:#FBC57F;}
+		.st13{fill:#192D4F;}
+		.st14{fill:#DB9B5B;}
+		.st15{fill:#F7AD1C;}
+		.st16{fill:#BF7F43;}
+		.st17{fill:#769BD1;}
+		.st18{fill:#754D24;}
+		.st19{fill:#F7A51D;stroke:#E27F2A;stroke-miterlimit:10;}
+		.st20{fill:#E27F2A;stroke:#E27F2A;stroke-width:2;stroke-miterlimit:10;}
+		.st21{fill:none;stroke:#E27F2A;stroke-width:3;stroke-miterlimit:10;}
+	}
 </style>

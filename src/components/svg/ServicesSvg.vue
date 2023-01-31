@@ -202,31 +202,33 @@
     }
 </script>
 
-<style scoped>
-	.st1{fill:#FFFFFF;stroke:#1D71B8;stroke-miterlimit:10;}
-	.st2{fill:#E7E6E6;stroke:#8089B0;stroke-width:5;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#8089B0;stroke-width:5;stroke-miterlimit:10;}
-	.st4{fill:#AAB5DD;stroke:#8089B0;stroke-width:2;stroke-miterlimit:10;}
-	.st5{fill:#FFFFFF;}
-	.st6{fill:#A9B0DA;}
-	.st7{fill:#FFFFFF;stroke:#8089B0;stroke-width:2;stroke-miterlimit:10;}
-	.st8{fill:#8393CA;}
-	.st9{fill:#9EADD9;}
-	.st10{fill:none;stroke:#8089B0;stroke-width:4;stroke-miterlimit:10;}
-	.st11{fill:#253863;}
-	.st12{fill:#769BD1;}
-	.st13{fill:#2C478C;}
-	.st14{fill:none;stroke:#0D71B9;stroke-miterlimit:10;}
-	.st15{fill:#FFFFFF;stroke:#EDEDED;stroke-width:1.5;stroke-miterlimit:10;}
-	.st16{fill:#DB9B5B;}
-	.st17{fill:#BF7F43;}
-	.st18{fill:#754D24;}
-	.st19{fill:#F7A51D;stroke:#E27F2A;stroke-miterlimit:10;}
-	.st20{fill:#E27F2A;stroke:#E27F2A;stroke-width:2;stroke-miterlimit:10;}
-	.st21{fill:none;stroke:#E27F2A;stroke-width:3;stroke-miterlimit:10;}
-	.st22{fill:#243773;}
-	.st23{fill:#EEAB72;}
-	.st24{fill:#EEAB6D;}
-	.st25{fill:#FBC57F;}
-	.st26{fill:#2D5076;}
+<style scoped lang="scss">
+	#ServicesSvg{
+		.st1{fill:#FFFFFF;stroke:#1D71B8;stroke-miterlimit:10;}
+		.st2{fill:#E7E6E6;stroke:#8089B0;stroke-width:5;stroke-miterlimit:10;}
+		.st3{fill:none;stroke:#8089B0;stroke-width:5;stroke-miterlimit:10;}
+		.st4{fill:#AAB5DD;stroke:#8089B0;stroke-width:2;stroke-miterlimit:10;}
+		.st5{fill:#FFFFFF;}
+		.st6{fill:#A9B0DA;}
+		.st7{fill:#FFFFFF;stroke:#8089B0;stroke-width:2;stroke-miterlimit:10;}
+		.st8{fill:#8393CA;}
+		.st9{fill:#9EADD9;}
+		.st10{fill:none;stroke:#8089B0;stroke-width:4;stroke-miterlimit:10;}
+		.st11{fill:#253863;}
+		.st12{fill:#769BD1;}
+		.st13{fill:#2C478C;}
+		.st14{fill:none;stroke:#0D71B9;stroke-miterlimit:10;}
+		.st15{fill:#FFFFFF;stroke:#EDEDED;stroke-width:1.5;stroke-miterlimit:10;}
+		.st16{fill:#DB9B5B;}
+		.st17{fill:#BF7F43;}
+		.st18{fill:#754D24;}
+		.st19{fill:#F7A51D;stroke:#E27F2A;stroke-miterlimit:10;}
+		.st20{fill:#E27F2A;stroke:#E27F2A;stroke-width:2;stroke-miterlimit:10;}
+		.st21{fill:none;stroke:#E27F2A;stroke-width:3;stroke-miterlimit:10;}
+		.st22{fill:#243773;}
+		.st23{fill:#EEAB72;}
+		.st24{fill:#EEAB6D;}
+		.st25{fill:#FBC57F;}
+		.st26{fill:#2D5076;}
+	}
 </style>

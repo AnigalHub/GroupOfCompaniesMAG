@@ -121,32 +121,34 @@
     }
 </script>
 
-<style scoped>
-    .st1{fill:#D6DCF1;stroke:#7387C3;stroke-miterlimit:10;}
-    .st2{fill:#FFFFFF;stroke:#1D71B8;stroke-miterlimit:10;}
-    .st3{fill:#7387C3;}
-    .st4{fill:#FFFFFF;stroke:#7387C3;stroke-width:2;stroke-miterlimit:10;}
-    .st5{fill:none;stroke:#4056A3;stroke-width:7;stroke-miterlimit:10;}
-    .st6{fill:none;stroke:#E94673;stroke-width:7;stroke-miterlimit:10;}
-    .st7{fill:none;stroke:#F3C894;stroke-width:7;stroke-miterlimit:10;}
-    .st8{fill:#F1F1FA;stroke:#1D71B8;stroke-miterlimit:10;}
-    .st9{fill:#F2F2FA;stroke:#1D71B8;stroke-miterlimit:10;}
-    .st10{fill:#D4DAF0;stroke:#1D71B8;stroke-miterlimit:10;}
-    .st11{fill:#A8B5DD;stroke:#1D71B8;stroke-miterlimit:10;}
-    .st12{fill:#DB9B5B;}
-    .st13{fill:#BF7F43;}
-    .st14{fill:#754D24;}
-    .st15{fill:#F7A51D;stroke:#E27F2A;stroke-miterlimit:10;}
-    .st16{fill:#E27F2A;stroke:#E27F2A;stroke-width:2;stroke-miterlimit:10;}
-    .st17{fill:none;stroke:#E27F2A;stroke-width:3;stroke-miterlimit:10;}
-    .st18{fill:#769BD1;}
-    .st19{fill:#2C478C;}
-    .st20{fill:#253863;}
-    .st21{fill:#F7AD1C;}
-    .st22{fill:#243773;}
-    .st23{fill:#EEAB72;}
-    .st24{fill:#EEAB6D;}
-    .st25{fill:#FBC57F;}
-    .st26{fill:#F3F1F9;stroke:#7D8AB4;stroke-miterlimit:10;}
-    .st27{fill:#D6DDF1;stroke:#7D8AB4;stroke-width:2;stroke-miterlimit:10;}
+<style scoped lang="scss">
+    #EmployeesSvg{
+        .st1{fill:#D6DCF1;stroke:#7387C3;stroke-miterlimit:10;}
+        .st2{fill:#FFFFFF;stroke:#1D71B8;stroke-miterlimit:10;}
+        .st3{fill:#7387C3;}
+        .st4{fill:#FFFFFF;stroke:#7387C3;stroke-width:2;stroke-miterlimit:10;}
+        .st5{fill:none;stroke:#4056A3;stroke-width:7;stroke-miterlimit:10;}
+        .st6{fill:none;stroke:#E94673;stroke-width:7;stroke-miterlimit:10;}
+        .st7{fill:none;stroke:#F3C894;stroke-width:7;stroke-miterlimit:10;}
+        .st8{fill:#F1F1FA;stroke:#1D71B8;stroke-miterlimit:10;}
+        .st9{fill:#F2F2FA;stroke:#1D71B8;stroke-miterlimit:10;}
+        .st10{fill:#D4DAF0;stroke:#1D71B8;stroke-miterlimit:10;}
+        .st11{fill:#A8B5DD;stroke:#1D71B8;stroke-miterlimit:10;}
+        .st12{fill:#DB9B5B;}
+        .st13{fill:#BF7F43;}
+        .st14{fill:#754D24;}
+        .st15{fill:#F7A51D;stroke:#E27F2A;stroke-miterlimit:10;}
+        .st16{fill:#E27F2A;stroke:#E27F2A;stroke-width:2;stroke-miterlimit:10;}
+        .st17{fill:none;stroke:#E27F2A;stroke-width:3;stroke-miterlimit:10;}
+        .st18{fill:#769BD1;}
+        .st19{fill:#2C478C;}
+        .st20{fill:#253863;}
+        .st21{fill:#F7AD1C;}
+        .st22{fill:#243773;}
+        .st23{fill:#EEAB72;}
+        .st24{fill:#EEAB6D;}
+        .st25{fill:#FBC57F;}
+        .st26{fill:#F3F1F9;stroke:#7D8AB4;stroke-miterlimit:10;}
+        .st27{fill:#D6DDF1;stroke:#7D8AB4;stroke-width:2;stroke-miterlimit:10;}
+    }
 </style>
