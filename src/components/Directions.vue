@@ -1,7 +1,7 @@
 <template>
     <div id="Directions">
         <b-container>
-            <h2>Основные направления работы компании:</h2>
+            <h2>Основные направления работы компании</h2>
             <b-row>
                 <b-col>
                     <DirectionsItems :items="Directions1"></DirectionsItems>
