@@ -3,11 +3,11 @@
         <b-container>
             <b-row>
                 <b-col>
-                    <h2>Мы предоставляем услуги:</h2>
+                    <h2>Мы предоставляем услуги</h2>
                     <ul>
                         <li v-for="service in Services" class="text">{{service.text}}</li>
                     </ul>
-                    <b-button><a>Узнать цены на виды работ</a></b-button>
+                    <b-button><a href="/price.xlsx" download>Узнать цены на виды работ</a></b-button>
                 </b-col>
                 <b-col cols="5">
                     <component :is="svg"/>
