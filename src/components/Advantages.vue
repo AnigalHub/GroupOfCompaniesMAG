@@ -7,12 +7,15 @@
                     <ul class="ul">
                         <li v-for="advantage in Advantages" class="text">{{advantage.text}}</li>
                     </ul>
-                    <b-button><a>Посмотреть лицензию</a></b-button>
+                    <b-button @click="modalShow = !modalShow"><a>Посмотреть лицензию</a></b-button>
                 </b-col>
                 <b-col cols="5">
                     <component :is="svg"/>
                 </b-col>
             </b-row>
+            <b-modal v-model="modalShow" size="lg">
+                <img :src="license.src" :alt="license.alt"/>
+            </b-modal>
         </b-container>
     </div>
 </template>
@@ -23,7 +26,12 @@
         name: "Advantages",
         data(){
             return{
+                modalShow: false,
                 svg:AdvantagesSvg,
+                license:{
+                    src:'/license.jpg',
+                    alt:'Лицензия'
+                },
                 Advantages:[
                     {text:"Безупречная репутация",},
                     {text:"Лучший технадзор на рынке",},
@@ -31,10 +39,38 @@
                     {text:"Личная сдача результата работы контролирующим органам",},
                 ],
             }
+        },
+        methods: {
+            showModal() {
+                this.$refs['my-modal'].show()
+            },
         }
     }
 </script>
-
-<style scoped lang="scss">
-
+<style>
+    .modal-open {
+        overflow: hidden;
+    }
+    /*картинки на всем сайте*/
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .modal-footer {display: none !important;}
+    /*заголовок модального окна*/
+    .modal-header{
+        padding: 0 0.5rem !important;
+        background: linear-gradient(to left, #deedf0, #dcdeee);
+    }
+    /*тело модального окна*/
+    .modal-body{
+        padding: 0;
+    }
+    @media screen and (max-width: 500px) {
+        /*"крестик" - кнопка закрытия модального окна*/
+        .modal-header .close {
+            padding: 0.5rem 0.5rem !important;
+        }
+    }
 </style>
+
