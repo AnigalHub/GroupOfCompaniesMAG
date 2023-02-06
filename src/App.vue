@@ -39,6 +39,7 @@ export default {
 <style lang="scss">
 @import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
 @import "components/styleSvg/animationsSvg";
+
 #app {
     height: 100%;
     margin: 0 !important;
@@ -104,11 +105,23 @@ button{
     border-radius: 30px !important;
     border: none !important;
     background: linear-gradient(to left, #a9d3dd, #9ba0cb);
+    font-size: 1.45rem !important;
+    &:hover{
+        transform: scale(1.03);
+    }
     a{
         color:white;
         font-size: 1.48rem !important;
         font-weight: 400;
         text-decoration: none;
+        &:hover{
+            color:white;
+        }
+    }
+}
+.modal{
+    button{
+        background: transparent !important;
     }
 }
 #Advantages svg, #Services svg{
@@ -127,8 +140,8 @@ button{
 }
 #Advantages button, #Services button{
     width: 60%;
-    margin: 1% 1.5%;
-    padding: 1.5%;
+    margin: 3% 1.5% 0;
+    padding: 2% 2.5%;
 }
 #Home, #About, #Directions, #Advantages,
 #Employees, #Services, #Contacts{
@@ -341,7 +354,7 @@ button{
         p{
             margin: 0 0 4%;
             font-size: 1rem;
-            line-height: 1.6rem;
+            line-height: 1.2rem;
         }
         svg{
             width: 96%;
@@ -376,13 +389,15 @@ button{
         width: 90%;
     }
     #Contacts{
-        .nameContact svg{
-            width: 1.9rem;
-            margin-left: -50%;
-            margin-top: 75%;
-        }
-        .contacts {
-            margin-left: 0;
+        .nameContact{
+            svg{
+                width: 1.8rem;
+                margin-left: -70%;
+                margin-top: 75%;
+            }
+            .contacts{
+                padding-left: 5% !important;
+            }
         }
     }
 }
@@ -421,7 +436,7 @@ button{
         p{
             margin: 0 0 4%;
             font-size: 1.2rem;
-            line-height: 1.6rem;
+            line-height: 1.4rem;
         }
         svg{
             width: 96%;
@@ -466,7 +481,7 @@ button{
         p{
             margin: 0 0 4%;
             font-size: 1.2rem;
-            line-height: 1.6rem;
+            line-height: 1.4rem;
         }
         svg{
             width: 66%;
@@ -523,7 +538,7 @@ button{
             width: 106%;
             margin: 0 0 4%;
             font-size: 1.2rem;
-            line-height: 1.6rem;
+            line-height: 1.4rem;
         }
         svg{
             margin-top: 2%;
@@ -590,7 +605,7 @@ button{
     #Home p{
         margin: 0 0 4%;
         font-size: 1.2rem;
-        line-height: 1.6rem;
+        line-height: 1.4rem;
     }
     h2{
         font-size: 2.15rem !important;
@@ -622,14 +637,14 @@ button{
     }
     #Home p{
         font-size: 1.35rem;
-        line-height: 1.9rem;
+        line-height: 1.8rem;
     }
     h2{
         font-size: 2.6rem !important;
     }
     a, b, u, p, li, .text{
         font-size: 1.2rem;
-        line-height: 1.45rem;
+        line-height: 1.6rem;
     }
     button a{
         font-size: 1.3rem !important;
