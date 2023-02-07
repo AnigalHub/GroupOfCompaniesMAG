@@ -12,18 +12,19 @@
                         время для проведения работ, и ответим на любой ваш вопрос.
                     </p>
                     <div class="nameContact text" v-for="value in Contacts">
-                        <b-row>
-                            <b-col cols="1">
-                                <component :is="value.svg"/>
-                            </b-col>
-                            <b-col>
-                                <div class="contacts">
-                                    <span>{{value.name}}</span>
-                                    <br/>
-                                    <a>{{value.description}}</a>
-                                </div>
-                            </b-col>
-                        </b-row>
+                        <a :href="value.href" :target="value.target">
+                            <b-row>
+                                <b-col cols="1">
+                                    <component :is="value.svg"/>
+                                </b-col>
+                                <b-col>
+                                    <div class="contacts">
+                                        <span>{{value.name}}</span>
+                                        <br/>{{value.description}}
+                                    </div>
+                                </b-col>
+                            </b-row>
+                        </a>
                     </div>
                 </b-col>
             </b-row>
@@ -46,11 +47,15 @@
                         name:'Телефон:',
                         description:'+7(968)-824-80-96',
                         svg:CallSvg,
+                        href:'tel:' + '+7 968 824-80-96',
+                        target:'_self',
                     },
                     {
                         name:'Почта:',
                         description:'mag@mail.ru',
                         svg:MailSvg,
+                        href:'mailto:' + 'mag@mail.ru',
+                        target:'_self',
                     },
                     {
                         name:'Адрес:',
