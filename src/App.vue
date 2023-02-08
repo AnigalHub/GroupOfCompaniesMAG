@@ -36,6 +36,27 @@ export default {
 }
 </script>
 
+<style>
+    .modal-open {
+        overflow: hidden;
+    }
+    .modal-footer {display: none !important;}
+    /*заголовок модального окна*/
+    .modal-header{
+        padding: 0 0.5rem !important;
+        background: linear-gradient(to left, #deedf0, #dcdeee);
+    }
+    /*тело модального окна*/
+    .modal-body{
+        padding: 0;
+    }
+    @media screen and (max-width: 500px) {
+        /*"крестик" - кнопка закрытия модального окна*/
+        .modal-header .close {
+            padding: 0.5rem 0.5rem !important;
+        }
+    }
+</style>
 <style lang="scss">
 @import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
 @import "components/styleSvg/animationsSvg";
@@ -50,6 +71,11 @@ export default {
 .container{
     padding-right: 15px !important;
     padding-left: 15px !important;
+}
+/*картинки на всем сайте*/
+img{
+    width: 100%;
+    height: auto;
 }
 h1{
     margin-top: 9% !important;
@@ -67,7 +93,7 @@ h2{
     margin-bottom: 2% !important;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .sidebar li {
     font-size: 1.2rem;
@@ -250,6 +276,7 @@ button{
     }
     a{
         margin-top: 5%;
+        color: black;
     }
     svg{
         margin-top: 5%;
@@ -258,6 +285,11 @@ button{
     }
     .nameContact{
         padding: 1%;
+        &:hover{
+            svg{
+                transform: scale(1.1);
+            }
+        }
         svg{
             width: 2.35rem;
             margin-left: 2%;

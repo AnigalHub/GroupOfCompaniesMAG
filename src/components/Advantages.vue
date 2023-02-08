@@ -40,37 +40,6 @@
                 ],
             }
         },
-        methods: {
-            showModal() {
-                this.$refs['my-modal'].show()
-            },
-        }
     }
 </script>
-<style>
-    .modal-open {
-        overflow: hidden;
-    }
-    /*картинки на всем сайте*/
-    img{
-        width: 100%;
-        height: auto;
-    }
-    .modal-footer {display: none !important;}
-    /*заголовок модального окна*/
-    .modal-header{
-        padding: 0 0.5rem !important;
-        background: linear-gradient(to left, #deedf0, #dcdeee);
-    }
-    /*тело модального окна*/
-    .modal-body{
-        padding: 0;
-    }
-    @media screen and (max-width: 500px) {
-        /*"крестик" - кнопка закрытия модального окна*/
-        .modal-header .close {
-            padding: 0.5rem 0.5rem !important;
-        }
-    }
-</style>
 
