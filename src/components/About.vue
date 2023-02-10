@@ -7,7 +7,7 @@
                 </b-col>
                 <b-col>
                     <h2>О нас</h2>
-                    <p><b>ОАО "Группа компаний МАГ"</b> занимается строительно-монтажными и пуско-наладочными работами систем.</p>
+                    <p><b>{{name}}</b> занимается строительно-монтажными и пуско-наладочными работами систем.</p>
                     <p><u>Наша компания состоит из:</u></p>
                     <ul>
                         <li v-for="company in Companies" class="text"><b>{{company.name}}</b>{{company.text}}</li>
@@ -20,16 +20,15 @@
 
 <script>
     import AboutSvg from "./svg/AboutSvg";
+    import information from '../../public/documents/information.json';
+
     export default {
         name: 'About',
         data(){
             return{
                 svg:AboutSvg,
-                Companies:[
-                    {name:"ООО \"МРС\"",text:"- оператор связи и проектирование;"},
-                    {name:"ООО \"Аваконт\"",text:"- строительно-монтажные работы;"},
-                    {name:"ООО \"Гостехносервис\"",text:"- локальные и международные поставки."},
-                ],
+                name: information.name_company,
+                Companies:information.Companies,
             }
         }
     }

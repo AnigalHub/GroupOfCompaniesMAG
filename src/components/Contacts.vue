@@ -37,6 +37,7 @@
     import CallSvg from "./svg_contacts/call";
     import MailSvg from "./svg_contacts/mail";
     import LocationSvg from "./svg_contacts/location";
+    import information from '../../public/documents/information.json';
     export default {
         name: "Contacts",
         data() {
@@ -45,21 +46,21 @@
                 Contacts: [
                     {
                         name:'Телефон:',
-                        description:'+7(968)-824-80-96',
+                        description:information.phone,
                         svg:CallSvg,
-                        href:'tel:' + '+7 968 824-80-96',
+                        href:'tel:' + information.phone,
                         target:'_self',
                     },
                     {
                         name:'Почта:',
-                        description:'mag@mail.ru',
+                        description:information.mail,
                         svg:MailSvg,
-                        href:'mailto:' + 'mag@mail.ru',
+                        href:'mailto:' + information.mail,
                         target:'_self',
                     },
                     {
                         name:'Адрес:',
-                        description:'Новорязанское шоссе, дом 6, подъезд 9-10, этаж 2.',
+                        description:information.address,
                         svg:LocationSvg,
                     },
                 ],

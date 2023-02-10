@@ -29,7 +29,7 @@
                 modalShow: false,
                 svg:AdvantagesSvg,
                 license:{
-                    src:'/license.jpg',
+                    src:'/documents/license.jpg',
                     alt:'Лицензия'
                 },
                 Advantages:[
