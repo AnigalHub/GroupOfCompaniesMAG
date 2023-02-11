@@ -123,7 +123,7 @@
 
 <style scoped lang="scss">
     #EmployeesSvg{
-        .st1{fill:#D6DCF1;stroke:#7387C3;stroke-miterlimit:10;}
+        .st1{fill:#D6DCF1;}
         .st2{fill:#FFFFFF;stroke:#1D71B8;stroke-miterlimit:10;}
         .st3{fill:#7387C3;}
         .st4{fill:#FFFFFF;stroke:#7387C3;stroke-width:2;stroke-miterlimit:10;}
