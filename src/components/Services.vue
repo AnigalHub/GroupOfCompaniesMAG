@@ -7,7 +7,7 @@
                     <ul>
                         <li v-for="service in Services" class="text">{{service.text}}</li>
                     </ul>
-                    <b-button><a href="/documents/price.xlsx" download>Узнать цены на виды работ</a></b-button>
+                    <b-button><a href="./documents/prices.xlsx" download>Узнать цены на виды работ</a></b-button>
                 </b-col>
                 <b-col cols="5">
                     <component :is="svg"/>
