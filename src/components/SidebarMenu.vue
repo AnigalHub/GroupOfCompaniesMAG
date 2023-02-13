@@ -186,7 +186,8 @@
     }
     #my-scroll {
         margin: 6px 14px 0 14px;
-        overflow-y: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
         height: calc(100% - 30px);
     }
     #my-scroll::-webkit-scrollbar{
