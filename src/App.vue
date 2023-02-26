@@ -61,6 +61,9 @@ export default {
 @import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
 @import "components/styleSvg/animationsSvg";
 
+body{
+    background: #edf8fc !important;
+}
 #app {
     height: 100%;
     margin: 0 !important;
