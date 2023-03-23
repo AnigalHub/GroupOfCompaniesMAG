@@ -14,7 +14,8 @@
                 </b-col>
             </b-row>
             <b-modal v-model="modalShow" size="lg">
-                <img :src="license.src" :alt="license.alt"/>
+                <img :src="license1.src" :alt="license1.alt"/>
+                <img :src="license2.src" :alt="license2.alt"/>
             </b-modal>
         </b-container>
     </div>
@@ -28,8 +29,12 @@
             return{
                 modalShow: false,
                 svg:AdvantagesSvg,
-                license:{
-                    src:'./documents/license.jpg',
+                license1:{
+                    src:'./documents/license-1.png',
+                    alt:'Лицензия'
+                },
+                license2:{
+                    src:'./documents/license-2.png',
                     alt:'Лицензия'
                 },
                 Advantages:[
