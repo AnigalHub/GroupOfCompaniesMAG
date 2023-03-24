@@ -14,29 +14,22 @@
                 </b-col>
             </b-row>
             <b-modal v-model="modalShow" size="lg">
-                <img :src="license1.src" :alt="license1.alt"/>
-                <img :src="license2.src" :alt="license2.alt"/>
+                <iframe :src="pdfSource" width="100%" height="100%"></iframe>
             </b-modal>
         </b-container>
     </div>
 </template>
 
 <script>
+    import axios from 'axios';
     import AdvantagesSvg from "./svg/AdvantagesSvg";
     export default {
         name: "Advantages",
         data(){
             return{
+                pdfSource:'',
                 modalShow: false,
                 svg:AdvantagesSvg,
-                license1:{
-                    src:'./documents/license-1.png',
-                    alt:'Лицензия'
-                },
-                license2:{
-                    src:'./documents/license-2.png',
-                    alt:'Лицензия'
-                },
                 Advantages:[
                     {text:"Безупречная репутация",},
                     {text:"Лучший технадзор на рынке",},
@@ -44,6 +37,17 @@
                     {text:"Личная сдача результата работы контролирующим органам",},
                 ],
             }
+        },
+        created() {
+            axios({
+                url: '/mag/documents/license.pdf',
+                method: 'GET',
+                responseType: 'blob',
+            }).then((response) => {
+                const href = URL.createObjectURL(response.data);
+                this.pdfSource = href
+                return this.pdfSource;
+            });
         },
     }
 </script>
