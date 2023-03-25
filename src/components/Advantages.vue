@@ -14,7 +14,7 @@
                 </b-col>
             </b-row>
             <b-modal v-model="modalShow" size="lg">
-                <iframe :src="pdfSource" width="100%" height="100%"></iframe>
+                <iframe src="/mag/documents/license.pdf" width="100%" height="100%"/>
             </b-modal>
         </b-container>
     </div>
@@ -27,7 +27,6 @@
         name: "Advantages",
         data(){
             return{
-                pdfSource:'',
                 modalShow: false,
                 svg:AdvantagesSvg,
                 Advantages:[
@@ -37,17 +36,6 @@
                     {text:"Личная сдача результата работы контролирующим органам",},
                 ],
             }
-        },
-        created() {
-            axios({
-                url: '/mag/documents/license.pdf',
-                method: 'GET',
-                responseType: 'blob',
-            }).then((response) => {
-                const href = URL.createObjectURL(response.data);
-                this.pdfSource = href
-                return this.pdfSource;
-            });
         },
     }
 </script>

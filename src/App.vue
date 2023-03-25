@@ -98,6 +98,9 @@ h2{
 a{
     text-decoration: none !important;
 }
+iframe{
+    height: 80vh;
+}
 .sidebar li {
     font-size: 1.2rem;
 }
