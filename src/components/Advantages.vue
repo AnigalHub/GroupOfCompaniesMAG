@@ -21,7 +21,6 @@
 </template>
 
 <script>
-    import axios from 'axios';
     import AdvantagesSvg from "./svg/AdvantagesSvg";
     export default {
         name: "Advantages",
