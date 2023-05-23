@@ -3,10 +3,12 @@
       <b-container>
           <b-row>
               <b-col cols="5">
-                  <h1>{{name}}</h1>
-                  <p>Создаем идеальное современное место для вашей комфотной и счастливой жизни</p>
-                  <b-button><a href="#About">О нас</a></b-button>
-                  <b-button><a href="#Services">Услуги</a></b-button>
+                  <h1>Группа компаний <span>«МАГ»</span></h1>
+                  <p>Воплощаем идеи в реальность - комплексные услуги по проектированию и строительству домов для комфортной и счастливой жизни.</p>
+                  <div class="buttonGroup">
+                      <b-button><a href="#About">О нас</a></b-button>
+                      <b-button><a href="#Services">Услуги</a></b-button>
+                  </div>
               </b-col>
               <b-col>
                   <component :is="svg"/>
@@ -17,7 +19,7 @@
 </template>
 
 <script>
-    import HomeSvg from "./svg/HomeSvg";
+    import HomeSvg from "./newSvg/Main/HomeSvg";
     import information from '../../public/documents/information.json';
     export default {
       name: 'Home',
