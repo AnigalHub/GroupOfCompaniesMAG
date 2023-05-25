@@ -2,15 +2,17 @@
     <div id="About">
         <b-container>
             <b-row>
-                <b-col cols="4">
+                <b-col cols="3">
                     <component :is="svg"/>
                 </b-col>
                 <b-col>
-                    <h2>О нас</h2>
-                    <p><b>{{name}}</b> занимается строительно-монтажными и пуско-наладочными работами систем.</p>
-                    <p><u>Наша компания состоит из:</u></p>
-                    <ul>
-                        <li v-for="company in Companies" class="text"><b>{{company.name}}</b>{{company.text}}</li>
+                    <h2>О компании</h2>
+                    <p>Группа "МАГ" представляет собой многопрофильную группу компаний, специализирующихся на строительно-монтажных и
+                        пусконаладочных работах систем.</p>
+                    <p>На сегодняшний день в группе компаний работает свыше 2000 квалифицированных сотрудников разных специализаций.</p>
+                    <p>В структуру группы "МАГ" входят компании:</p>
+                    <ul v-for="company in Companies" class="text">
+                        <li>{{company.name}}{{company.text}}</li>
                     </ul>
                 </b-col>
             </b-row>
@@ -19,7 +21,7 @@
 </template>
 
 <script>
-    import AboutSvg from "./svg/AboutSvg";
+    import AboutSvg from "./newSvg/Main/AboutSvg";
     import information from '../../public/documents/information.json';
 
     export default {
