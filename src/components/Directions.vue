@@ -4,10 +4,22 @@
             <h2>Основные направления работы компании</h2>
             <b-row>
                 <b-col>
-                    <DirectionsItems :items="Directions1"></DirectionsItems>
+                    <div>
+                        <component :is="svgDim"/>
+                        <DirectionsItems :items="Directions1"></DirectionsItems>
+                    </div>
                 </b-col>
                 <b-col>
-                    <DirectionsItems :items="Directions2"></DirectionsItems>
+                    <div>
+                        <component :is="svgMonitor"/>
+                        <DirectionsItems :items="Directions2"></DirectionsItems>
+                    </div>
+                </b-col>
+                <b-col>
+                    <div>
+                        <component :is="svgEl"/>
+                        <DirectionsItems :items="Directions3"></DirectionsItems>
+                    </div>
                 </b-col>
             </b-row>
         </b-container>
@@ -15,6 +27,10 @@
 </template>
 
 <script>
+    import MonitoringSvg from "./newSvg/Directions/MonitoringSvg";
+    import EvacuationSvg from "./newSvg/Directions/EvacuationSvg";
+    import ElectricitySvg from "./newSvg/Directions/ElectricitySvg";
+    import AboutSvg from "./svg/AboutSvg";
     import DirectionsItems from "@/components/mixins/DirectionsItems";
     export default {
         name: "Directions",
@@ -23,22 +39,28 @@
         },
         data(){
             return{
+                svg:AboutSvg,
                 Directions1:[
                     {text:"Оповещения населения (ГОиЧС)",},
                     {text:"Оповещения и управления эвакуацией (СОУЭ)",},
                     {text:"Пожарные сигнализации (СПС, АПС)",},
-                    {text:"Проводного радиовещания (РСО, РАСЦО)",},
-                    {text:"Каналов связи (оптические, электрические, беспроводные)",},
-                    {text:"Видеонаблюдения (СОТ, Безопасный регион, Безопасный город)",},
+                    {text:"Проводное радиовещание (РСО, РАСЦО)",},
                 ],
                 Directions2:[
+                    {text:"Каналы связи (оптические, электрические, беспроводные)",},
+                    {text:"Видеонаблюдения (СОТ, Безопасный регион, Безопасный город)",},
                     {text:"Дератизационные системы (ОЗДС)",},
                     {text:"Охранные комплексы и различный мониторинг",},
-                    {text:"Контроля учета электроэнергии (АСКУЭ)",},
-                    {text:"Контроля и управления доступом (СКУД)",},
+                ],
+                Directions3:[
+                    {text:"Контроль учета электроэнергии (АСКУЭ)",},
+                    {text:"Контроль и управления доступом (СКУД)",},
                     {text:"Управления и диспетчеризация инженерных систем (АСУД)",},
                     {text:"Электрические сети и установки (Бытовые и промышленные до 220КВ)",},
                 ],
+                svgMonitor: MonitoringSvg,
+                svgDim: EvacuationSvg,
+                svgEl:ElectricitySvg,
             }
         }
     }
