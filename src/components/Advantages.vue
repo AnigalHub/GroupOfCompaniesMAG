@@ -7,35 +7,35 @@
                     <ul class="ul">
                         <li v-for="advantage in Advantages" class="text">{{advantage.text}}</li>
                     </ul>
-                    <b-button @click="modalShow = !modalShow"><a>Посмотреть лицензию</a></b-button>
                 </b-col>
                 <b-col cols="5">
                     <component :is="svg"/>
                 </b-col>
             </b-row>
-            <b-modal v-model="modalShow" size="lg">
-                <iframe src="/mag/documents/license.pdf" width="100%" height="100%"/>
-            </b-modal>
         </b-container>
     </div>
 </template>
 
 <script>
-    import AdvantagesSvg from "./svg/AdvantagesSvg";
+    import AdvantagesSvg from "./newSvg/Main/AdvantagesSvg";
     export default {
         name: "Advantages",
         data(){
             return{
-                modalShow: false,
                 svg:AdvantagesSvg,
                 Advantages:[
                     {text:"Безупречная репутация",},
                     {text:"Лучший технадзор на рынке",},
                     {text:"Выполнение всех работ точно в срок",},
                     {text:"Личная сдача результата работы контролирующим органам",},
+                    {text:'Все выполняемые работы и оказывающие услуги лицензированы',}
                 ],
             }
         },
     }
 </script>
+
+<style scoped lang="scss">
+
+</style>
 
