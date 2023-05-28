@@ -1,36 +1,41 @@
 <template>
     <div id="Employees">
         <b-container>
-            <b-row>
-                <b-col cols="4">
-                    <component :is="svg"/>
-                </b-col>
-                <b-col>
-                    <h2>Сотрудники<span>, которым доверяют</span></h2>
-                    <ul>
-                        <li class="text" v-for="employee in Employees">
-                           <span>{{employee.name}}</span>
-                            <br/>
+вмест            <h2>Сотрудники, которым доверяют</h2>
+            <div class="flex-container">
+                <div class="text employee" v-for="employee in Employees">
+                    <span>{{employee.name}}</span>
+                    <b-row>
+                        <b-col>
                             {{employee.text}}
-                        </li>
-                    </ul>
-                </b-col>
-            </b-row>
+                        </b-col>
+                        <b-col cols="2">
+                            <component :is="employee.svg"/>
+                        </b-col>
+                    </b-row>
+                </div>
+                <div class="svgEmployees">
+                    <component :is="svg"/>
+                </div>
+            </div>
         </b-container>
     </div>
 </template>
 
 <script>
-    import AboutSvg from "./svg/EmployeesSvg";
+    import AboutSvg from "./newSvg/Main/EmployeesSvg";
+    import SlavsSvg from "./newSvg/Employees/SlavsSvg";
+    import CertificationSvg from "./newSvg/Employees/CertificationSvg";
+    import EducationSvg from "./newSvg/Employees/EducationSvg";
     export default {
         name: "Employees",
         data() {
             return {
                 svg: AboutSvg,
                 Employees:[
-                    {name:"Работники с высшим образованием",text:"У нас работают сотрудники только с высшим образованием"},
-                    {name:"Аттестация каждые полгода",text:"Каждые полгода все сотрудники проходят подготовку и аттестацию в учебном центре"},
-                    {name:"Только славяне",text:"В компании работают только славяне. Каждый из них дорожит своей репутацией и имеет профессиональную подготовку"},
+                    {svg:EducationSvg, name:"Работники с высшим образованием",text:"У нас работают сотрудники только с высшим образованием"},
+                    {svg:CertificationSvg, name:"Аттестация каждые полгода",text:"Каждые полгода все сотрудники проходят подготовку и аттестацию в учебном центре"},
+                    {svg:SlavsSvg, name:"Только славяне",text:"В компании работают только славяне. Каждый из них дорожит своей репутацией и имеет профессиональную подготовку"},
                 ],
             }
         }
