@@ -2,6 +2,9 @@
     <div id="Services">
         <b-container>
             <b-row>
+                <b-col cols="5">
+                    <component :is="svg"/>
+                </b-col>
                 <b-col>
                     <h2>Мы предоставляем услуги</h2>
                     <ul>
@@ -9,16 +12,13 @@
                     </ul>
                     <b-button><a href="./documents/prices.xlsx" download>Узнать цены на виды работ</a></b-button>
                 </b-col>
-                <b-col cols="5">
-                    <component :is="svg"/>
-                </b-col>
             </b-row>
         </b-container>
     </div>
 </template>
 
 <script>
-    import ServicesSvg from "./svg/ServicesSvg"
+    import ServicesSvg from "./newSvg/Main/ServicesSvg"
     export default {
         name: "Services",
         data(){
