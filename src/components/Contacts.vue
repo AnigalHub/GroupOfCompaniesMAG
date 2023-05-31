@@ -1,31 +1,21 @@
 <template>
     <div id="Contacts">
         <b-container>
-            <b-row>
-                <b-col cols="4">
-                    <component :is="svg"/>
-                </b-col>
-                <b-col>
-                    <h2>Контактная информация</h2>
-                    <p>Свяжитесь с нами любым удобным для вас способом.<br/>
-                     Мы проконсультируем вас по нашим услугам, подберем мастеров, согласуем удобное для вас
-                        время для проведения работ, и ответим на любой ваш вопрос.
-                    </p>
-                    <div class="nameContact text" v-for="value in Contacts">
-                        <a :href="value.href" :target="value.target">
-                            <b-row>
-                                <b-col cols="1">
-                                    <component :is="value.svg"/>
-                                </b-col>
-                                <b-col>
-                                    <div class="contacts">
-                                        <span>{{value.name}}</span>
-                                        <br/>{{value.description}}
-                                    </div>
-                                </b-col>
-                            </b-row>
-                        </a>
-                    </div>
+            <h2>Свяжитесь с нами!</h2>
+            <p>Мы проконсультируем вас по нашим услугам, подберем мастеров, согласуем удобное для вас
+                время для проведения работ, и ответим на любой ваш вопрос.
+            </p>
+            <b-row class="text" >
+                <b-col v-for="contact in Contacts" class="contacts">
+                    <b-row>
+                        <b-col cols="3">
+                            <component :is="contact.svg"/>
+                        </b-col>
+                        <b-col>
+                            <b>{{contact.name}}</b>
+                            {{contact.description}}
+                        </b-col>
+                    </b-row>
                 </b-col>
             </b-row>
         </b-container>
@@ -34,9 +24,9 @@
 
 <script>
     import ContactsSvg from "./svg/ContactsSvg";
-    import CallSvg from "./svg_contacts/call";
-    import MailSvg from "./svg_contacts/mail";
-    import LocationSvg from "./svg_contacts/location";
+    import CallSvg from "./newSvg/Contacts/CallSvg";
+    import MailSvg from "./newSvg/Contacts/MailSvg";
+    import LocationSvg from "./newSvg/Contacts/LocationSvg";
     import information from '../../public/documents/information.json';
     export default {
         name: "Contacts",
@@ -45,21 +35,21 @@
                 svg: ContactsSvg,
                 Contacts: [
                     {
-                        name:'Телефон:',
+                        name:'Телефон',
                         description:information.phone,
                         svg:CallSvg,
                         href:'tel:' + information.phone,
                         target:'_self',
                     },
                     {
-                        name:'Почта:',
+                        name:'Почта',
                         description:information.mail,
                         svg:MailSvg,
                         href:'mailto:' + information.mail,
                         target:'_self',
                     },
                     {
-                        name:'Адрес:',
+                        name:'Адрес',
                         description:information.address,
                         svg:LocationSvg,
                     },
