@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-      <sidebar-menu/>
+      <navbar/>
       <Home/>
       <About/>
       <Directions/>
       <Advantages/>
+      <Licenses/>
       <Employees/>
       <Services/>
       <Contacts/>
@@ -12,7 +13,7 @@
 </template>
 
 <script>
-    import SidebarMenu from "@/components/SidebarMenu.vue"
+    import Navbar from "@/components/Navbar";
     import Home from './components/Home.vue'
     import About from "@/components/About";
     import Advantages from "@/components/Advantages";
@@ -20,10 +21,13 @@
     import Services from "@/components/Services";
     import Contacts from "@/components/Contacts";
     import Directions from "@/components/Directions";
+    import Licenses from "@/components/Licenses";
 
 export default {
   name: 'App',
   components: {
+      Navbar,
+      Licenses,
       Directions,
       Contacts,
       Services,
@@ -31,7 +35,6 @@ export default {
       Advantages,
       About,
       Home,
-      SidebarMenu,
   }
 }
 </script>
@@ -58,17 +61,20 @@ export default {
     }
 </style>
 <style lang="scss">
-@import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
-@import "components/styleSvg/animationsSvg";
-
 body{
-    background: #edf8fc !important;
+    background: transparent !important;
 }
-#app {
+#Home, #Directions, #Licenses, #Services{
+    background: #f2f4f6;
+
+}
+#About, #Advantages, #Employees, #Contacts{
+    background: #e9f0f4;
+}
+#app{
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
-    background: #edf8fc;
 }
 /*контейнер на блоки посередине экрана*/
 .container{
@@ -81,19 +87,25 @@ img{
     height: auto;
 }
 h1{
-    margin-top: 9% !important;
-    font-size: 4rem !important;
-    color: #5d86b4;
-    font-weight: 700 !important;
-    line-height: 4.9rem !important;
-    padding-bottom: 2% !important;
-    width: 110%;
+    margin-top: 20px !important;
+    font-size: 5.8rem !important;
+    color: #5595d9;
+    text-shadow: .5px .5px .5px rgba(87, 87, 87, 0.69);
+    letter-spacing: -1.8px;
+    margin-bottom: 0 !important;
+    font-weight: 500 !important;
+    line-height: 7.2rem !important;
+    width: 135%;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 h2{
-    color: #5d86b4;
-    font-weight: 700 !important;
-    font-size: 2.8rem !important;
-    margin-bottom: 2% !important;
+    font-weight: 500 !important;
+    font-size: 3rem !important;
+    margin-bottom: 3% !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #5595d9;
+    text-shadow: .25px .25px .25px rgba(87, 87, 87, 0.69);
+    letter-spacing: -.5px;
 }
 a{
     text-decoration: none !important;
@@ -101,20 +113,17 @@ a{
 iframe{
     height: 80vh;
 }
-.sidebar li {
-    font-size: 1.2rem;
-}
 a, b, u, p, li, .text{
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     line-height: 1.8rem;
 }
-a, b, u, p, li, .text, button, .sidebar li{
+a, b, u, p, li, .text, button{
     font-weight: 400;
 }
-h1, h2, a, b, u, p, li, .text, button, .sidebar li{
+a, b, u, p, li, .text, button{
     font-weight: 400;
-    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
-}
+    font-family: 'Tinos', serif;
+  }
 ul{
     list-style: none !important;
     margin-bottom: 1.5% !important;
@@ -122,27 +131,26 @@ ul{
 li{
     margin-bottom: 2.25%;
 }
-li::before {
+li::before{
     font-weight: bold;
     padding-right: 10px;
     margin-left: -3%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #77AEDB;
     transition-duration: 0.5s;
 }
-li:hover::before {
+li:hover::before{
     color: #337AB7;
 }
-button{
-    border-radius: 30px !important;
+button, #Home button{
     border: none !important;
-    background: linear-gradient(to left, #a9d3dd, #9ba0cb);
-    font-size: 1.45rem !important;
+    background: #f7f7f7;
+    font-size: 1.5rem;
     &:hover{
         transform: scale(1.03);
     }
     a{
-        color:white;
+        color:black;
         font-size: 1.48rem !important;
         font-weight: 400;
         text-decoration: none;
@@ -156,12 +164,6 @@ button{
         background: transparent !important;
     }
 }
-#Advantages svg, #Services svg{
-    width: 93%;
-}
-#Services svg{
-    margin-top: -2%;
-}
 #About, #Services{
     li:before {
         content: "\25cb";
@@ -170,66 +172,94 @@ button{
         content: "\25cf";
     }
 }
-#Advantages button, #Services button{
-    width: 60%;
-    margin: 3% 1.5% 0;
-    padding: 2% 2.5%;
+#Home{
+    padding: 30px 0 110px 0;
 }
-#Home, #About, #Directions, #Advantages,
+#Contacts{
+    min-height: 60vh !important;
+}
+#About, #Directions, #Advantages, #Licenses,
 #Employees, #Services, #Contacts{
-    padding: 2% 3% 2% 8%;
+    padding: 80px 3% 80px 8%;
+    min-height: 80vh;
 }
-
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
 #Home{
     p{
-        margin: 4% 0;
-        font-size: 1.35rem;
-        line-height: 2.25rem;
+        margin: 20px 0;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+        width: 110%;
+        font-weight: 500;
+    }
+    .buttonGroup{
+        width: 115%;
     }
     button{
-        width: 60%;
-        margin: 3% 1.5%;
-        padding: 2.7% 2.5%;
-        border: none;
+        width: 46%;
+        float: left;
+        background: #d1ebff;
+        border-radius: 25px;
+        color:#bfdbf1;
+        margin: 4% 0;
+        padding: 2.5%;
         &:last-child{
-            margin-top: 2.5%;
+            margin-left: 4% !important;
+            background: transparent;
+            border: 2px solid #bfdbf1 !important;
         }
     }
     svg{
-        margin-top: 2%;
-        width: 105%;
-        margin-left: -5%;
+        margin-top: -20px;
+        width: 98%;
+        margin-left: 60px;
     }
 }
 #About{
-    h2{
-        margin-top: 3%;
+    .row{
+        margin: 15px 0;
     }
-    li{
-        margin-bottom: 0;
+    li, ul{
+        margin-bottom: 0 !important;
     }
     svg{
-        width: 100%;
-        margin-top: 5%;
+        width: 150%;
+        margin-top: 10%;
+        margin-left: -20%;
+    }
+    .col{
+        padding-left: 7%;
     }
 }
 #Directions{
     .col{
         padding: 0 !important;
+        div{
+            padding: 20px 0 5px;
+            background: #f2f4f6;
+            margin: 2% 3%;
+            box-shadow: 0 2px 18px rgba(41, 41, 41, 0.1);
+        }
     }
-    .col-3 {
-        width: 21% !important;
+    svg{
+        margin: 0 auto;
+        width: 90%;
+        display: block;
     }
     .wrapper {
         display: flex;
         flex-wrap: wrap;
+        box-shadow: none !important;
         div{
             width: 100%;
             margin: 0 auto 1%;
+            box-shadow: none;
         }
     }
     li:before {
-        font-family: "Font Awesome 6 brands";
         content: "\2727";
     }
     li:hover:before {
@@ -237,80 +267,111 @@ button{
     }
 }
 #Advantages{
+    h2{
+        margin-top: 6%;
+    }
     ul li:before {
-        font-family: "Font Awesome 6 brands";
         content: "\2713";
     }
-    .col-1 svg{
-        width: 2.8rem;
-        margin-top: 45%;
-        margin-right: 15%;
+    li{
+        margin-bottom: 3%;
     }
     svg{
-        margin-top: -5%;
+        width: 100%;
+        padding: 0;
+    }
+}
+#Licenses{
+    h2{
+        text-align: center;
+    }
+    table{
+        border-color: #b0cde2 !important;
+        tr td:first-child{
+            width: 61%;
+        }
+        svg{
+            width: 23px;
+            float: left;
+        }
+    }
+    span{
+        float: left;
+        padding: 0 10px;
+    }
+    svg{
+        width: 100%;
+        padding: 0;
     }
 }
 #Employees{
+    .employee{
+        padding: 15px;
+        background: #f2f4f6;
+        width: 46%;
+        height: 180px;
+        margin: 8px 15px;
+        box-shadow: 0px 2px 18px rgba(41, 41, 41, 0.1);
+        span{
+            font-weight: 600;
+        }
+        .row{
+            margin-top: 4%;
+        }
+    }
     svg{
-        margin-left: -8%;
+        padding: 0;
+        width: 100%;
+        margin-top: -1.5%;
+    }
+    .svgEmployees{
+        margin: 8px 15px;
+        width: 46%;
+        height: 180px;
+    }
+}
+#Services{
+    svg{
         width: 108%;
+        padding: 0;
+        margin-left: -8%;
+        margin-top: -20px;
     }
-    li:before {
-        content: "\2606";
-    }
-    li:hover:before {
-        content: "\2605";
-    }
-    h2 span{
-        text-shadow: none;
-        font-weight: 400;
-        text-transform: lowercase;
-        text-decoration: none;
-    }
-    span{
-        font-weight: 600;
+    button{
+        width: 60%;
+        margin: 3% 1.5% 0;
+        padding: 2% 2.5%;
+        background: #d1ebff;
+        border-radius: 25px;
+        box-shadow: 0 1px 2px rgba(41, 41, 41, 0.1);
+        color: black;
+
     }
 }
 #Contacts{
     padding-bottom: 5%;
     .contacts{
-        margin-left: - 2%;
-    }
-    span{
-        font-weight: 600;
-        text-decoration: underline;
-    }
-    a{
-        margin-top: 5%;
-        color: black;
-    }
-    svg{
-        margin-top: 5%;
-        margin-left: -8%;
-        width: 114%;
-    }
-    .nameContact{
-        padding: 1%;
-        &:hover{
-            svg{
-                transform: scale(1.1);
+        padding: 10px;
+        background: #f2f4f6;
+        margin: 20px;
+        box-shadow: 0px 2px 18px rgba(41, 41, 41, 0.1);
+        .row{
+            padding: 10px;
+            b{
+                display: block;
+                margin-bottom: 10px;
             }
-        }
-        svg{
-            width: 2.35rem;
-            margin-left: 2%;
-            margin-top: 15%;
+            svg{
+                margin-top: 5%;
+                margin-left: -8%;
+                padding: 10px;
+                width: 100%;
+            }
         }
     }
 }
 @media screen and (max-width: 992px){
-    .sidebar.open {
-        width: 100%;
-    }
     #Home{
-        .row{
-            flex-direction: column;
-        }
         .col-5{
             width: 100%;
             button{
@@ -319,29 +380,6 @@ button{
         }
         svg{
             margin: 0 auto;
-            display: block;
-        }
-    }
-    #About .row, #Employees .row, #Contacts .row{
-        flex-direction: column-reverse;
-    }
-    #Advantages .row, #Services .row{
-        flex-direction: column;
-    }
-    #Directions{
-        .row{
-            flex-direction: column;
-        }
-        .col{
-            padding: 0 15px !important;
-        }
-    }
-    #About, #Advantages, #Employees, #Services, #Contacts{
-        .col-4, .col-5{
-            width: 100%;
-        }
-        svg{
-            margin: 3% auto 0;
             display: block;
         }
     }
@@ -359,51 +397,22 @@ button{
     li {
         margin-bottom: 1%;
     }
-    #Contacts .nameContact .row{
-        flex-direction: inherit;
-    }
 }
 @media screen and (max-width: 500px){
-    body{
-        padding-left: 45px;
-    }
-    .sidebar {
-        width: 45px;
-        #my-scroll {
-            margin: 6px 0 0;
-        }
-        .logo-details{
-            margin: 6px 0 0 75%;
-            #btn:before {
-                margin-left: 8%;
-            }
-        }
-        li i {
-            font-size: 1.4rem;
-        }
-    }
-    #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
-        padding: 2% !important;
-    }
-    #About svg, #Advantages svg, #Employees svg, #Services svg, #Contacts svg{
-        width: 56%;
-    }
-    #Home{
-        p{
-            margin: 0 0 4%;
-            font-size: 1rem;
-            line-height: 1.2rem;
-        }
-        svg{
-            width: 96%;
-        }
+    #Home, #About, #Directions,
+    #Licenses, #Advantages, #Employees,
+    #Services, #Contacts {
+        padding: 25px 3% 25px 3%;
+        min-height: auto !important;
     }
     h1{
-        font-size: 1.45rem !important;
-        line-height: 2rem !important;
+        text-align: center;
+        margin-top: 0 !important;
+        font-size: 2.2rem !important;
+        line-height: 4rem !important;
     }
     h2{
-        font-size: 1.25rem !important;
+        font-size: 1.7rem !important;
     }
     a, b, u, p, li, .text{
         font-size: 1rem;
@@ -420,75 +429,308 @@ button{
         margin-left: -5%;
         font-size: 1.4rem;
     }
-    ul{
-        margin-left: -8%;
+    #About li, #About ul{
+        margin-left: -4%;
     }
-    #Advantages button, #Services button {
-        width: 90%;
+    ul{
+        margin-left: -3%;
+    }
+    #Home{
+        p{
+            margin: 0 0 4%;
+            width: 100%;
+            text-align: center;
+            font-size: 1.15rem;
+            line-height: 1.3rem;
+        }
+        svg{
+            width: 86%;
+        }
+    }
+    #About {
+        .row {
+            flex-direction: column-reverse;
+        }
+        .col {
+            padding-left: 0;
+        }
+        .col-3 {
+            width: 100%;
+        }
+        svg {
+            width: 65%;
+            margin-left: 22.5%;
+            margin-top: 0;
+        }
+    }
+    #Directions{
+        .row{
+            flex-direction: column;
+        }
+        .col div{
+            padding: 0;
+        }
+        svg {
+            width: 60%;
+        }
+    }
+    #Advantages{
+        h2{
+            margin-top: 0;
+        }
+        .row{
+            flex-direction: column;
+        }
+        .col-5 {
+            width: 100%;
+        }
+        svg {
+            width: 60%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    #Licenses{
+        .table > :not(caption) > * > *{
+            padding: 0.35rem 0.35rem !important;
+        }
+        table  tr td:first-child{
+            width: 78%;
+        }
+        table svg{
+            margin-left: 0;
+        }
+        table span{
+            display: none;
+        }
+        .row{
+            flex-direction: column-reverse;
+        }
+        .col-5 {
+            width: 100%;
+        }
+        svg {
+            width: 60%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    #Employees{
+        .employee {
+            padding: 15px;
+            height: 130px;
+            width: 100%;
+            .row {
+                margin-top: 2%;
+                svg{
+                    width: 130%;
+                    margin-left: -15%;
+                }
+            }
+        }
+        .svgEmployees {
+            margin: 0 auto;
+            width: 80%;
+            height: 90px;
+        }
+    }
+    #Services{
+        .row{
+            flex-direction: column-reverse;
+        }
+        button{
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        .col-5 {
+            width: 100%;
+        }
+        svg {
+            width: 65%;
+            margin-left: 23%;
+            margin-top: 0;
+        }
     }
     #Contacts{
-        .nameContact{
-            svg{
-                width: 1.8rem;
-                margin-left: -70%;
-                margin-top: 75%;
+        .row{
+            flex-direction: column;
+            .row{
+                flex-direction: row;
+                .col{
+                    margin-left: -15%;
+                }
             }
-            .contacts{
-                padding-left: 5% !important;
+        }
+        .contacts {
+            margin: 0 0 2%;
+            .row svg {
+                margin-top: 0;
+                width: 50%;
+                padding: 3px;
             }
         }
     }
 }
 @media screen and (min-width: 500px) and (max-width: 768px){
-    body{
-        padding-left: 45px;
+    #Home{
+        padding: 0 0 60px 0;
+        min-height: auto;
     }
-    .sidebar {
-        width: 45px;
-        #my-scroll {
-            margin: 6px 0 0;
-        }
-        .logo-details{
-            margin: 6px 0 0 75%;
-            #btn:before {
-                margin-left: 16%;
-            }
-        }
-
-    }
-    #Home, #About, #Directions, #Advantages, #Employees, #Services, #Contacts {
-        padding: 2% 3% 2% 1%;
-    }
-    #About svg, #Advantages svg, #Employees svg, #Services svg, #Contacts svg{
-        width: 56%;
+    #About, #Directions, #Licenses,
+    #Advantages, #Licenses, #Employees,
+    #Services, #Contacts{
+        padding: 40px 3% 40px 3%;
+        min-height: auto !important;
     }
     li:before {
         margin-left: 0;
         font-size: 1.1rem;
     }
-    #Directions li:before {
-        margin-left: -1%;
-        font-size: 1.4rem;
-    }
     #Home{
         p{
-            margin: 0 0 4%;
-            font-size: 1.2rem;
-            line-height: 1.4rem;
+            margin: 2% 0 4%;
+            width: 100%;
+            text-align: center;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
         }
         svg{
-            width: 96%;
+            width: 66%;
+        }
+    }
+    #About {
+        .row {
+            flex-direction: column-reverse;
+        }
+        .col {
+            padding-left: 0;
+        }
+        .col-3 {
+            width: 100%;
+        }
+        svg {
+            width: 55%;
+            margin-left: 22.5%;
+            margin-top: 0;
+        }
+    }
+    #Directions{
+        .row{
+            flex-direction: column;
+        }
+        .col div{
+            padding: 0;
+        }
+        svg {
+            width: 50%;
+        }
+    }
+    #Advantages{
+        h2{
+            margin-top: 0;
+        }
+        .row{
+            flex-direction: column;
+        }
+        .col-5 {
+            width: 100%;
+        }
+        svg {
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    #Licenses{
+        .table > :not(caption) > * > *{
+            padding: 0.35rem 0.35rem !important;
+        }
+        table  tr td:first-child{
+            width: 78%;
+        }
+        table svg{
+            margin-left: 0;
+        }
+        table span{
+            display: none;
+        }
+        .row{
+            flex-direction: column-reverse;
+        }
+        .col-5 {
+            width: 100%;
+        }
+        svg {
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    #Employees{
+        .employee {
+            padding: 15px;
+            height: 150px;
+            width: 100%;
+            .row {
+                margin-top: 2%;
+            }
+        }
+        .svgEmployees {
+            margin: 0 auto;
+            width: 80%;
+            height: 150px;
+        }
+    }
+    #Services{
+        .row{
+            flex-direction: column-reverse;
+        }
+        button{
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        .col-5 {
+            width: 100%;
+        }
+        svg {
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    #Contacts{
+        .row{
+            flex-direction: column;
+            .row{
+                flex-direction: row;
+                .col{
+                    margin-left: -12%;
+                }
+            }
+        }
+        .contacts {
+            margin: 0 0 2%;
+            .row svg {
+                padding: 5px;
+                margin-top: 0;
+                width: 50%;
+            }
         }
     }
     h1{
-        font-size: 2.4rem !important;
-        line-height: 2.3rem !important;
+        text-align: center;
+        margin-top: 0 !important;
+        font-size: 2.6rem !important;
+        line-height: 3rem !important;
     }
     h2{
-        font-size: 1.7rem !important;
+        font-size: 1.9rem !important;
+    }
+    #About li, #About ul{
+        margin-left: -6%;
     }
     ul{
-        margin-left: -6%;
+        margin-left: -3%;
     }
     a, b, u, p, li, .text{
         font-size: 1.2rem;
@@ -497,42 +739,157 @@ button{
     button a{
         font-size: 1.25rem !important;
     }
-    #Advantages button, #Services button {
-        width: 90%;
-    }
-    #Contacts{
-        .nameContact svg{
-            width: 1.9rem;
-            margin-left: -50%;
-            margin-top: 75%;
-        }
-        .contacts {
-            margin-left: 0;
-        }
-    }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
-    #About svg, #Advantages svg, #Employees svg, #Services svg, #Contacts svg{
-        width: 50%;
+    #Home{
+        padding: 0 0 60px 0;
+        min-height: auto;
+    }
+    #About, #Directions, #Advantages, #Licenses,
+    #Employees, #Services, #Contacts{
+        padding: 40px 3% 40px 3%;
+        min-height: auto !important;
     }
     #Home{
         p{
             margin: 0 0 4%;
-            font-size: 1.2rem;
-            line-height: 1.4rem;
+            width: 100%;
+            text-align: center;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
         }
         svg{
             width: 66%;
         }
     }
+    #About {
+        .row {
+            flex-direction: column-reverse;
+        }
+        .col {
+            padding-left: 0;
+        }
+        .col-3 {
+            width: 100%;
+        }
+        svg {
+            width: 55%;
+            margin-left: 22.5%;
+            margin-top: 0;
+        }
+    }
+    #Directions{
+        .row{
+            flex-direction: column;
+        }
+        .col div{
+            padding: 0;
+        }
+        svg {
+            width: 50%;
+        }
+    }
+    #Advantages{
+        h2{
+            margin-top: 0;
+        }
+        .row{
+            flex-direction: column;
+        }
+        .col-5 {
+            width: 100%;
+        }
+        svg {
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    #Licenses{
+        .table > :not(caption) > * > *{
+            padding: 0.35rem 0.35rem !important;
+        }
+        table  tr td:first-child{
+            width: 48%;
+        }
+        table svg{
+            margin-left: 0;
+        }
+        table span{
+            display: none;
+        }
+        .row{
+            flex-direction: column-reverse;
+        }
+        .col-5 {
+            width: 100%;
+        }
+        svg {
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    #Employees{
+        .employee {
+            padding: 15px;
+            height: 150px;
+            width: 100%;
+            .row {
+                margin-top: 2%;
+            }
+        }
+        .svgEmployees {
+            margin: 0 auto;
+            width: 80%;
+            height: 150px;
+        }
+    }
+    #Services{
+        .row{
+            flex-direction: column-reverse;
+        }
+        button{
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        .col-5 {
+            width: 100%;
+        }
+        svg {
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    #Contacts{
+        .row{
+            flex-direction: column;
+            .row{
+                flex-direction: row;
+                .col{
+                    margin-left: -12%;
+                }
+            }
+        }
+        .contacts {
+            margin: 0 0 2%;
+            .row svg {
+                margin-top: 0;
+                width: 50%;
+            }
+        }
+    }
     h1{
-        font-size: 2.65rem !important;
-        line-height: 2.35rem !important;
+        text-align: center;
+        margin-top: 0 !important;
+        font-size: 3rem !important;
+        line-height: 5rem !important;
     }
     h2{
-        font-size: 1.7rem !important;
+        font-size: 2rem !important;
     }
-    ul{
+    ul, #About li, #About ul{
         margin-left: -2%;
     }
     a, b, u, p, li, .text{
@@ -542,34 +899,16 @@ button{
     button a{
         font-size: 1.25rem !important;
     }
-    #Contacts .nameContact svg{
-        width: 2rem;
-    }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
-    #About .row, #Employees .row, #Contacts .row{
-        flex-direction: column-reverse;
+    #Home{
+        padding: 30px 0 60px 0;
+        min-height: auto;
     }
-    #Advantages .row, #Services .row{
-        flex-direction: column;
-    }
-    #Directions{
-        .row{
-            flex-direction: column;
-        }
-        .col{
-            padding: 0 15px !important;
-        }
-    }
-    #About, #Advantages, #Employees, #Services, #Contacts{
-        .col-4, .col-5{
-            width: 100%;
-        }
-        svg{
-            margin: 3% auto 0;
-            display: block;
-            width: 45%;
-        }
+    #About, #Directions, #Advantages, #Licenses,
+    #Employees, #Services, #Contacts{
+        padding: 40px 3% 40px 8%;
+        min-height: auto !important;
     }
     #Home{
         p{
@@ -579,15 +918,47 @@ button{
             line-height: 1.4rem;
         }
         svg{
-            margin-top: 2%;
-            width: 118%;
-            margin-left: -13%;
+            width: 94%;
+            margin-left: 30px;
+        }
+
+    }
+    #Advantages h2 {
+        margin-top: 3%;
+    }
+    #Licenses{
+        svg{
+            margin-top: 25%;
+        }
+        .col{
+            padding-left: 0 !important;
+            svg{
+                margin: 0;
+            }
+        }
+        .table > :not(caption) > * > *{
+           padding: 0.35rem 0.35rem !important;
+        }
+        table  tr td:first-child{
+            width: 48%;
+        }
+    }
+    #Employees .svgEmployees{
+        margin: 46px 15px 8px;
+    }
+    #Contacts{
+        .contacts {
+            margin: 10px;
+            padding: 5px;
+            .row svg {
+                padding: 5px;
+            }
         }
     }
     h1{
         margin-top: 3% !important;
-        font-size: 2.28rem !important;
-        line-height: 2.8rem !important;
+        font-size: 3.5rem !important;
+        line-height: 4.5rem !important;
         margin-bottom: 0 !important;
     }
     h2{
@@ -597,8 +968,11 @@ button{
         margin-bottom: .5rem !important;
     }
     a, b, u, p, li, .text{
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         line-height: 1.4rem;
+    }
+    button, #Home button{
+        font-size: 1.25rem !important;
     }
     ul{
         margin-left: -2%;
@@ -610,49 +984,43 @@ button{
     button a{
         font-size: 1.25rem !important;
     }
-    #Contacts .nameContact{
-        svg{
-            width: 2rem;
-        }
-        .row{
-            flex-direction: inherit;
-        }
-    }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px){
     #Advantages svg, #Services svg{
         width: 95%;
     }
-    #Home svg{
-        width: 110%;
-        margin-left: -8%;
-    }
-    #About svg{
-        margin-left: -5%;
-        width: 105%;
-    }
-    #Employees svg, #Contacts svg {
-        margin-left: -12%;
-        width: 110%;
-    }
     h1{
-        font-size: 2.65rem !important;
-        line-height: 3.5rem !important;
+        font-size: 4.2rem !important;
+        line-height: 5.5rem !important;
         margin-bottom: 0 !important;
     }
-    #Home p{
-        margin: 0 0 4%;
-        font-size: 1.2rem;
-        line-height: 1.4rem;
+    button, #Home button{
+        font-size: 1.25rem !important;
+    }
+    #Home{
+        p{
+            font-size: 1.25rem;
+            line-height: 1.8rem;
+        }
+        svg{
+            width: 94%;
+            margin-left: 50px;
+        }
+    }
+    #Licenses table  tr td:first-child{
+        width: 55%;
+    }
+    #Contacts .contacts .row svg {
+        padding: 5px;
     }
     h2{
-        font-size: 2.15rem !important;
+        font-size: 2.5rem !important;
     }
     p{
         margin-bottom: .5rem !important;
     }
     a, b, u, p, li, .text{
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         line-height: 1.4rem;
     }
     ul{
@@ -663,32 +1031,6 @@ button{
     }
     button a{
         font-size: 1.25rem !important;
-    }
-    #Contacts .nameContact svg{
-        width: 2rem;
-    }
-}
-@media screen and (min-width: 1400px) and (max-width: 1600px){
-    h1{
-        font-size: 3.5rem !important;
-        line-height: 4.25rem !important;
-    }
-    #Home p{
-        font-size: 1.35rem;
-        line-height: 1.8rem;
-    }
-    h2{
-        font-size: 2.6rem !important;
-    }
-    a, b, u, p, li, .text{
-        font-size: 1.2rem;
-        line-height: 1.6rem;
-    }
-    button a{
-        font-size: 1.3rem !important;
-    }
-    #Contacts .nameContact svg{
-        width: 2.15rem;
     }
 }
 </style>
