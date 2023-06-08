@@ -30,7 +30,6 @@
     import MonitoringSvg from "./newSvg/Directions/MonitoringSvg";
     import EvacuationSvg from "./newSvg/Directions/EvacuationSvg";
     import ElectricitySvg from "./newSvg/Directions/ElectricitySvg";
-    import AboutSvg from "./svg/AboutSvg";
     import DirectionsItems from "@/components/mixins/DirectionsItems";
     export default {
         name: "Directions",
@@ -39,7 +38,6 @@
         },
         data(){
             return{
-                svg:AboutSvg,
                 Directions1:[
                     {text:"Оповещения населения (ГОиЧС)",},
                     {text:"Оповещения и управления эвакуацией (СОУЭ)",},

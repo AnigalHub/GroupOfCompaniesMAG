@@ -23,7 +23,6 @@
 </template>
 
 <script>
-    import ContactsSvg from "./svg/ContactsSvg";
     import CallSvg from "./newSvg/Contacts/CallSvg";
     import MailSvg from "./newSvg/Contacts/MailSvg";
     import LocationSvg from "./newSvg/Contacts/LocationSvg";
@@ -32,7 +31,6 @@
         name: "Contacts",
         data() {
             return {
-                svg: ContactsSvg,
                 Contacts: [
                     {
                         name:'Телефон',
