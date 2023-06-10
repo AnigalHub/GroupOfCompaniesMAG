@@ -7,10 +7,10 @@
                 </b-col>
                 <b-col>
                     <h2>О компании</h2>
-                    <p>Группа "МАГ" представляет собой многопрофильную группу компаний, специализирующихся на строительно-монтажных и
+                    <p>Группа {{short_name_company}} представляет собой многопрофильную группу компаний, специализирующихся на строительно-монтажных и
                         пусконаладочных работах систем.</p>
                     <p>На сегодняшний день в группе компаний работает свыше 2000 квалифицированных сотрудников разных специализаций.</p>
-                    <p>В структуру группы "МАГ" входят компании:</p>
+                    <p>В структуру группы {{short_name_company}} входят компании:</p>
                     <ul v-for="company in Companies" class="text">
                         <li>{{company.name}}{{company.text}}</li>
                     </ul>
@@ -29,7 +29,7 @@
         data(){
             return{
                 svg:AboutSvg,
-                name: information.name_company,
+                short_name_company: information.short_name_company,
                 Companies:information.Companies,
             }
         }
