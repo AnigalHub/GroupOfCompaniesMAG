@@ -1,7 +1,7 @@
 <template>
     <div id="Employees">
         <b-container>
-вмест            <h2>Сотрудники, которым доверяют</h2>
+            <h2>Сотрудники, которым доверяют</h2>
             <div class="flex-container">
                 <div class="text employee" v-for="employee in Employees">
                     <span>{{employee.name}}</span>

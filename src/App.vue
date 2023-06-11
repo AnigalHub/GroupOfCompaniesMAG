@@ -87,19 +87,19 @@ img{
     height: auto;
 }
 h1{
-    margin-top: 20px !important;
-    font-size: 5.8rem !important;
+    margin-top: 24px !important;
+    font-size: 5.2rem !important;
     color: #5595d9;
     text-shadow: .5px .5px .5px rgba(87, 87, 87, 0.69);
-    letter-spacing: -1.8px;
+    letter-spacing: -.5px;
     margin-bottom: 0 !important;
-    font-weight: 500 !important;
-    line-height: 7.2rem !important;
+    font-weight: 600 !important;
+    line-height: 7rem !important;
     width: 135%;
     font-family: 'Roboto Condensed', sans-serif;
 }
 h2{
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     font-size: 3rem !important;
     margin-bottom: 3% !important;
     font-family: 'Roboto Condensed', sans-serif;
@@ -175,13 +175,9 @@ button, #Home button{
 #Home{
     padding: 30px 0 110px 0;
 }
-#Contacts{
-    min-height: 60vh !important;
-}
 #About, #Directions, #Advantages, #Licenses,
 #Employees, #Services, #Contacts{
-    padding: 80px 3% 80px 8%;
-    min-height: 80vh;
+    padding: 80px 50px 80px;
 }
 .flex-container{
     display: flex;
@@ -205,7 +201,7 @@ button, #Home button{
         border-radius: 25px;
         color:#bfdbf1;
         margin: 4% 0;
-        padding: 2.5%;
+        padding: 10px;
         &:last-child{
             margin-left: 4% !important;
             background: transparent;
@@ -403,7 +399,6 @@ button, #Home button{
     #Licenses, #Advantages, #Employees,
     #Services, #Contacts {
         padding: 25px 3% 25px 3%;
-        min-height: auto !important;
     }
     h1{
         text-align: center;
@@ -574,13 +569,11 @@ button, #Home button{
 @media screen and (min-width: 500px) and (max-width: 768px){
     #Home{
         padding: 0 0 60px 0;
-        min-height: auto;
     }
     #About, #Directions, #Licenses,
     #Advantages, #Licenses, #Employees,
     #Services, #Contacts{
-        padding: 40px 3% 40px 3%;
-        min-height: auto !important;
+        padding: 40px 30px 40px;
     }
     li:before {
         margin-left: 0;
@@ -743,12 +736,10 @@ button, #Home button{
 @media screen and (min-width: 768px) and (max-width: 992px){
     #Home{
         padding: 0 0 60px 0;
-        min-height: auto;
     }
     #About, #Directions, #Advantages, #Licenses,
     #Employees, #Services, #Contacts{
-        padding: 40px 3% 40px 3%;
-        min-height: auto !important;
+        padding: 40px 30px 40px;
     }
     #Home{
         p{
@@ -903,12 +894,10 @@ button, #Home button{
 @media screen and (min-width: 992px) and (max-width: 1200px){
     #Home{
         padding: 30px 0 60px 0;
-        min-height: auto;
     }
     #About, #Directions, #Advantages, #Licenses,
     #Employees, #Services, #Contacts{
-        padding: 40px 3% 40px 8%;
-        min-height: auto !important;
+        padding: 40px 30px 40px;
     }
     #Home{
         p{
