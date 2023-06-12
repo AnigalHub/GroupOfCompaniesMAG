@@ -1729,7 +1729,7 @@
 <style scoped lang="scss">
     .st0{fill:#bfdbf1;}
     .st1{fill:#A7A7AA;}
-    .st2{fill:rgb(87 87 87 / 29%);stroke: #8e8e8eb3;stroke-width:0.25;stroke-miterlimit:10;}
+    .st2{fill:rgb(87 87 87 / 59%);stroke: #8e8e8eb3;stroke-width:0.25;stroke-miterlimit:10;}
     .st3{opacity:0.4;fill:#DEDEDE;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
     .st4{opacity:0.4;fill:#B5B5BA;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
     .st5{fill: #d7d7d763;stroke: #8e8e8e6b;stroke-width:0.25;stroke-miterlimit:10;}
