@@ -109,6 +109,10 @@ h2{
 }
 a{
     text-decoration: none !important;
+    color: black !important;
+    &:hover{
+        cursor: pointer;
+    }
 }
 iframe{
     height: 80vh;
@@ -151,12 +155,8 @@ button, #Home button{
     }
     a{
         color:black;
-        font-size: 1.48rem !important;
         font-weight: 400;
         text-decoration: none;
-        &:hover{
-            color:white;
-        }
     }
 }
 .modal{
@@ -199,7 +199,6 @@ button, #Home button{
         float: left;
         background: #d1ebff;
         border-radius: 25px;
-        color:#bfdbf1;
         margin: 4% 0;
         padding: 10px;
         &:last-child{
@@ -280,6 +279,9 @@ button, #Home button{
 #Licenses{
     h2{
         text-align: center;
+    }
+    a:hover{
+        color: #0766ce !important;
     }
     table{
         border-color: #b0cde2 !important;

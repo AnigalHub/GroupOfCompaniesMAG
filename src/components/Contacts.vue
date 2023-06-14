@@ -7,15 +7,17 @@
             </p>
             <b-row class="text" >
                 <b-col v-for="contact in Contacts" class="contacts">
-                    <b-row>
-                        <b-col cols="3">
-                            <component :is="contact.svg"/>
-                        </b-col>
-                        <b-col>
-                            <b>{{contact.name}}</b>
-                            {{contact.description}}
-                        </b-col>
-                    </b-row>
+                    <a :href="contact.href" :target="contact.target">
+                        <b-row>
+                            <b-col cols="3">
+                                <component :is="contact.svg"/>
+                            </b-col>
+                            <b-col>
+                                <b>{{contact.name}}</b>
+                                {{contact.description}}
+                            </b-col>
+                        </b-row>
+                    </a>
                 </b-col>
             </b-row>
         </b-container>
