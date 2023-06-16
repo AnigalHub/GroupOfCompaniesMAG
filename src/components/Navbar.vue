@@ -84,12 +84,14 @@
     }
     /*все кнопки в меню*/
     .nav-link{
-        //color: #3798c5 !important;
         color: rgb(112 112 112) !important;
         padding-right: 1rem !important;
         padding-left: 1rem !important;
         font-family: 'Tinos', serif;
         font-size: 1.35rem ;
+        &:hover{
+            color: black !important;
+        }
     }
     /*надпись "производственная компания" в логотипе*/
     .description_name{
