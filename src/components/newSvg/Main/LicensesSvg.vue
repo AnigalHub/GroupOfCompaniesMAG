@@ -379,32 +379,34 @@
     }
 </script>
 
-<style scoped>
-    .st0{opacity:0.9;fill:#D1EBFF;}
-    .st1{fill:#F5F5F5;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st2{fill:#FFFFFF;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st3{fill:#F0F0F0;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st4{fill:#E7E7E7;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st5{fill:#ECECEC;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st6{fill:#A7A7AA;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st7{fill:#E1E1E1;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st8{fill:#BBBBBC;}
-    .st9{fill:#A7A7AA;}
-    .st10{fill:#FFAC1A;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st11{fill:#1A2E35;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st12{opacity:0.2;enable-background:new;}
-    .st13{stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st14{opacity:0.1;}
-    .st15{fill:#007CFF;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st16{opacity:0.2;}
-    .st17{fill:#D1D5D7;}
-    .st18{opacity:0.6;fill:#FFFFFF;enable-background:new;}
-    .st19{fill:#FD897B;}
-    .st20{fill:#1A2E35;}
-    .st21{fill:#FD5652;}
-    .st22{fill:#FFFFFF;}
-    .st23{opacity:0.1;fill:#FFFFFF;enable-background:new;}
-    .st24{fill:#F9CD87;}
+<style scoped lang="scss">
+    #LicensesSvg{
+        .st0{opacity:0.9;fill:#D1EBFF;}
+        .st1{fill:#F5F5F5;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st2{fill:#FFFFFF;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st3{fill:#F0F0F0;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st4{fill:#E7E7E7;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st5{fill:#ECECEC;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st6{fill:#A7A7AA;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st7{fill:#E1E1E1;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st8{fill:#BBBBBC;}
+        .st9{fill:#A7A7AA;}
+        .st10{fill:#FFAC1A;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st11{fill:#1A2E35;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st12{opacity:0.2;enable-background:new;}
+        .st13{stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st14{opacity:0.1;}
+        .st15{fill:#007CFF;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st16{opacity:0.2;}
+        .st17{fill:#D1D5D7;}
+        .st18{opacity:0.6;fill:#FFFFFF;enable-background:new;}
+        .st19{fill:#FD897B;}
+        .st20{fill:#1A2E35;}
+        .st21{fill:#FD5652;}
+        .st22{fill:#FFFFFF;}
+        .st23{opacity:0.1;fill:#FFFFFF;enable-background:new;}
+        .st24{fill:#F9CD87;}
+    }
 
     #headPen1, #pen1{
         animation: up-down-1 4s infinite ;

@@ -505,38 +505,40 @@
 </script>
 
 <style scoped lang="scss">
-    .st0{fill:#D1EBFF;}
-    .st1{fill:#A7A7AA;}
-    .st2{fill:rgb(87 87 87 / 45%);stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st3{opacity:0.4;fill:#DEDEDE;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st4{opacity:0.4;fill:#B5B5BA;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st5{fill:#C7C7C7;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st6{fill:#BBBBBC;}
-    .st7{fill:#CC8512;}
-    .st8{opacity:0.3;fill:#FFFFFF;enable-background:new;}
-    .st9{opacity:0.8;fill:#FFFFFF;enable-background:new;}
-    .st10{fill:#F9C0BB;}
-    .st11{fill:#1A2E35;}
-    .st12{opacity:0.2;}
-    .st13{fill:#FFAC1A;}
-    .st14{opacity:0.2;fill:#FFFFFF;}
-    .st15{fill:#FFFFFF;}
-    .st16{fill:#FF5551;}
-    .st17{opacity:0.2;enable-background:new;}
-    .st18{opacity:0.6;fill:#FFFFFF;enable-background:new;}
-    .st19{opacity:0.6;fill:#FFFFFF;}
-    .st20{opacity:0.7;fill:#FFFFFF;}
-    .st21{opacity:0.4;}
-    .st22{fill:#FCB373;}
-    .st23{opacity:0.4;fill:#FFFFFF;enable-background:new;}
-    .st24{opacity:0.3;}
-    .st25{fill:#EC873E;}
-    .st26{opacity:0.1;}
-    .st27{fill:#F0877C;}
-    .st28{fill:#DD8F12;}
-    .st29{opacity:0.3;fill:#FFFFFF;}
-    .st30{fill:#FD5652;}
-    .st31{opacity:0.4;fill:#FFFFFF;}
+    #HomeSvg{
+        .st0{fill:#D1EBFF;}
+        .st1{fill:#A7A7AA;}
+        .st2{fill:rgb(87 87 87 / 45%);stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st3{opacity:0.4;fill:#DEDEDE;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st4{opacity:0.4;fill:#B5B5BA;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st5{fill:#C7C7C7;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st6{fill:#BBBBBC;}
+        .st7{fill:#CC8512;}
+        .st8{opacity:0.3;fill:#FFFFFF;enable-background:new;}
+        .st9{opacity:0.8;fill:#FFFFFF;enable-background:new;}
+        .st10{fill:#F9C0BB;}
+        .st11{fill:#1A2E35;}
+        .st12{opacity:0.2;}
+        .st13{fill:#FFAC1A;}
+        .st14{opacity:0.2;fill:#FFFFFF;}
+        .st15{fill:#FFFFFF;}
+        .st16{fill:#FF5551;}
+        .st17{opacity:0.2;enable-background:new;}
+        .st18{opacity:0.6;fill:#FFFFFF;enable-background:new;}
+        .st19{opacity:0.6;fill:#FFFFFF;}
+        .st20{opacity:0.7;fill:#FFFFFF;}
+        .st21{opacity:0.4;}
+        .st22{fill:#FCB373;}
+        .st23{opacity:0.4;fill:#FFFFFF;enable-background:new;}
+        .st24{opacity:0.3;}
+        .st25{fill:#EC873E;}
+        .st26{opacity:0.1;}
+        .st27{fill:#F0877C;}
+        .st28{fill:#DD8F12;}
+        .st29{opacity:0.3;fill:#FFFFFF;}
+        .st30{fill:#FD5652;}
+        .st31{opacity:0.4;fill:#FFFFFF;}
+    }
 
     #radio1, #logs1, #hammer1, #headBoy1, #headGirl1, #headPerson1, #copybook1{
         animation: up-down-1 4s infinite ;

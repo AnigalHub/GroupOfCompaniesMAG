@@ -953,26 +953,28 @@
     }
 </script>
 
-<style scoped>
-    .st0{fill:#D1EBFF;}
-    .st1{fill:#EEEEEB;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
-    .st2{fill:#1A2E35;}
-    .st3{opacity:0.5;fill:#FFFFFF;}
-    .st4{fill:#FFAC1A;}
-    .st5{opacity:0.3;}
-    .st6{opacity:0.2;fill:#FFFFFF;}
-    .st7{opacity:0.1;}
-    .st8{opacity:0.2;}
-    .st9{opacity:0.1;fill:#FFFFFF;}
-    .st10{fill:#FFFFFF;}
-    .st11{opacity:0.15;}
-    .st12{opacity:0.7;fill:#FFFFFF;}
-    .st13{opacity:0.85;fill:#FFFFFF;}
-    .st14{opacity:0.6;}
-    .st15{opacity:0.6;fill:#FFFFFF;}
-    .st16{opacity:0.2;fill:none;stroke:#1A2E35;stroke-width:0.3062;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-    .st17{opacity:0.4;fill:#FFFFFF;}
-    .st18{opacity:0.3;fill:#FFFFFF;}
+<style scoped lang="scss">
+    #EmployeesSvg{
+        .st0{fill:#D1EBFF;}
+        .st1{fill:#EEEEEB;stroke:#8E8E8E;stroke-width:0.25;stroke-miterlimit:10;}
+        .st2{fill:#1A2E35;}
+        .st3{opacity:0.5;fill:#FFFFFF;}
+        .st4{fill:#FFAC1A;}
+        .st5{opacity:0.3;}
+        .st6{opacity:0.2;fill:#FFFFFF;}
+        .st7{opacity:0.1;}
+        .st8{opacity:0.2;}
+        .st9{opacity:0.1;fill:#FFFFFF;}
+        .st10{fill:#FFFFFF;}
+        .st11{opacity:0.15;}
+        .st12{opacity:0.7;fill:#FFFFFF;}
+        .st13{opacity:0.85;fill:#FFFFFF;}
+        .st14{opacity:0.6;}
+        .st15{opacity:0.6;fill:#FFFFFF;}
+        .st16{opacity:0.2;fill:none;stroke:#1A2E35;stroke-width:0.3062;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        .st17{opacity:0.4;fill:#FFFFFF;}
+        .st18{opacity:0.3;fill:#FFFFFF;}
+    }
 
     #tap{
         animation: up-down-1 4s infinite ;
