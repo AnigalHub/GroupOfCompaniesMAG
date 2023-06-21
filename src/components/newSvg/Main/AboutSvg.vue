@@ -690,27 +690,4 @@
         .st37{fill:#FFAC1A;stroke:#8A6A33;stroke-width:0.25;stroke-miterlimit:10;}
         .st38{opacity:0.4;enable-background:new;}
     }
-
-    #broadcastingGroup {animation: up-down-1 4s infinite;}
-    #personsGroup {animation: up-down-2 4s infinite;}
-    #deliveryGroup {animation: up-down-3 4s infinite;}
-
-    @keyframes up-down-1{
-        0%   {transform: initial;}
-        25%  {transform: translateY(10px) scale(1.11);}
-        50%  {transform: initial;}
-        100%  {transform: initial;}
-    }
-    @keyframes up-down-2{
-        0%   {transform: initial;}
-        25%  {transform: initial;}
-        50%  {transform: translateY(10px) scale(1.11);}
-        100%  {transform: initial;}
-    }
-    @keyframes up-down-3{
-        0%   {transform: initial;}
-        25%  {transform: initial;}
-        50%  {transform: initial;}
-        100%  {transform: translateY(10px) scale(1.11);}
-    }
 </style>

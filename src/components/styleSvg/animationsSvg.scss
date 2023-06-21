@@ -1,0 +1,145 @@
+	#ElectricitySvg #zipper{
+		animation: blinking1 4s infinite;
+	}
+	#ElectricitySvg #wire1, #ElectricitySvg #wire3{
+    	animation: blinking2 5s infinite;
+    }
+    #ElectricitySvg #wire2, #ElectricitySvg #wire4{
+    	animation: blinking3 5s infinite;
+    }
+    #EvacuationSvg #arrows path{
+        animation: blinking4 4s infinite;
+    }
+    #MonitoringSvg #window1, #MonitoringSvg #window2,
+    #MonitoringSvg #window3, #MonitoringSvg #window4,
+    #MonitoringSvg #window5, #MonitoringSvg #window6{
+        animation: blinking5 3s infinite;
+    }
+
+    #EvacuationSvg #smoke1, #AdvantagesSvg  #handHouse2,
+    #AdvantagesSvg #head1, #AdvantagesSvg #handRight1,
+    #HomeSvg #radio1, #HomeSvg #logs1, #HomeSvg #hammer1,
+    #HomeSvg #headBoy1, #HomeSvg #headGirl1, #HomeSvg #headPerson1,
+    #HomeSvg #copybook1, #LicensesSvg #headPen1, #LicensesSvg #pen1,
+    #ServicesSvg #entrance, #ServicesSvg #headBoyCopybook1,
+    #ServicesSvg #headGirlDesign1, #ServicesSvg #copybook1,
+    #ServicesSvg #handGirlDesing1
+    {
+        animation: up-down-1 4s infinite ;
+    }
+    #EvacuationSvg #smoke2, #AdvantagesSvg  #handHouse1,
+    #AdvantagesSvg #head2, #AdvantagesSvg #handRight2,
+    #HomeSvg #radio2, #HomeSvg #logs2, #HomeSvg #hammer2,
+    #HomeSvg #headBoy2,#HomeSvg #headGirl2,#HomeSvg #headPerson2,
+    #HomeSvg #copybook2, #LicensesSvg #headPen2, #LicensesSvg #pen2,
+    #ServicesSvg #headBoyCopybook2,#ServicesSvg #headGirlDesign2,
+    #ServicesSvg #copybook2,#ServicesSvg #handGirlDesing2
+    {
+        animation: up-down-2 4s infinite ;
+    }
+    #AboutSvg #broadcastingGroup {animation: up-down-3 4s infinite;}
+    #AboutSvg #personsGroup {animation: up-down-4 4s infinite;}
+    #AboutSvg #deliveryGroup {animation: up-down-5 4s infinite;}
+
+    #AdvantagesSvg #shield1, #AdvantagesSvg #shield2,
+    #AdvantagesSvg #shield3{
+        animation: up-down-6 7s infinite ;
+    }
+    #EmployeesSvg  #tap{
+        animation: up-down-8 4s infinite ;
+    }
+    #EmployeesSvg  #car{
+        animation: up-down-7 5s infinite ;
+    }
+   #LicensesSvg #signature1, #LicensesSvg #signature2{
+        animation: blinking6 4s infinite;
+   }
+
+@keyframes blinking1 {
+	0%   {fill: #8b8b8b;}
+	25%  {fill: #8b8b8b;}
+	50%  {fill: #8b8b8b;}
+	75%  {fill: #FFAC1A;}
+	100% {fill: #FFAC1A;}
+}
+@keyframes blinking2 {
+	0%   {fill: #2872a0;stroke:#2872a0;}
+	25%  {fill: #2872a0;stroke:#2872a0;}
+	50%  {fill: #FFAC1A;stroke:#FFAC1A;}
+	100% {fill: #FFAC1A;stroke:#FFAC1A;}
+}
+@keyframes blinking3 {
+	0%   {fill: #FFAC1A;stroke:#FFAC1A;}
+	25%  {fill: #FFAC1A;stroke:#FFAC1A;}
+	50%  {fill: #2872a0;stroke:#2872a0;}
+	100% {fill: #2872a0;stroke:#2872a0;}
+}
+ @keyframes blinking4 {
+    0%   {fill: #2872a0;}
+    25%  {fill: #2872a0;}
+    50%  {fill: #2872a0;}
+    75%  {fill: #FFAC1A;}
+    100% {fill: #FFAC1A;}
+}
+@keyframes blinking5 {
+    0%   {fill: #daffff;}
+    25%  {fill: #daffff;}
+    50%  {fill: #daffff;}
+    75%  {fill: #eed7a8;}
+    100% {fill: #eed7a8;}
+}
+@keyframes blinking6{
+    0%   {fill: #007CFF;}
+    25%  {fill: #007CFF;}
+    50%  {fill: #007CFF;}
+    75%  {fill: #1A2E35;}
+    100% {fill: #1A2E35;}
+}
+
+
+@keyframes up-down-1{
+    from {visibility:visible;}
+    50% {visibility:hidden;}
+    to {visibility:hidden;}
+}
+@keyframes up-down-2 {
+    from {visibility:hidden;}
+    50% {visibility:hidden;}
+    to {visibility:visible;}
+}
+@keyframes up-down-3{
+    0%   {transform: initial;}
+    25%  {transform: translateY(10px) scale(1.11);}
+    50%  {transform: initial;}
+    100%  {transform: initial;}
+}
+@keyframes up-down-4{
+    0%   {transform: initial;}
+    25%  {transform: initial;}
+    50%  {transform: translateY(10px) scale(1.11);}
+    100%  {transform: initial;}
+}
+@keyframes up-down-5{
+    0%   {transform: initial;}
+    25%  {transform: initial;}
+    50%  {transform: initial;}
+    100%  {transform: translateY(10px) scale(1.11);}
+}
+@keyframes up-down-6{
+    0%   {transform: initial;}
+    25%  {transform: translateY(10px);}
+    50%  {transform: translateY(5px);}
+    100%  {transform: initial;}
+}
+@keyframes up-down-7{
+    from {transform: initial;}
+    50% {transform: translateX(5px);}
+    to {transform: initial;}
+}
+@keyframes up-down-8{
+    from {transform: initial;}
+    50% {transform: translateY(5px);}
+    to {transform: initial;}
+}
+
+

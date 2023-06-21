@@ -658,30 +658,4 @@
         .st31{opacity:0.3;enable-background:new;}
         .st32{fill:#8F9393;}
     }
-
-    #handHouse2, #head1, #handRight1{
-        animation: up-down-1 4s infinite ;
-    }
-    #handHouse1, #head2, #handRight2 {
-        animation: up-down-2 4s infinite ;
-    }
-    @keyframes up-down-1{
-        from {visibility:visible;}
-        50% {visibility:hidden;}
-        to {visibility:hidden;}
-    }
-    @keyframes up-down-2 {
-        from {visibility:hidden;}
-        50% {visibility:hidden;}
-        to {visibility:visible;}
-    }
-    #shield1, #shield2, #shield3{
-        animation: up-down 7s infinite ;
-    }
-    @keyframes up-down{
-        0%   {transform: initial;}
-        25%  {transform: translateY(10px);}
-        50%  {transform: translateY(5px);}
-        100%  {transform: initial;}
-    }
 </style>

@@ -547,21 +547,4 @@
         .st39{fill:#FFB570;}
         .st40{opacity:0.3;}
     }
-
-    #entrance, #headBoyCopybook1, #headGirlDesign1, #copybook1, #handGirlDesing1{
-        animation: up-down-1 4s infinite ;
-    }
-    #headBoyCopybook2, #headGirlDesign2, #copybook2, #handGirlDesing2{
-        animation: up-down-2 4s infinite ;
-    }
-    @keyframes up-down-1{
-        from {visibility:visible;}
-        50% {visibility:hidden;}
-        to {visibility:hidden;}
-    }
-    @keyframes up-down-2 {
-        from {visibility:hidden;}
-        50% {visibility:hidden;}
-        to {visibility:visible;}
-    }
 </style>

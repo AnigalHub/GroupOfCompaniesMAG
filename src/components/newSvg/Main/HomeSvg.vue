@@ -539,21 +539,4 @@
         .st30{fill:#FD5652;}
         .st31{opacity:0.4;fill:#FFFFFF;}
     }
-
-    #radio1, #logs1, #hammer1, #headBoy1, #headGirl1, #headPerson1, #copybook1{
-        animation: up-down-1 4s infinite ;
-    }
-    #radio2, #logs2, #hammer2, #headBoy2, #headGirl2, #headPerson2, #copybook2{
-        animation: up-down-2 4s infinite ;
-    }
-    @keyframes up-down-1{
-        from {visibility:visible;}
-        50% {visibility:hidden;}
-        to {visibility:hidden;}
-    }
-    @keyframes up-down-2 {
-        from {visibility:hidden;}
-        50% {visibility:hidden;}
-        to {visibility:visible;}
-    }
 </style>

@@ -975,22 +975,4 @@
         .st17{opacity:0.4;fill:#FFFFFF;}
         .st18{opacity:0.3;fill:#FFFFFF;}
     }
-
-    #tap{
-        animation: up-down-1 4s infinite ;
-    }
-    @keyframes up-down-1{
-        from {transform: initial;}
-        50% {transform: translateY(5px);}
-        to {transform: initial;}
-    }
-    #car{
-        animation: up-down-2 5s infinite;
-    }
-    @keyframes up-down-2{
-        from {transform: initial;}
-        50% {transform: translateX(5px);}
-        to {transform: initial;}
-
-    }
 </style>

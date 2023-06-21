@@ -407,31 +407,4 @@
         .st23{opacity:0.1;fill:#FFFFFF;enable-background:new;}
         .st24{fill:#F9CD87;}
     }
-
-    #headPen1, #pen1{
-        animation: up-down-1 4s infinite ;
-    }
-    #headPen2, #pen2{
-        animation: up-down-2 4s infinite ;
-    }
-    @keyframes up-down-1{
-        from {visibility:visible;}
-        50% {visibility:hidden;}
-        to {visibility:hidden;}
-    }
-    @keyframes up-down-2 {
-        from {visibility:hidden;}
-        50% {visibility:hidden;}
-        to {visibility:visible;}
-    }
-    #signature1, #signature2{
-        animation: blinking1 4s infinite;
-    }
-    @keyframes blinking1 {
-        0%   {fill: #007CFF;}
-        25%  {fill: #007CFF;}
-        50%  {fill: #007CFF;}
-        75%  {fill: #1A2E35;}
-        100% {fill: #1A2E35;}
-    }
 </style>

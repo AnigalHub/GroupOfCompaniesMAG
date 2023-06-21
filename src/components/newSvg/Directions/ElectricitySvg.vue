@@ -166,33 +166,4 @@
 		.st20{fill:#B2B2B2;}
 		.st21{fill:#789CAD;}
 	}
-
-	#zipper{
-		animation: blinking1 4s infinite;
-	}
-	@keyframes blinking1 {
-		0%   {fill: #8b8b8b;}
-		25%  {fill: #8b8b8b;}
-		50%  {fill: #8b8b8b;}
-		75%  {fill: #FFAC1A;}
-		100% {fill: #FFAC1A;}
-	}
-	#wire1, #wire3{
-		animation: blinking2 5s infinite;
-	}
-	#wire2, #wire4{
-		animation: blinking3 5s infinite;
-	}
-	@keyframes blinking2 {
-		0%   {fill: #2872a0;stroke:#2872a0;}
-		25%  {fill: #2872a0;stroke:#2872a0;}
-		50%  {fill: #FFAC1A;stroke:#FFAC1A;}
-		100% {fill: #FFAC1A;stroke:#FFAC1A;}
-	}
-	@keyframes blinking3 {
-		0%  {fill: #FFAC1A;stroke:#FFAC1A;}
-		25% {fill: #FFAC1A;stroke:#FFAC1A;}
-		50%   {fill: #2872a0;stroke:#2872a0;}
-		100%  {fill: #2872a0;stroke:#2872a0;}
-	}
 </style>

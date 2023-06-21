@@ -236,15 +236,4 @@
         .st47{opacity:0.9;fill-rule:evenodd;clip-rule:evenodd;fill:#F8F8F8;}
         .st48{opacity:0.4;fill:#FFFFFF;}
     }
-
-    #window1, #window2, #window3, #window4, #window5, #window6{
-        animation: blinking1 3s infinite;
-    }
-    @keyframes blinking1 {
-        0%   {fill: #daffff;}
-        25%  {fill: #daffff;}
-        50%  {fill: #daffff;}
-        75%  {fill: #eed7a8;}
-        100% {fill: #eed7a8;}
-    }
 </style>

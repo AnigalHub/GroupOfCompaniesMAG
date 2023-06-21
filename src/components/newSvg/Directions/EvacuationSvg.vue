@@ -131,31 +131,4 @@
         .st12{fill:#9B9B9A;}
         .st13{fill:#A8A5A5;}
     }
-
-    #smoke1{
-        animation: up-down-1 4s infinite ;
-    }
-    #smoke2{
-        animation: up-down-2 4s infinite ;
-    }
-    #arrows path{
-        animation: blinking1 4s infinite;
-    }
-    @keyframes blinking1 {
-        0%   {fill: #2872a0;}
-        25%  {fill: #2872a0;}
-        50%  {fill: #2872a0;}
-        75%  {fill: #FFAC1A;}
-        100% {fill: #FFAC1A;}
-    }
-    @keyframes up-down-1{
-        from {visibility:visible;}
-        50% {visibility:hidden;}
-        to {visibility:hidden;}
-    }
-    @keyframes up-down-2 {
-        from {visibility:hidden;}
-        50% {visibility:hidden;}
-        to {visibility:visible;}
-    }
 </style>
