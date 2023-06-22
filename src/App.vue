@@ -40,6 +40,8 @@ export default {
 </script>
 
 <style>
+    @import "components/styleSvg/animationsSvg.scss";
+
     .modal-open {
         overflow: hidden;
     }
