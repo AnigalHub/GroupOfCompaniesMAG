@@ -9,7 +9,7 @@
                 <b-col>
                     <table class="table">
                         <tbody>
-                            <tr v-for="license in Licenses" class="text">
+                            <tr v-for="(license, index) in Licenses" :key="index" class="text">
                                 <td> {{license.text}}</td>
                                 <td>
                                     <a @click="showModal(license)"><span> Просмотр</span><component :is="viewSvg"/></a>

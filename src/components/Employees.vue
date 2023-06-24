@@ -3,7 +3,7 @@
         <b-container>
             <h2>Сотрудники, которым доверяют</h2>
             <div class="flex-container">
-                <div class="text employee" v-for="employee in Employees">
+                <div class="text employee" v-for="(employee, index) in Employees" :key="index">
                     <span>{{employee.name}}</span>
                     <b-row>
                         <b-col>

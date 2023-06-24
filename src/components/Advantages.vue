@@ -5,7 +5,7 @@
                 <b-col>
                     <h2>Почему выбирают нас</h2>
                     <ul class="ul">
-                        <li v-for="advantage in Advantages" class="text">{{advantage.text}}</li>
+                        <li v-for="(advantage, index) in Advantages" :key="index"class="text">{{advantage.text}}</li>
                     </ul>
                 </b-col>
                 <b-col cols="5">

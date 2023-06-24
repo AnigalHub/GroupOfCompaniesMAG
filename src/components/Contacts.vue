@@ -6,7 +6,7 @@
                 время для проведения работ, и ответим на любой ваш вопрос.
             </p>
             <b-row class="text" >
-                <b-col v-for="contact in Contacts" class="contacts">
+                <b-col v-for="(contact, index) in Contacts" class="contacts" :key="index">
                     <a :href="contact.href" :target="contact.target">
                         <b-row>
                             <b-col cols="3">
