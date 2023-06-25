@@ -37,9 +37,9 @@
     {
         animation: up-down-2 4s infinite ;
     }
-    #AboutSvg #broadcastingGroup {animation: up-down-3 4s infinite;}
-    #AboutSvg #personsGroup {animation: up-down-4 4s infinite;}
-    #AboutSvg #deliveryGroup {animation: up-down-5 4s infinite;}
+    #AboutSvg #broadcastingGroup {animation: up-down-3 5s infinite;}
+    #AboutSvg #personsGroup {animation: up-down-4 5s infinite;}
+    #AboutSvg #deliveryGroup {animation: up-down-5 5s infinite;}
 
     #AdvantagesSvg #shield1, #AdvantagesSvg #shield2,
     #AdvantagesSvg #shield3{
@@ -109,21 +109,21 @@
 }
 @keyframes up-down-3{
     0%   {transform: initial;}
-    25%  {transform: translateY(10px) scale(1.11);}
+    25%  {transform: scale(1.05);}
     50%  {transform: initial;}
     100%  {transform: initial;}
 }
 @keyframes up-down-4{
     0%   {transform: initial;}
     25%  {transform: initial;}
-    50%  {transform: translateY(10px) scale(1.11);}
+    50%  {transform: scale(1.05);}
     100%  {transform: initial;}
 }
 @keyframes up-down-5{
     0%   {transform: initial;}
     25%  {transform: initial;}
     50%  {transform: initial;}
-    100%  {transform: translateY(10px) scale(1.11);}
+    100%  {transform: scale(1.05);}
 }
 @keyframes up-down-6{
     0%   {transform: initial;}

@@ -349,7 +349,6 @@ button, #Home button{
     }
 }
 #Contacts{
-    padding-bottom: 5%;
     .contacts{
         padding: 10px;
         background: #f2f4f6;
