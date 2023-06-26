@@ -121,7 +121,7 @@ iframe{
 }
 a, b, u, p, li, .text{
     font-size: 1.4rem;
-    line-height: 1.8rem;
+    line-height: 1.85rem;
 }
 a, b, u, p, li, .text, button{
     font-weight: 400;
@@ -188,8 +188,6 @@ button, #Home button{
 #Home{
     p{
         margin: 20px 0;
-        font-size: 1.6rem;
-        line-height: 2.3rem;
         width: 110%;
         font-weight: 500;
     }
@@ -306,12 +304,9 @@ button, #Home button{
 }
 #Employees{
     .employee{
-        padding: 15px;
-        background: #f2f4f6;
         width: 46%;
         height: 180px;
         margin: 8px 15px;
-        box-shadow: 0px 2px 18px rgba(41, 41, 41, 0.1);
         span{
             font-weight: 600;
         }
@@ -329,6 +324,11 @@ button, #Home button{
         width: 46%;
         height: 180px;
     }
+}
+#Employees .employee, #Contacts .contacts{
+    padding: 10px;
+    box-shadow: 0px 2px 18px rgba(41, 41, 41, 0.1);
+    background: #f2f4f6;
 }
 #Services{
     svg{
@@ -350,10 +350,7 @@ button, #Home button{
 }
 #Contacts{
     .contacts{
-        padding: 10px;
-        background: #f2f4f6;
         margin: 20px;
-        box-shadow: 0px 2px 18px rgba(41, 41, 41, 0.1);
         .row{
             padding: 10px;
             b{
@@ -438,8 +435,6 @@ button, #Home button{
             margin: 0 0 4%;
             width: 100%;
             text-align: center;
-            font-size: 1.15rem;
-            line-height: 1.3rem;
         }
         svg{
             width: 86%;
@@ -587,8 +582,6 @@ button, #Home button{
             margin: 2% 0 4%;
             width: 100%;
             text-align: center;
-            font-size: 1.25rem;
-            line-height: 1.5rem;
         }
         svg{
             width: 66%;
@@ -749,8 +742,6 @@ button, #Home button{
             margin: 0 0 4%;
             width: 100%;
             text-align: center;
-            font-size: 1.25rem;
-            line-height: 1.5rem;
         }
         svg{
             width: 66%;
@@ -801,10 +792,10 @@ button, #Home button{
     }
     #Licenses{
         .table > :not(caption) > * > *{
-            padding: 0.35rem 0.35rem !important;
+            padding: 0.5rem 0.35rem !important;
         }
         table  tr td:first-child{
-            width: 48%;
+            width: 80%;
         }
         table svg{
             margin-left: 0;
@@ -906,8 +897,6 @@ button, #Home button{
         p{
             width: 106%;
             margin: 0 0 4%;
-            font-size: 1.2rem;
-            line-height: 1.4rem;
         }
         svg{
             width: 94%;
@@ -960,7 +949,7 @@ button, #Home button{
         margin-bottom: .5rem !important;
     }
     a, b, u, p, li, .text{
-        font-size: 1.15rem;
+        font-size: 1.2rem;
         line-height: 1.4rem;
     }
     button, #Home button{
@@ -990,10 +979,6 @@ button, #Home button{
         font-size: 1.25rem !important;
     }
     #Home{
-        p{
-            font-size: 1.25rem;
-            line-height: 1.8rem;
-        }
         svg{
             width: 94%;
             margin-left: 50px;
