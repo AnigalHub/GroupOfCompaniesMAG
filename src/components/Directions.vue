@@ -3,13 +3,13 @@
         <b-container>
             <h2>Основные направления работы компании</h2>
             <b-row>
-                <b-col v-for="directions in Directions">
+                <b-col v-for="(directions, index) in Directions" :key="index">
                     <div>
                         <component :is="directions.svg"/>
                         <div class="wrapper">
                             <div>
                                 <ul>
-                                    <li v-for="item in directions.values">{{item.text}}</li>
+                                    <li v-for="item in directions.values" :key="directions.index">{{item.text}}</li>
                                 </ul>
                             </div>
                         </div>
