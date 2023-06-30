@@ -89,24 +89,26 @@ img{
     height: auto;
 }
 h1{
-    margin-top: 24px !important;
+    margin-top: 5px !important;
     font-size: 5.2rem !important;
     color: #5595d9;
-    text-shadow: .5px .5px .5px rgba(87, 87, 87, 0.69);
     letter-spacing: -.5px;
+    margin-left: -8px;
     margin-bottom: 0 !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     line-height: 7rem !important;
     width: 135%;
     font-family: 'Roboto Condensed', sans-serif;
+    text-shadow:  #4884c0 2px 1px 1px;
 }
 h2{
-    font-weight: 600 !important;
-    font-size: 3rem !important;
+    font-weight: 500 !important;
+    margin-top: 0 !important;
+    font-size: 2.5rem !important;
     margin-bottom: 3% !important;
     font-family: 'Roboto Condensed', sans-serif;
     color: #5595d9;
-    text-shadow: .25px .25px .25px rgba(87, 87, 87, 0.69);
+    text-shadow:  #4884c0 1px .5px .5px;
     letter-spacing: -.5px;
 }
 a{
@@ -117,7 +119,7 @@ a{
     }
 }
 iframe{
-    height: 80vh;
+    height: 82vh;
 }
 a, b, u, p, li, .text{
     font-size: 1.4rem;
@@ -175,7 +177,7 @@ button, #Home button{
     }
 }
 #Home{
-    padding: 30px 0 110px 0;
+    padding: 40px 0 110px 0;
 }
 #About, #Directions, #Advantages, #Licenses,
 #Employees, #Services, #Contacts{
@@ -188,11 +190,21 @@ button, #Home button{
 #Home{
     p{
         margin: 20px 0;
-        width: 110%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 115%;
         font-weight: 500;
+    }
+    h2{
+        color: #5e6571;
+        width: 115%;
+        font-weight: 500 !important;
+        margin: 3% 0 !important;
+        font-family: 'Marck Script', cursive;
     }
     .buttonGroup{
         width: 115%;
+        margin-left: -15px;
     }
     button{
         width: 46%;
@@ -209,8 +221,8 @@ button, #Home button{
     }
     svg{
         margin-top: -20px;
-        width: 98%;
-        margin-left: 60px;
+        width: 100%;
+        margin-left: 50px;
     }
 }
 #About{
@@ -263,7 +275,7 @@ button, #Home button{
 }
 #Advantages{
     h2{
-        margin-top: 6%;
+        margin-top: 6% !important;
     }
     ul li:before {
         content: "\2713";
@@ -403,13 +415,13 @@ button, #Home button{
     h1{
         text-align: center;
         margin-top: 0 !important;
-        font-size: 2.2rem !important;
-        line-height: 4rem !important;
+        font-size: 2rem !important;
+        line-height: 3rem !important;
     }
     h2{
         font-size: 1.7rem !important;
     }
-    a, b, u, p, li, .text{
+    a, b, u, p, li, .text, #Home p{
         font-size: 1rem;
         line-height: 1.2rem;
     }
@@ -437,7 +449,12 @@ button, #Home button{
             text-align: center;
         }
         svg{
-            width: 86%;
+            width: 90%;
+        }
+        h2{
+            width: 100%;
+            text-align: center;
+            font-size: 1.4rem !important;
         }
     }
     #About {
@@ -452,7 +469,7 @@ button, #Home button{
         }
         svg {
             width: 65%;
-            margin-left: 22.5%;
+            margin-left: 17.5%;
             margin-top: 0;
         }
     }
@@ -479,7 +496,7 @@ button, #Home button{
         }
         svg {
             width: 60%;
-            margin-left: 25%;
+            margin-left: 20%;
             margin-top: 0;
         }
     }
@@ -511,7 +528,7 @@ button, #Home button{
     #Employees{
         .employee {
             padding: 15px;
-            height: 130px;
+            height: 140px;
             width: 100%;
             .row {
                 margin-top: 2%;
@@ -522,7 +539,7 @@ button, #Home button{
             }
         }
         .svgEmployees {
-            margin: 0 auto;
+            margin: 2% auto 0;
             width: 80%;
             height: 90px;
         }
@@ -540,7 +557,7 @@ button, #Home button{
         }
         svg {
             width: 65%;
-            margin-left: 23%;
+            margin-left: 17.5%;
             margin-top: 0;
         }
     }
@@ -555,6 +572,7 @@ button, #Home button{
             }
         }
         .contacts {
+            padding: 0;
             margin: 0 0 2%;
             .row svg {
                 margin-top: 0;
@@ -584,7 +602,11 @@ button, #Home button{
             text-align: center;
         }
         svg{
-            width: 66%;
+            width: 78%;
+        }
+        h2{
+            width: 100%;
+            text-align: center;
         }
     }
     #About {
@@ -616,7 +638,7 @@ button, #Home button{
     }
     #Advantages{
         h2{
-            margin-top: 0;
+            margin-top: 0 !important;
         }
         .row{
             flex-direction: column;
@@ -660,6 +682,7 @@ button, #Home button{
             padding: 15px;
             height: 150px;
             width: 100%;
+            margin: 8px 0;
             .row {
                 margin-top: 2%;
             }
@@ -698,6 +721,7 @@ button, #Home button{
             }
         }
         .contacts {
+            padding: 5px;
             margin: 0 0 2%;
             .row svg {
                 padding: 5px;
@@ -721,7 +745,7 @@ button, #Home button{
     ul{
         margin-left: -3%;
     }
-    a, b, u, p, li, .text{
+    a, b, u, p, li, .text, #Home p{
         font-size: 1.2rem;
         line-height: 1.4rem;
     }
@@ -739,12 +763,16 @@ button, #Home button{
     }
     #Home{
         p{
-            margin: 0 0 4%;
+            margin: 0 auto 4%;
             width: 100%;
             text-align: center;
         }
         svg{
             width: 66%;
+        }
+        h2{
+            width: 100%;
+            text-align: center;
         }
     }
     #About {
@@ -776,7 +804,7 @@ button, #Home button{
     }
     #Advantages{
         h2{
-            margin-top: 0;
+            margin-top: 0 !important;
         }
         .row{
             flex-direction: column;
@@ -820,6 +848,7 @@ button, #Home button{
             padding: 15px;
             height: 150px;
             width: 100%;
+            margin: 8px 0;
             .row {
                 margin-top: 2%;
             }
@@ -877,7 +906,7 @@ button, #Home button{
     ul, #About li, #About ul{
         margin-left: -2%;
     }
-    a, b, u, p, li, .text{
+    a, b, u, p, li, .text, #Home p{
         font-size: 1.2rem;
         line-height: 1.4rem;
     }
@@ -902,10 +931,12 @@ button, #Home button{
             width: 94%;
             margin-left: 30px;
         }
-
+        h2{
+            font-size: 1.8rem !important;
+        }
     }
     #Advantages h2 {
-        margin-top: 3%;
+        margin-top: 3% !important;
     }
     #Licenses{
         svg{
@@ -921,7 +952,7 @@ button, #Home button{
            padding: 0.35rem 0.35rem !important;
         }
         table  tr td:first-child{
-            width: 48%;
+            width: 49%;
         }
     }
     #Employees .svgEmployees{
@@ -948,7 +979,7 @@ button, #Home button{
     p{
         margin-bottom: .5rem !important;
     }
-    a, b, u, p, li, .text{
+    a, b, u, p, li, .text, #Home p{
         font-size: 1.2rem;
         line-height: 1.4rem;
     }
@@ -971,8 +1002,8 @@ button, #Home button{
         width: 95%;
     }
     h1{
-        font-size: 4.2rem !important;
-        line-height: 5.5rem !important;
+        font-size: 4rem !important;
+        line-height: 5rem !important;
         margin-bottom: 0 !important;
     }
     button, #Home button{
@@ -982,6 +1013,9 @@ button, #Home button{
         svg{
             width: 94%;
             margin-left: 50px;
+        }
+        h2{
+            font-size: 2rem !important;
         }
     }
     #Licenses table  tr td:first-child{
@@ -996,8 +1030,8 @@ button, #Home button{
     p{
         margin-bottom: .5rem !important;
     }
-    a, b, u, p, li, .text{
-        font-size: 1.25rem;
+    a, b, u, p, li, .text, #Home p{
+        font-size: 1.22rem;
         line-height: 1.4rem;
     }
     ul{
