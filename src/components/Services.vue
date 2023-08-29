@@ -10,7 +10,9 @@
                     <ul>
                         <li v-for="(service, index) in Services" :key="index" class="text">{{service.text}}</li>
                     </ul>
-                    <b-button><a href="./documents/Цены на виды работ.xlsx" download>Узнать цены на виды работ</a></b-button>
+                    <b-button>
+<!--                        <a href="./documents/Цены на виды работ.xlsx" download>-->
+                        <a>Узнать цены на виды работ</a></b-button>
                 </b-col>
             </b-row>
         </b-container>
