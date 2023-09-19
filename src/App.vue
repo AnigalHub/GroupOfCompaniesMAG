@@ -64,7 +64,7 @@ export default {
 </style>
 <style lang="scss">
 body{
-    background: transparent !important;
+    background: #f2f4f6!important;
 }
 #Home, #Directions, #Licenses, #Services{
     background: #f2f4f6;
@@ -74,6 +74,7 @@ body{
     background: #e9f0f4;
 }
 #app{
+    background: #e9f0f4 !important;
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
