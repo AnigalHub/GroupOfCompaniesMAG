@@ -41,10 +41,10 @@ export default {
 
 <style>
     @import "components/styleSvg/animationsSvg.scss";
-
     .modal-open {
         overflow: hidden;
     }
+    /*футер модального окна*/
     .modal-footer {display: none !important;}
     /*заголовок модального окна*/
     .modal-header{
@@ -66,18 +66,19 @@ export default {
 body{
     background: #f2f4f6!important;
 }
-#Home, #Directions, #Licenses, #Services{
-    background: #f2f4f6;
-
-}
-#About, #Advantages, #Employees, #Contacts{
-    background: #e9f0f4;
-}
 #app{
     background: #e9f0f4 !important;
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
+}
+/*компоненты - Главная, Направления, Лицензии, Услуги*/
+#Home, #Directions, #Licenses, #Services{
+    background: #f2f4f6;
+}
+/*компоненты - О нас, Преимущества, Сотрудники, Контакты*/
+#About, #Advantages, #Employees, #Contacts{
+    background: #e9f0f4;
 }
 /*контейнер на блоки посередине экрана*/
 .container{
@@ -89,6 +90,7 @@ img{
     width: 100%;
     height: auto;
 }
+/*заголовки*/
 h1{
     margin-top: 5px !important;
     font-size: 5.2rem !important;
@@ -112,34 +114,40 @@ h2{
     text-shadow:  #4884c0 1px .5px .5px;
     letter-spacing: -.5px;
 }
+/*ссылки*/
 a{
     text-decoration: none !important;
     color: black !important;
+    /*при наведении*/
     &:hover{
         cursor: pointer;
     }
 }
+/*фрейм для документов*/
 iframe{
     height: 82vh;
 }
+/*ссылки, жирный текст, список, параграф, пункты списка, текст*/
 a, b, u, p, li, .text{
     font-size: 1.4rem;
     line-height: 1.85rem;
 }
+/*ссылки, жирный текст, список, параграф, пункты списка, текст, кнопки*/
 a, b, u, p, li, .text, button{
     font-weight: 400;
-}
-a, b, u, p, li, .text, button{
     font-weight: 400;
     font-family: 'Tinos', serif;
-  }
+}
+/*список*/
 ul{
     list-style: none !important;
     margin-bottom: 1.5% !important;
 }
+/*пункты списка*/
 li{
     margin-bottom: 2.25%;
 }
+/*пункты списка(до, пункты)*/
 li::before{
     font-weight: bold;
     padding-right: 10px;
@@ -148,47 +156,60 @@ li::before{
     color: #77AEDB;
     transition-duration: 0.5s;
 }
+/*пункты списка - при наведении(до, пункты)*/
 li:hover::before{
     color: #337AB7;
 }
+/*кнопки, компонент - Главная (кнопки)*/
 button, #Home button{
     border: none !important;
     background: #f7f7f7;
     font-size: 1.5rem;
+    /*при наведении*/
     &:hover{
         transform: scale(1.03);
     }
+    /*ссылки*/
     a{
         color:black;
         font-weight: 400;
         text-decoration: none;
     }
 }
+/*модальное окно*/
 .modal{
+    /*кнопки*/
     button{
         background: transparent !important;
     }
 }
+/*компоненты - О нас, Услуги*/
 #About, #Services{
+    /*пункты списка(до, пункты)*/
     li:before {
         content: "\25cb";
     }
+    /*пункты списка - при наведении(до, пункты)*/
     li:hover:before {
         content: "\25cf";
     }
 }
+/*компоненты - Главная*/
 #Home{
     padding: 40px 0 110px 0;
 }
-#About, #Directions, #Advantages, #Licenses,
-#Employees, #Services, #Contacts{
+/*компоненты - Главная, Направления, Преимущества, Лицензии, Сотрудники, Услуги, Контакты*/
+#About, #Directions, #Advantages, #Licenses, #Employees, #Services, #Contacts{
     padding: 80px 50px 80px;
 }
+/*контейнер, который включает в себя повтор блоков*/
 .flex-container{
     display: flex;
     flex-wrap: wrap;
 }
+/*компоненты - Главная*/
 #Home{
+    /*параграф*/
     p{
         margin: 20px 0;
         font-size: 1.5rem;
@@ -196,6 +217,7 @@ button, #Home button{
         width: 115%;
         font-weight: 500;
     }
+    /*заголовки*/
     h2{
         color: #5e6571;
         width: 115%;
@@ -203,10 +225,12 @@ button, #Home button{
         margin: 3% 0 !important;
         font-family: 'Marck Script', cursive;
     }
+    /*блок под кнопки*/
     .buttonGroup{
         width: 115%;
         margin-left: -15px;
     }
+    /*кнопки*/
     button{
         width: 46%;
         float: left;
@@ -214,37 +238,47 @@ button, #Home button{
         border-radius: 25px;
         margin: 4% 0;
         padding: 10px;
+        /*последняя*/
         &:last-child{
             margin-left: 4% !important;
             background: transparent;
             border: 2px solid #bfdbf1 !important;
         }
     }
+    /*svg*/
     svg{
         margin-top: -20px;
         width: 100%;
         margin-left: 50px;
     }
 }
+/*компоненты - О нас*/
 #About{
+    /*бутстрап сетка*/
     .row{
         margin: 15px 0;
     }
+    /*список, пункты списка*/
     li, ul{
         margin-bottom: 0 !important;
     }
+    /*svg*/
     svg{
         width: 150%;
         margin-top: 10%;
         margin-left: -20%;
     }
+    /*бутстрап сетка*/
     .col{
         padding-left: 7%;
     }
 }
+/*компоненты - Направления*/
 #Directions{
+    /*бутстрап сетка*/
     .col{
         padding: 0 !important;
+        /*блок*/
         div{
             padding: 20px 0 5px;
             background: #f2f4f6;
@@ -252,104 +286,132 @@ button, #Home button{
             box-shadow: 0 2px 18px rgba(41, 41, 41, 0.1);
         }
     }
+    /*svg*/
     svg{
         margin: 0 auto;
         width: 90%;
         display: block;
     }
+    /*обертка блока*/
     .wrapper {
         display: flex;
         flex-wrap: wrap;
         box-shadow: none !important;
+        /*блок*/
         div{
             width: 100%;
             margin: 0 auto 1%;
             box-shadow: none;
         }
     }
+    /*пункты списка(до, пункты)*/
     li:before {
         content: "\2727";
     }
+    /*пункты списка - при наведении(до, пункты)*/
     li:hover:before {
         content: "\2726";
     }
 }
+/*компоненты - Преимущества*/
 #Advantages{
+    /*заголовки*/
     h2{
         margin-top: 6% !important;
     }
+    /*пункты списка(до, пункты)*/
     ul li:before {
         content: "\2713";
     }
+    /*пункты списка*/
     li{
         margin-bottom: 3%;
     }
+    /*svg*/
     svg{
         width: 100%;
         padding: 0;
     }
 }
+/*компоненты - Лицензии*/
 #Licenses{
+    /*заголовки*/
     h2{
         text-align: center;
     }
+    /*ссылки при наведении*/
     a:hover{
         color: #0766ce !important;
     }
+    /*таблица*/
     table{
         border-color: #b0cde2 !important;
+        /*первый столбец таблицы*/
         tr td:first-child{
             width: 61%;
         }
+        /*svg*/
         svg{
             width: 23px;
             float: left;
         }
     }
+    /*выделение главного*/
     span{
         float: left;
         padding: 0 10px;
     }
+    /*svg*/
     svg{
         width: 100%;
         padding: 0;
     }
 }
+/*компоненты - Сотрудники*/
 #Employees{
+    /*блоки под информацию о сотрудниках*/
     .employee{
         width: 46%;
         height: 180px;
         margin: 8px 15px;
+        /*выделение главного*/
         span{
             font-weight: 600;
         }
+        /*бутстрап сетка*/
         .row{
             margin-top: 4%;
         }
     }
+    /*svg*/
     svg{
         padding: 0;
         width: 100%;
         margin-top: -1.5%;
     }
+    /*блок под svg*/
     .svgEmployees{
         margin: 8px 15px;
         width: 46%;
         height: 180px;
     }
 }
+/*компоненты - Сотрудники (блоки под информацию о сотрудниках), Контакты (блоки под информацию о контактах)*/
 #Employees .employee, #Contacts .contacts{
     padding: 10px;
     box-shadow: 0px 2px 18px rgba(41, 41, 41, 0.1);
     background: #f2f4f6;
 }
+/*компоненты - Услуги*/
 #Services{
+    /*svg*/
     svg{
         width: 108%;
         padding: 0;
         margin-left: -8%;
         margin-top: -20px;
     }
+    /*кнопки*/
     button{
         width: 60%;
         margin: 3% 1.5% 0;
@@ -361,15 +423,20 @@ button, #Home button{
 
     }
 }
+/*компоненты - Контакты*/
 #Contacts{
+    /*блоки под информацию о контактах*/
     .contacts{
         margin: 20px;
+        /*бутстрап сетка*/
         .row{
             padding: 10px;
+            /*жирный шрифт*/
             b{
                 display: block;
                 margin-bottom: 10px;
             }
+            /*svg*/
             svg{
                 margin-top: 5%;
                 margin-left: -8%;
@@ -379,6 +446,8 @@ button, #Home button{
         }
     }
 }
+
+
 @media screen and (max-width: 992px){
     #Home{
         .col-5{
