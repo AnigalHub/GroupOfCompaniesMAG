@@ -447,41 +447,49 @@ button, #Home button{
     }
 }
 
-
+/*АДАПТИВНОСТЬ*/
 @media screen and (max-width: 992px){
+    /*компоненты - Главная*/
     #Home{
+        /*бутстрап сетка*/
         .col-5{
             width: 100%;
+            /*кнопки*/
             button{
                 display: none;
             }
         }
+        /*svg*/
         svg{
             margin: 0 auto;
             display: block;
         }
     }
+    /*заголовки*/
     h1{
         width: 100%;
         margin-bottom: 0 !important;
         margin-top: 3% !important;
     }
+    /*параграф*/
     p{
         margin-bottom: .5rem !important;
     }
+    /*список*/
     ul{
         margin-bottom: 0 !important;
     }
+    /*пункты списка*/
     li {
         margin-bottom: 1%;
     }
 }
 @media screen and (max-width: 500px){
-    #Home, #About, #Directions,
-    #Licenses, #Advantages, #Employees,
-    #Services, #Contacts {
+    /*компоненты - Главная, Направления, Преимущества, Лицензии, Сотрудники, Услуги, Контакты*/
+    #Home, #About, #Directions, #Licenses, #Advantages, #Employees, #Services, #Contacts {
         padding: 25px 3% 25px 3%;
     }
+    /*заголовки*/
     h1{
         text-align: center;
         margin-top: 0 !important;
@@ -491,160 +499,208 @@ button, #Home button{
     h2{
         font-size: 1.7rem !important;
     }
+    /*ссылки, жирный текст, список, параграф, пункты списка, текст*/
     a, b, u, p, li, .text, #Home p{
         font-size: 1rem;
         line-height: 1.2rem;
     }
+    /*ссылка в кнопке*/
     button a{
         font-size: 1.1rem !important;
     }
+    /*пункты списка(до, пункты)*/
     li:before {
         margin-left: -3%;
         font-size: 1.1rem;
     }
+    /*компонент - Направления (пункты списка(до, пункты))*/
     #Directions li:before {
         margin-left: -5%;
         font-size: 1.4rem;
     }
+    /*компонент - О нас(список и пункты списка)*/
     #About li, #About ul{
         margin-left: -4%;
     }
+    /*список*/
     ul{
         margin-left: -3%;
     }
+    /*компонент - Главная*/
     #Home{
+        /*параграф*/
         p{
             margin: 0 0 4%;
             width: 100%;
             text-align: center;
         }
+        /*svg*/
         svg{
             width: 90%;
         }
+        /*заголовки*/
         h2{
             width: 100%;
             text-align: center;
             font-size: 1.4rem !important;
         }
     }
-    #About {
-        .row {
+    /*компонент - О нас*/
+    #About{
+        /*бутстрап сетка*/
+        .row{
             flex-direction: column-reverse;
         }
-        .col {
+        /*бутстрап сетка*/
+        .col{
             padding-left: 0;
         }
-        .col-3 {
+        /*бутстрап сетка*/
+        .col-3{
             width: 100%;
         }
-        svg {
+        /*svg*/
+        svg{
             width: 65%;
             margin-left: 17.5%;
             margin-top: 0;
         }
     }
+    /*компонент - Направления*/
     #Directions{
+        /*бутстрап сетка*/
         .row{
             flex-direction: column;
         }
+        /*бутстрап сетка*/
         .col div{
             padding: 0;
         }
-        svg {
+        /*svg*/
+        svg{
             width: 60%;
         }
     }
+    /*компонент - Преимущества*/
     #Advantages{
+        /*заголовки*/
         h2{
             margin-top: 0;
         }
+        /*бутстрап сетка*/
         .row{
             flex-direction: column;
         }
+        /*бутстрап сетка*/
         .col-5 {
             width: 100%;
         }
-        svg {
+        /*svg*/
+        svg{
             width: 60%;
             margin-left: 20%;
             margin-top: 0;
         }
     }
+    /*компонент - Лицензии*/
     #Licenses{
+        /*отступы в таблице*/
         .table > :not(caption) > * > *{
             padding: 0.35rem 0.35rem !important;
         }
+        /*первый столбец таблицы*/
         table  tr td:first-child{
             width: 78%;
         }
+        /*svg в таблице*/
         table svg{
             margin-left: 0;
         }
+        /*выделения важного в таблице*/
         table span{
             display: none;
         }
+        /*бутстрап сетка*/
         .row{
             flex-direction: column-reverse;
         }
-        .col-5 {
+        /*бутстрап сетка*/
+        .col-5{
             width: 100%;
         }
-        svg {
+        /*svg*/
+        svg{
             width: 60%;
             margin-left: 25%;
             margin-top: 0;
         }
     }
+    /*компонент - Сотрудники*/
     #Employees{
-        .employee {
+        /*блоки под информацию о сотрудниках*/
+        .employee{
             padding: 15px;
             height: 140px;
             width: 100%;
-            .row {
+            /*бутстрап сетка*/
+            .row{
                 margin-top: 2%;
+                /*svg*/
                 svg{
                     width: 130%;
                     margin-left: -15%;
                 }
             }
         }
-        .svgEmployees {
+        /*блок под svg*/
+        .svgEmployees{
             margin: 2% auto 0;
             width: 80%;
             height: 90px;
         }
     }
+    /*компонент - Услуги*/
     #Services{
+        /*бутстрап сетка*/
         .row{
             flex-direction: column-reverse;
         }
+        /*кнопки*/
         button{
             width: 100%;
             margin-bottom: 5%;
         }
+        /*бутстрап сетка*/
         .col-5 {
             width: 100%;
         }
-        svg {
+        /*svg*/
+        svg{
             width: 65%;
             margin-left: 17.5%;
             margin-top: 0;
         }
     }
+    /*компонент - Контакты*/
     #Contacts{
+        /*бутстрап сетка*/
         .row{
             flex-direction: column;
+            /*бутстрап сетка*/
             .row{
                 flex-direction: row;
+                /*бутстрап сетка*/
                 .col{
                     margin-left: -15%;
                 }
             }
         }
+        /*блоки под информацию о контактах*/
         .contacts {
             padding: 0;
             margin: 0 0 2%;
-            .row svg {
+            /*svg*/
+            .row svg{
                 margin-top: 0;
                 width: 50%;
                 padding: 3px;
@@ -653,153 +709,20 @@ button, #Home button{
     }
 }
 @media screen and (min-width: 500px) and (max-width: 768px){
+    /*компоненты - Главная*/
     #Home{
         padding: 0 0 60px 0;
     }
-    #About, #Directions, #Licenses,
-    #Advantages, #Licenses, #Employees,
-    #Services, #Contacts{
+    /*компоненты - Главная, Направления, Преимущества, Лицензии, Сотрудники, Услуги, Контакты*/
+    #About, #Directions, #Licenses, #Advantages, #Licenses, #Employees, #Services, #Contacts{
         padding: 40px 30px 40px;
     }
+    /*пункты списка(до, пункты)*/
     li:before {
         margin-left: 0;
         font-size: 1.1rem;
     }
-    #Home{
-        p{
-            margin: 2% 0 4%;
-            width: 100%;
-            text-align: center;
-        }
-        svg{
-            width: 78%;
-        }
-        h2{
-            width: 100%;
-            text-align: center;
-        }
-    }
-    #About {
-        .row {
-            flex-direction: column-reverse;
-        }
-        .col {
-            padding-left: 0;
-        }
-        .col-3 {
-            width: 100%;
-        }
-        svg {
-            width: 55%;
-            margin-left: 22.5%;
-            margin-top: 0;
-        }
-    }
-    #Directions{
-        .row{
-            flex-direction: column;
-        }
-        .col div{
-            padding: 0;
-        }
-        svg {
-            width: 50%;
-        }
-    }
-    #Advantages{
-        h2{
-            margin-top: 0 !important;
-        }
-        .row{
-            flex-direction: column;
-        }
-        .col-5 {
-            width: 100%;
-        }
-        svg {
-            width: 50%;
-            margin-left: 25%;
-            margin-top: 0;
-        }
-    }
-    #Licenses{
-        .table > :not(caption) > * > *{
-            padding: 0.35rem 0.35rem !important;
-        }
-        table  tr td:first-child{
-            width: 78%;
-        }
-        table svg{
-            margin-left: 0;
-        }
-        table span{
-            display: none;
-        }
-        .row{
-            flex-direction: column-reverse;
-        }
-        .col-5 {
-            width: 100%;
-        }
-        svg {
-            width: 50%;
-            margin-left: 25%;
-            margin-top: 0;
-        }
-    }
-    #Employees{
-        .employee {
-            padding: 15px;
-            height: 150px;
-            width: 100%;
-            margin: 8px 0;
-            .row {
-                margin-top: 2%;
-            }
-        }
-        .svgEmployees {
-            margin: 0 auto;
-            width: 80%;
-            height: 150px;
-        }
-    }
-    #Services{
-        .row{
-            flex-direction: column-reverse;
-        }
-        button{
-            width: 100%;
-            margin-bottom: 5%;
-        }
-        .col-5 {
-            width: 100%;
-        }
-        svg {
-            width: 50%;
-            margin-left: 25%;
-            margin-top: 0;
-        }
-    }
-    #Contacts{
-        .row{
-            flex-direction: column;
-            .row{
-                flex-direction: row;
-                .col{
-                    margin-left: -12%;
-                }
-            }
-        }
-        .contacts {
-            padding: 5px;
-            margin: 0 0 2%;
-            .row svg {
-                padding: 5px;
-                margin-top: 0;
-                width: 50%;
-            }
-        }
-    }
+    /*заголовки*/
     h1{
         text-align: center;
         margin-top: 0 !important;
@@ -809,161 +732,210 @@ button, #Home button{
     h2{
         font-size: 1.9rem !important;
     }
+    /*компонент - О нас(список и пункты списка)*/
     #About li, #About ul{
         margin-left: -6%;
     }
+    /*список*/
     ul{
         margin-left: -3%;
     }
+    /*ссылки, жирный текст, список, параграф, пункты списка, текст*/
     a, b, u, p, li, .text, #Home p{
         font-size: 1.2rem;
         line-height: 1.4rem;
     }
+    /*ссылка в кнопке*/
     button a{
         font-size: 1.25rem !important;
     }
-}
-@media screen and (min-width: 768px) and (max-width: 992px){
+    /*компонент - Главная*/
     #Home{
-        padding: 0 0 60px 0;
-    }
-    #About, #Directions, #Advantages, #Licenses,
-    #Employees, #Services, #Contacts{
-        padding: 40px 30px 40px;
-    }
-    #Home{
+        /*параграф*/
         p{
-            margin: 0 auto 4%;
+            margin: 2% 0 4%;
             width: 100%;
             text-align: center;
         }
+        /*svg*/
         svg{
-            width: 66%;
+            width: 78%;
         }
+        /*заголовки*/
         h2{
             width: 100%;
             text-align: center;
         }
     }
+    /*компонент - О нас*/
     #About {
-        .row {
+        /*бутстрап сетка*/
+        .row{
             flex-direction: column-reverse;
         }
-        .col {
+        /*бутстрап сетка*/
+        .col{
             padding-left: 0;
         }
-        .col-3 {
+        /*бутстрап сетка*/
+        .col-3{
             width: 100%;
         }
-        svg {
+        /*svg*/
+        svg{
             width: 55%;
             margin-left: 22.5%;
             margin-top: 0;
         }
     }
+    /*компонент - Направления*/
     #Directions{
+        /*бутстрап сетка*/
         .row{
             flex-direction: column;
         }
+        /*бутстрап сетка*/
         .col div{
             padding: 0;
         }
-        svg {
+        /*svg*/
+        svg{
             width: 50%;
         }
     }
+    /*компонент - Преимущества*/
     #Advantages{
+        /*заголовки*/
         h2{
             margin-top: 0 !important;
         }
+        /*бутстрап сетка*/
         .row{
             flex-direction: column;
         }
+        /*бутстрап сетка*/
         .col-5 {
             width: 100%;
         }
-        svg {
+        /*svg*/
+        svg{
             width: 50%;
             margin-left: 25%;
             margin-top: 0;
         }
     }
+    /*компонент - Лицензии*/
     #Licenses{
+        /*отступы в таблице*/
         .table > :not(caption) > * > *{
-            padding: 0.5rem 0.35rem !important;
+            padding: 0.35rem 0.35rem !important;
         }
-        table  tr td:first-child{
-            width: 80%;
+        /*первый столбец таблицы*/
+        table tr td:first-child{
+            width: 78%;
         }
+        /*svg в таблице*/
         table svg{
             margin-left: 0;
         }
+        /*выделения важного в таблице*/
         table span{
             display: none;
         }
+        /*бутстрап сетка*/
         .row{
             flex-direction: column-reverse;
         }
-        .col-5 {
+        /*бутстрап сетка*/
+        .col-5{
             width: 100%;
         }
-        svg {
+        /*svg*/
+        svg{
             width: 50%;
             margin-left: 25%;
             margin-top: 0;
         }
     }
+    /*компонент - Сотрудники*/
     #Employees{
-        .employee {
+        /*блоки под информацию о сотрудниках*/
+        .employee{
             padding: 15px;
             height: 150px;
             width: 100%;
             margin: 8px 0;
-            .row {
+            /*бутстрап сетка*/
+            .row{
                 margin-top: 2%;
             }
         }
-        .svgEmployees {
+        /*блок под svg*/
+        .svgEmployees{
             margin: 0 auto;
             width: 80%;
             height: 150px;
         }
     }
+    /*компонент - Услуги*/
     #Services{
+        /*бутстрап сетка*/
         .row{
             flex-direction: column-reverse;
         }
+        /*кнопки*/
         button{
             width: 100%;
             margin-bottom: 5%;
         }
-        .col-5 {
+        /*бутстрап сетка*/
+        .col-5{
             width: 100%;
         }
-        svg {
+        /*svg*/
+        svg{
             width: 50%;
             margin-left: 25%;
             margin-top: 0;
         }
     }
+    /*компонент - Контакты*/
     #Contacts{
+        /*бутстрап сетка*/
         .row{
             flex-direction: column;
+            /*бутстрап сетка*/
             .row{
                 flex-direction: row;
+                /*бутстрап сетка*/
                 .col{
                     margin-left: -12%;
                 }
             }
         }
-        .contacts {
+        /*блоки под информацию о контактах*/
+        .contacts{
+            padding: 5px;
             margin: 0 0 2%;
-            .row svg {
+            /*svg*/
+            .row svg{
+                padding: 5px;
                 margin-top: 0;
                 width: 50%;
             }
         }
     }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /*компонент - Главная*/
+    #Home{
+        padding: 0 0 60px 0;
+    }
+    /*компоненты - Направления, Преимущества, Лицензии, Сотрудники, Услуги, Контакты*/
+    #About, #Directions, #Advantages, #Licenses, #Employees, #Services, #Contacts{
+        padding: 40px 30px 40px;
+    }
+    /*заголовки*/
     h1{
         text-align: center;
         margin-top: 0 !important;
@@ -973,70 +945,204 @@ button, #Home button{
     h2{
         font-size: 2rem !important;
     }
+    /*компонент - О нас(список и пункты списка)*/
     ul, #About li, #About ul{
         margin-left: -2%;
     }
+    /*ссылки, жирный текст, список, параграф, пункты списка, текст*/
     a, b, u, p, li, .text, #Home p{
         font-size: 1.2rem;
         line-height: 1.4rem;
     }
+    /*ссылка в кнопке*/
     button a{
         font-size: 1.25rem !important;
     }
+    /*компонент - Главная*/
+    #Home{
+        /*параграф*/
+        p{
+            margin: 0 auto 4%;
+            width: 100%;
+            text-align: center;
+        }
+        /*svg*/
+        svg{
+            width: 66%;
+        }
+        /*заголовки*/
+        h2{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    /*компонент - О нас*/
+    #About{
+        /*бутстрап сетка*/
+        .row{
+            flex-direction: column-reverse;
+        }
+        /*бутстрап сетка*/
+        .col{
+            padding-left: 0;
+        }
+        /*бутстрап сетка*/
+        .col-3{
+            width: 100%;
+        }
+        /*svg*/
+        svg{
+            width: 55%;
+            margin-left: 22.5%;
+            margin-top: 0;
+        }
+    }
+    /*компонент - Направления*/
+    #Directions{
+        /*бутстрап сетка*/
+        .row{
+            flex-direction: column;
+        }
+        /*бутстрап сетка*/
+        .col div{
+            padding: 0;
+        }
+        /*svg*/
+        svg{
+            width: 50%;
+        }
+    }
+    /*компонент - Преимущества*/
+    #Advantages{
+        /*заголовки*/
+        h2{
+            margin-top: 0 !important;
+        }
+        /*бутстрап сетка*/
+        .row{
+            flex-direction: column;
+        }
+        /*бутстрап сетка*/
+        .col-5{
+            width: 100%;
+        }
+        /*svg*/
+        svg{
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    /*компонент - Лицензии*/
+    #Licenses{
+        /*отступы в таблице*/
+        .table > :not(caption) > * > *{
+            padding: 0.5rem 0.35rem !important;
+        }
+        /*первый столбец таблицы*/
+        table tr td:first-child{
+            width: 80%;
+        }
+        /*svg в таблице*/
+        table svg{
+            margin-left: 0;
+        }
+        /*выделения важного в таблице*/
+        table span{
+            display: none;
+        }
+        /*бутстрап сетка*/
+        .row{
+            flex-direction: column-reverse;
+        }
+        /*бутстрап сетка*/
+        .col-5{
+            width: 100%;
+        }
+        /*svg*/
+        svg{
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    /*компонент - Сотрудники*/
+    #Employees{
+        /*блоки под информацию о сотрудниках*/
+        .employee{
+            padding: 15px;
+            height: 150px;
+            width: 100%;
+            margin: 8px 0;
+            /*бутстрап сетка*/
+            .row{
+                margin-top: 2%;
+            }
+        }
+        /*блок под svg*/
+        .svgEmployees {
+            margin: 0 auto;
+            width: 80%;
+            height: 150px;
+        }
+    }
+    /*компонент - Услуги*/
+    #Services{
+        /*бутстрап сетка*/
+        .row{
+            flex-direction: column-reverse;
+        }
+        /*кнопки*/
+        button{
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        /*бутстрап сетка*/
+        .col-5{
+            width: 100%;
+        }
+        /*svg*/
+        svg{
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 0;
+        }
+    }
+    /*компонент - Контакты*/
+    #Contacts{
+        /*бутстрап сетка*/
+        .row{
+            flex-direction: column;
+            /*бутстрап сетка*/
+            .row{
+                flex-direction: row;
+                /*бутстрап сетка*/
+                .col{
+                    margin-left: -12%;
+                }
+            }
+        }
+        /*блоки под информацию о контактах*/
+        .contacts{
+            margin: 0 0 2%;
+            /*svg*/
+            .row svg{
+                margin-top: 0;
+                width: 50%;
+            }
+        }
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
+    /*компоненты - Главная*/
     #Home{
         padding: 30px 0 60px 0;
     }
-    #About, #Directions, #Advantages, #Licenses,
-    #Employees, #Services, #Contacts{
+    /*компоненты - Главная, Направления, Преимущества, Лицензии, Сотрудники, Услуги, Контакты*/
+    #About, #Directions, #Advantages, #Licenses, #Employees, #Services, #Contacts{
         padding: 40px 30px 40px;
     }
-    #Home{
-        p{
-            width: 106%;
-            margin: 0 0 4%;
-        }
-        svg{
-            width: 94%;
-            margin-left: 30px;
-        }
-        h2{
-            font-size: 1.8rem !important;
-        }
-    }
-    #Advantages h2 {
-        margin-top: 3% !important;
-    }
-    #Licenses{
-        svg{
-            margin-top: 25%;
-        }
-        .col{
-            padding-left: 0 !important;
-            svg{
-                margin: 0;
-            }
-        }
-        .table > :not(caption) > * > *{
-           padding: 0.35rem 0.35rem !important;
-        }
-        table  tr td:first-child{
-            width: 49%;
-        }
-    }
-    #Employees .svgEmployees{
-        margin: 46px 15px 8px;
-    }
-    #Contacts{
-        .contacts {
-            margin: 10px;
-            padding: 5px;
-            .row svg {
-                padding: 5px;
-            }
-        }
-    }
+    /*заголовки*/
     h1{
         margin-top: 3% !important;
         font-size: 3.5rem !important;
@@ -1046,72 +1152,151 @@ button, #Home button{
     h2{
         font-size: 2rem !important;
     }
+    /*параграф*/
     p{
         margin-bottom: .5rem !important;
     }
+    /*ссылки, жирный текст, список, параграф, пункты списка, текст*/
     a, b, u, p, li, .text, #Home p{
         font-size: 1.2rem;
         line-height: 1.4rem;
     }
+    /*кнопки*/
     button, #Home button{
         font-size: 1.25rem !important;
     }
+    /*список*/
     ul{
         margin-left: -2%;
         margin-bottom: 0 !important;
     }
-    li {
+    /*пункты списка*/
+    li{
         margin-bottom: 1%;
     }
+    /*ссылка в кнопке*/
     button a{
         font-size: 1.25rem !important;
     }
+    /*компонент - Главная*/
+    #Home{
+        /*параграф*/
+        p{
+            width: 106%;
+            margin: 0 0 4%;
+        }
+        /*svg*/
+        svg{
+            width: 94%;
+            margin-left: 30px;
+        }
+        /*заголовки*/
+        h2{
+            font-size: 1.8rem !important;
+        }
+    }
+    /*компонент - Преимущества (заголовок)*/
+    #Advantages h2 {
+        margin-top: 3% !important;
+    }
+    /*компонент - Лицензии*/
+    #Licenses{
+        /*svg*/
+        svg{
+            margin-top: 25%;
+        }
+        /*бутстрап сетка*/
+        .col{
+            padding-left: 0 !important;
+            /*svg*/
+            svg{
+                margin: 0;
+            }
+        }
+        /*отступы в таблице*/
+        .table > :not(caption) > * > *{
+           padding: 0.35rem 0.35rem !important;
+        }
+        /*первый столбец таблицы*/
+        table tr td:first-child{
+            width: 49%;
+        }
+    }
+    /*компонент - Сотрудники (блок под svg)*/
+    #Employees .svgEmployees{
+        margin: 46px 15px 8px;
+    }
+    /*компонент - Контакты*/
+    #Contacts{
+        /*бутстрап сетка*/
+        .contacts{
+            margin: 10px;
+            padding: 5px;
+            /*svg*/
+            .row svg{
+                padding: 5px;
+            }
+        }
+    }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px){
+    /*компонент - Преимущества, Услуги(svg)*/
     #Advantages svg, #Services svg{
         width: 95%;
     }
+    /*параграф*/
+    p{
+        margin-bottom: .5rem !important;
+    }
+    /*ссылки, жирный текст, список, параграф, пункты списка, текст*/
+    a, b, u, p, li, .text, #Home p{
+        font-size: 1.22rem;
+        line-height: 1.4rem;
+    }
+    /*список*/
+    ul{
+        margin-left: -4%;
+    }
+    /*пункты списка*/
+    li{
+        margin-bottom: 2%;
+    }
+    /*ссылка в кнопке*/
+    button a{
+        font-size: 1.25rem !important;
+    }
+    /*заголовки*/
     h1{
         font-size: 4rem !important;
         line-height: 5rem !important;
         margin-bottom: 0 !important;
     }
+    h2{
+        font-size: 2.5rem !important;
+    }
+    /*кнопки*/
     button, #Home button{
         font-size: 1.25rem !important;
     }
+    /*компонент - Главная*/
     #Home{
+        /*svg*/
         svg{
             width: 94%;
             margin-left: 50px;
         }
+        /*заголовки*/
         h2{
             font-size: 2rem !important;
         }
     }
-    #Licenses table  tr td:first-child{
+    /*компонент - Лицензии (первый столбец таблицы)*/
+    #Licenses table tr td:first-child{
         width: 55%;
     }
+    /*компонент - Контакты (svg)*/
     #Contacts .contacts .row svg {
         padding: 5px;
-    }
-    h2{
-        font-size: 2.5rem !important;
-    }
-    p{
-        margin-bottom: .5rem !important;
-    }
-    a, b, u, p, li, .text, #Home p{
-        font-size: 1.22rem;
-        line-height: 1.4rem;
-    }
-    ul{
-        margin-left: -4%;
-    }
-    li {
-        margin-bottom: 2%;
-    }
-    button a{
-        font-size: 1.25rem !important;
     }
 }
 </style>
